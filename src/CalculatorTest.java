@@ -3,6 +3,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -212,7 +214,16 @@ public class CalculatorTest
         int result = calculator.GetHighestProductof5DigitsInAStringOfConsecutiveDigits();
 
         Assert.assertEquals(40824, result);
+    }
+    
+    @Test
+    public void ShouldGetPythagoreanTripletThatSumsTo1000()
+    {
+        int value = 1000;
+        Calculator calculator = new Calculator();
+        PythagoreanTriplet result = calculator.GetFirstPythagoreanTripletThatSumsTo(value);
 
+        Assert.assertEquals(31875000, result.GetProductOfTriplet());
     }
 
     @Test
