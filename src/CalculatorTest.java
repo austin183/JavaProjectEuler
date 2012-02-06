@@ -3,8 +3,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 /**
  * Created by IntelliJ IDEA.
@@ -227,12 +226,41 @@ public class CalculatorTest
     }
 
     @Test
+    public void ShouldGetSumOfPrimesUnder17()
+    {
+        int maxValue = 10;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.GetSumPrimesUnderMaxValue(maxValue);
+
+        Assert.assertEquals(17, result);
+    }
+
+    @Test
+    @Ignore("Rewriting PrimeFactorizer")
+    public void ShouldGetSumOfPrimesUnder2000000()
+    {
+        Date start = new Date();
+
+        int maxValue = 2000000;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.GetSumPrimesUnderMaxValue(maxValue);
+
+        Date end = new Date();
+        int timeInSeconds = (int) ((end.getTime() - start.getTime())/1000);
+        System.out.println(Integer.toString(timeInSeconds));
+
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
     @Ignore("Manual Test to generate more Primes for the PrimeRecord")
     public void ShouldWritePrimesToFile()
     {
-        BigInteger maxValue = new BigInteger("5000000");
+        int maxValue = 2000000;
 
-        PrimeFactorizer primeFactorizer = new PrimeFactorizer();
-        primeFactorizer.MakePrimesList(maxValue);
+        PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
+        PrimeFactorizer.MakePrimesList(maxValue, "C:\\Temp\\PrimeTemp.txt");
     }
 }

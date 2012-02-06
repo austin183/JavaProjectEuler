@@ -45,15 +45,7 @@ class Calculator {
         return toReturn;
     }
 
-    public BigInteger GetLargestPrimeFactor(BigInteger maxValue) {
-        BigInteger toReturn;
-        PrimeFactorizer primeFactorizer = new PrimeFactorizer();
 
-        toReturn =  primeFactorizer.GetLargestKnownPrimeFactorForValuesUnderMaxKnownPrime(maxValue);
-        if(toReturn != null) return toReturn;
-
-        return primeFactorizer.GetLargetPrimeFactorOverMaxKnowPrime(maxValue);
-    }
     
     public int GetLargestPalindromeByTwoNumbersXDigits(int digits)
     {
@@ -163,5 +155,22 @@ class Calculator {
             }
         }
         return null;
+    }
+
+    public long GetSumPrimesUnderMaxValue(int maxValue) {
+
+        PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
+
+        return PrimeFactorizer.GetSumPrimesUnderMaxValue(maxValue);
+    }
+
+    public BigInteger GetLargestPrimeFactor(BigInteger maxValue) {
+        BigInteger toReturn;
+        BigIntPrimeFactorizer bigIntPrimeFactorizer = new BigIntPrimeFactorizer();
+
+        toReturn =  bigIntPrimeFactorizer.GetLargestKnownPrimeFactorForValuesUnderMaxKnownPrime(maxValue);
+        if(toReturn != null) return toReturn;
+
+        return bigIntPrimeFactorizer.GetLargetPrimeFactorOverMaxKnowPrime(maxValue);
     }
 }
