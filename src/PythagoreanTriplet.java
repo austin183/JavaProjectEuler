@@ -7,9 +7,9 @@
  */
 public class PythagoreanTriplet
 {
-    public int A;
-    public int B;
-    public int C;
+    private final int A;
+    private final int B;
+    private final int C;
     
     public PythagoreanTriplet(int a, int b, int c)
     {

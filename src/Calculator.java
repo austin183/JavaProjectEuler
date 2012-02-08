@@ -9,7 +9,6 @@ import java.math.BigInteger;
  * To change this template use File | Settings | File Templates.
  */
 class Calculator {
-    private final String DIGIT_STRING = "C:\\Temp\\PrimeWork\\1000DigitString.txt";
 
     public int CalculateSumFromMultiplesUnderMaxValue(int[] multiples, int maxValue) {
         int toReturn = 0;
@@ -107,6 +106,7 @@ class Calculator {
         int highestValue = 0;
         FileInputStream fileInputStream = null;
         try {
+            String DIGIT_STRING = "C:\\Temp\\PrimeWork\\1000DigitString.txt";
             fileInputStream = new FileInputStream(DIGIT_STRING);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -172,5 +172,25 @@ class Calculator {
         if(toReturn != null) return toReturn;
 
         return bigIntPrimeFactorizer.GetLargetPrimeFactorOverMaxKnowPrime(maxValue);
+    }
+
+    public int GetHighestProductOfValuesInGrid(Gridizer gridizer, int sequenceSize) {
+        int toReturn = 0;
+        for(int x = 0; x < gridizer.GetGrid().size(); x++)
+        {
+            for (int y = 0; y < gridizer.GetGrid().get(x).size(); y++)
+            {
+                int productDown = gridizer.GetProductDown(x, y, sequenceSize);
+                int productRight = gridizer.GetProductRight(x, y, sequenceSize);
+                int productDownAndRight = gridizer.GetProductDownAndRight(x, y, sequenceSize);
+                int productDownAndLeft = gridizer.GetProductDownAndLeft(x, y, sequenceSize);
+                
+                if(productDown > toReturn) toReturn = productDown;
+                if(productRight > toReturn) toReturn = productRight;
+                if(productDownAndRight > toReturn) toReturn = productDownAndRight;
+                if(productDownAndLeft > toReturn) toReturn = productDownAndLeft;
+            }
+        }
+        return toReturn;
     }
 }

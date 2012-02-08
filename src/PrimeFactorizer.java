@@ -11,7 +11,7 @@ import java.util.List;
  * Time: 11:05 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PrimeFactorizer {
+class PrimeFactorizer {
     private final List<Integer> knownPrimes;
     
     public PrimeFactorizer()
@@ -52,34 +52,28 @@ public class PrimeFactorizer {
     }
 
     boolean IsPrime(int candidate) {
-        boolean toReturn = true;
-
         //System.out.printf("Testing prime candidate %d to known primes%n", candidate);
         if (IsKnownPrime(candidate)) return true;
+
         for(int i = 0; i < knownPrimes.size() -1; i++)
         {
             //System.out.printf("Testing prime candidate %d to %s%n", candidate, knownPrimes.get(i).toString());
             if(candidate % knownPrimes.get(i) == 0)
                 return false;
         }
-        if(toReturn)
+
+        int index = knownPrimes.size() > 0 ? knownPrimes.get(knownPrimes.size() -1) : 2;
+        for(int i= index; i < candidate; i++)
         {
-            int index = 2;
-            if(knownPrimes.size() > 0) index = knownPrimes.get(knownPrimes.size() -1);
-            for(int i= index; i < candidate; i++)
-            {
-                //System.out.printf("Testing prime candidate %s to %s%n", Integer.toString(candidate), Integer.toString(i));
-                if(candidate % i == 0)
-                    return false;
-            }
+            //System.out.printf("Testing prime candidate %s to %s%n", Integer.toString(candidate), Integer.toString(i));
+            if(candidate % i == 0)
+                return false;
         }
 
-        if(toReturn)
-        {
-            //System.out.printf("%s is Prime%n", Integer.toString(candidate));
-            knownPrimes.add(candidate);
-        }
-        return toReturn;
+        //System.out.printf("%s is Prime%n", Integer.toString(candidate));
+        knownPrimes.add(candidate);
+
+        return true;
     }
 
     public int GetLargestKnownPrimeFactorForValuesUnderMaxKnownPrime(int maxValue) {

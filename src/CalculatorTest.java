@@ -235,9 +235,37 @@ public class CalculatorTest
 
         Assert.assertEquals(17, result);
     }
+    
+    @Test
+    public void ShouldGetHighestProductOf3ValuesFrom3x3File()
+    {
+        int sequenceSize = 3;
+        
+        Calculator calculator = new Calculator();
+        Gridizer gridizer = new Gridizer();
+        gridizer.InitializeGrid("C:\\Temp\\GridWork\\11.3x3.txt");
+
+        int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
+
+        Assert.assertEquals(237699, result);
+    }
 
     @Test
-    @Ignore("Rewriting PrimeFactorizer")
+    public void ShouldGetHighestProductOf4ValuesFrom20x20File()
+    {
+        int sequenceSize = 4;
+
+        Calculator calculator = new Calculator();
+        Gridizer gridizer = new Gridizer();
+        gridizer.InitializeGrid("C:\\Temp\\GridWork\\11.20x20.txt");
+
+        int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
+
+        Assert.assertEquals(70600674, result);
+    }
+
+    @Test
+    @Ignore("Verrry Slow.  Like 23 minutes slow!")
     public void ShouldGetSumOfPrimesUnder2000000()
     {
         Date start = new Date();
