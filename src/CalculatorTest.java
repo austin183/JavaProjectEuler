@@ -65,67 +65,67 @@ public class CalculatorTest
     @Test
     public void ShouldGetPrimeFactorsUnder26()
     {
-        BigInteger maxValue = new BigInteger("26");
+        long maxValue = 26;
 
         Calculator calculator = new Calculator();
-        BigInteger result = calculator.GetLargestPrimeFactor(maxValue);
+        long result = calculator.GetLargestPrimeFactor(maxValue);
 
-        Assert.assertTrue("Expecting 13", result.compareTo(new BigInteger("13")) == 0);
+        Assert.assertEquals(13, result);
     }
 
     @Test
     public void ShouldGetPrimeFactorsUnder38()
     {
-        BigInteger maxValue = new BigInteger("38");
+        long maxValue = 38;
 
         Calculator calculator = new Calculator();
-        BigInteger result = calculator.GetLargestPrimeFactor(maxValue);
+        long result = calculator.GetLargestPrimeFactor(maxValue);
 
-        Assert.assertTrue("Expecting 19", result.compareTo(new BigInteger("19")) == 0);
+        Assert.assertEquals(19, result);
     }
 
     @Test
     public void ShouldGetPrimeFactorsUnder1670()
     {
-        BigInteger maxValue = new BigInteger("1670");
+        long maxValue = 1670;
 
         Calculator calculator = new Calculator();
-        BigInteger result = calculator.GetLargestPrimeFactor(maxValue);
+        long result = calculator.GetLargestPrimeFactor(maxValue);
 
-        Assert.assertTrue("Expecting 167 but was " + result.toString(), result.compareTo(new BigInteger("167")) == 0);
+        Assert.assertEquals(167, result);
     }
 
     @Test
     public void ShouldGetPrimeFactorsUnder15()
     {
-        BigInteger maxValue = new BigInteger("15");
+        long maxValue = 15;
 
         Calculator calculator = new Calculator();
-        BigInteger result = calculator.GetLargestPrimeFactor(maxValue);
+        long result = calculator.GetLargestPrimeFactor(maxValue);
 
-        Assert.assertTrue("Expecting 5", result.compareTo(new BigInteger("5")) == 0);
+        Assert.assertEquals(5, result);
     }
 
     @Test
     public void ShouldGetPrimeFactorsUnder13195()
     {
-        BigInteger maxValue = new BigInteger("13195");
+        long maxValue = 13195;
 
         Calculator calculator = new Calculator();
-        BigInteger result = calculator.GetLargestPrimeFactor(maxValue);
+        long result = calculator.GetLargestPrimeFactor(maxValue);
 
-        Assert.assertTrue("Expecting 29", result.compareTo(new BigInteger("29")) == 0);
+        Assert.assertEquals(29, result);
     }
 
     @Test
     public void ShouldGetPrimeFactorsUnder600851475143()
     {
-        BigInteger maxValue = new BigInteger("600851475143");
+        long maxValue = new Long(600851475143L);
 
         Calculator calculator = new Calculator();
-        BigInteger result = calculator.GetLargestPrimeFactor(maxValue);
+        long result = calculator.GetLargestPrimeFactor(maxValue);
 
-        Assert.assertTrue("Expecting 6857 but was " + result.toString(), result.compareTo(new BigInteger("6857")) == 0);
+        Assert.assertEquals(6857, result);
     }
     
     @Test

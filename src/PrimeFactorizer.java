@@ -76,17 +76,30 @@ class PrimeFactorizer {
         return true;
     }
 
-    public int GetLargestKnownPrimeFactorForValuesUnderMaxKnownPrime(int maxValue) {
-        if(maxValue < (knownPrimes.get(knownPrimes.size() -1)))
+    public long GetLargestPrimeFactor(long maxValue) {
+        if(knownPrimes.size() > 0)
         {
-            for(int knowPrimeIndex = knownPrimes.size() - 1; knowPrimeIndex > 0; knowPrimeIndex--)
+            if(maxValue < (knownPrimes.get(knownPrimes.size() -1)))
             {
-                if((knownPrimes.get(knowPrimeIndex).compareTo(maxValue) <= 0) &&
-                        ((maxValue % (knownPrimes.get(knowPrimeIndex))) == 0))
-                    return knownPrimes.get(knowPrimeIndex);
+                for(int knowPrimeIndex = knownPrimes.size() - 1; knowPrimeIndex > 0; knowPrimeIndex--)
+                {
+                    if((knownPrimes.get(knowPrimeIndex) <= maxValue) &&
+                            ((maxValue % (knownPrimes.get(knowPrimeIndex))) == 0))
+                        return knownPrimes.get(knowPrimeIndex);
+                }
             }
         }
-        return -1;
+        for(int i = 2;i < maxValue; i++)
+        {
+            if(IsPrime(i))
+            {
+                if(maxValue % i == 0)
+                {
+                    return GetLargestPrimeFactor(maxValue / i);
+                }
+            }
+        }
+        return maxValue;
     }
 
     public void MakePrimesList(int upTo, String primeRecord)

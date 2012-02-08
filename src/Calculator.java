@@ -164,14 +164,11 @@ class Calculator {
         return PrimeFactorizer.GetSumPrimesUnderMaxValue(maxValue);
     }
 
-    public BigInteger GetLargestPrimeFactor(BigInteger maxValue) {
-        BigInteger toReturn;
-        BigIntPrimeFactorizer bigIntPrimeFactorizer = new BigIntPrimeFactorizer();
+    public long GetLargestPrimeFactor(long maxValue) {
+        int toReturn;
+        PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
 
-        toReturn =  bigIntPrimeFactorizer.GetLargestKnownPrimeFactorForValuesUnderMaxKnownPrime(maxValue);
-        if(toReturn != null) return toReturn;
-
-        return bigIntPrimeFactorizer.GetLargetPrimeFactorOverMaxKnowPrime(maxValue);
+        return  PrimeFactorizer.GetLargestPrimeFactor(maxValue);
     }
 
     public int GetHighestProductOfValuesInGrid(Gridizer gridizer, int sequenceSize) {
