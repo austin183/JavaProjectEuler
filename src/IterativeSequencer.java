@@ -5,7 +5,7 @@
  * Time: 8:45 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IterativeSequencer {
+class IterativeSequencer {
     public int GetNumberTermsInChain(int number) {
         long i = number;
         int chainLength = 1;

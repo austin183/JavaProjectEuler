@@ -112,9 +112,6 @@ class Gridizer {
 
     public int GetProductDownAndLeft(int x, int y, int sequenceSize) {
         int toReturn = 1;
-        //02
-        //11
-        //20
 
         try
         {
@@ -129,4 +126,6 @@ class Gridizer {
         }
         return toReturn;
     }
+
+
 }

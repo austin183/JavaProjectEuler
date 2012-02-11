@@ -8,7 +8,7 @@ import java.math.BigInteger;
  * Time: 8:34 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BigIntegerMath {
+class BigIntegerMath {
     public BigInteger GetSumOfNumbersInFile(String filePath) {
         BigInteger sum = BigInteger.ZERO;
         FileInputStream fileInputStream = null;
@@ -27,6 +27,17 @@ public class BigIntegerMath {
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        return sum;
+    }
+
+    public int GetSumOfDigitsInNumber(BigInteger number) {
+        int sum = 0;
+        String numberLine = number.toString();
+        
+        for(int i = 0; i< numberLine.length(); i++)
+        {
+            sum += Integer.parseInt(numberLine.substring(i, i + 1));
         }
         return sum;
     }

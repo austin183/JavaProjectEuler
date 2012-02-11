@@ -213,4 +213,15 @@ class Calculator {
         }
         return triangleNumber;
     }
+
+    public long GetNumberRoutesThroughXbyXGrid(int m, int n) {
+        Factorializer factorializer = new Factorializer();
+
+        BigInteger mnBang = factorializer.Factorialize(m + n);
+        BigInteger mBang = factorializer.Factorialize(m);
+        BigInteger nBang = factorializer.Factorialize(n);
+
+        BigInteger answer = mnBang.divide(mBang.multiply(nBang));
+        return answer.longValue();
+    }
 }

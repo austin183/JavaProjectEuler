@@ -275,6 +275,28 @@ public class CalculatorTest
     }
 
     @Test
+    public void ShouldGetGridRoutesFor2x2Grid()
+    {
+        //http://joaoff.com/2008/01/20/a-square-grid-path-problem/
+        //for n -> 2n : (2n!) / n! (n!)
+        Calculator calculator = new Calculator();
+
+        long result = calculator.GetNumberRoutesThroughXbyXGrid(2, 2);
+        Assert.assertEquals(6, result);
+    }
+
+    @Test
+    public void ShouldGetGridRoutesFor20x20Grid()
+    {
+        //http://joaoff.com/2008/01/20/a-square-grid-path-problem/
+        //for n -> 2n : (2n!) / n! (n!)
+        Calculator calculator = new Calculator();
+
+        long result = calculator.GetNumberRoutesThroughXbyXGrid(20, 20);
+        Assert.assertEquals(137846528820L, result);
+    }
+
+    @Test
     @Ignore("Runs kinda slowly")
     public void ShouldGetSmallestNumberDivisibleByNumbersBelow20()
     {
