@@ -1,5 +1,6 @@
 import java.io.*;
 import java.math.BigInteger;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -67,15 +68,15 @@ class Calculator {
         return toReturn;
     }
     
-    public int GetSmallestNumberDivisibleByAllNumbersBelowNumber(int allNumberBelow)
+    public int GetSmallestNumberDivisibleByAllNumbersBelowNumber(int allNumbersBelow)
     {
-        int candidate = allNumberBelow * (allNumberBelow - 1) - 1;
+        int candidate = allNumbersBelow * (allNumbersBelow - 1) - 1;
         boolean haveNotFoundGoodCandidate = true;
         while(haveNotFoundGoodCandidate)
         {
             candidate ++;
             haveNotFoundGoodCandidate = false;
-            for(int i = 1; i <= allNumberBelow; i++)
+            for(int i = 1; i <= allNumbersBelow; i++)
             {
                 if(candidate % i != 0)
                 {
@@ -165,7 +166,6 @@ class Calculator {
     }
 
     public long GetLargestPrimeFactor(long maxValue) {
-        int toReturn;
         PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
 
         return  PrimeFactorizer.GetLargestPrimeFactor(maxValue);
@@ -189,5 +189,28 @@ class Calculator {
             }
         }
         return toReturn;
+    }
+
+    public long GetFirstTriangeNumberToHaveNumberDivisors(int numDivisors) {
+        int currentNumDivisors = 0;
+        int triangleIndex = 1;
+        long triangleNumber = 0;
+        
+        Triangulizer triangulizer = new Triangulizer();
+        Factorizer factorizer = new Factorizer();
+        
+        while(currentNumDivisors < numDivisors)
+        {
+            triangleNumber = triangulizer.GetTriangleNumberAt(triangleIndex);
+            currentNumDivisors = factorizer.GetNumberFactorsOf(triangleNumber);
+            
+            triangleIndex++;
+            if(triangleIndex % 100 == 0)
+            {
+                System.out.println("Current Triangle Number: " + triangleNumber
+                        + " Current Num Divisors: " + currentNumDivisors);
+            }
+        }
+        return triangleNumber;
     }
 }

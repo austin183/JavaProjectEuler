@@ -37,8 +37,7 @@ class Gridizer {
         DataInputStream in = new DataInputStream(fileInputStream);
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
         String line;
-        List<String> lines = new ArrayList<String>();
-        try {               
+        try {
             while((line = reader.readLine()) != null)
             {
                 String[] lineValues = line.split(" ");

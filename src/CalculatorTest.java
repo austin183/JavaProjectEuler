@@ -120,7 +120,7 @@ public class CalculatorTest
     @Test
     public void ShouldGetPrimeFactorsUnder600851475143()
     {
-        long maxValue = new Long(600851475143L);
+        long maxValue = 600851475143L;
 
         Calculator calculator = new Calculator();
         long result = calculator.GetLargestPrimeFactor(maxValue);
@@ -170,18 +170,6 @@ public class CalculatorTest
         int result = calculator.GetSmallestNumberDivisibleByAllNumbersBelowNumber(numbersBelow);
 
         Assert.assertEquals(2520, result);
-    }
-
-    @Test
-    @Ignore("Runs kinda slowly")
-    public void ShouldGetSmallestNumberDivisibleByNumbersBelow20()
-    {
-        int numbersBelow = 20;
-
-        Calculator calculator = new Calculator();
-        int result = calculator.GetSmallestNumberDivisibleByAllNumbersBelowNumber(numbersBelow);
-
-        Assert.assertEquals(232792560, result);
     }
 
     @Test
@@ -262,6 +250,40 @@ public class CalculatorTest
         int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
 
         Assert.assertEquals(70600674, result);
+    }
+
+    @Test
+    public void ShouldGetFirstTriangleNumberToHaveOverFiveDivisors()
+    {
+        int numDivisors = 5;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.GetFirstTriangeNumberToHaveNumberDivisors(numDivisors);
+
+        Assert.assertEquals(28, result);
+    }
+
+    @Test
+    public void ShouldGetFirstTriangleNumberToHaveOverFiveHundredDivisors()
+    {
+        int numDivisors = 500;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.GetFirstTriangeNumberToHaveNumberDivisors(numDivisors);
+
+        Assert.assertEquals(76576500, result);
+    }
+
+    @Test
+    @Ignore("Runs kinda slowly")
+    public void ShouldGetSmallestNumberDivisibleByNumbersBelow20()
+    {
+        int numbersBelow = 20;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetSmallestNumberDivisibleByAllNumbersBelowNumber(numbersBelow);
+
+        Assert.assertEquals(232792560, result);
     }
 
     @Test
