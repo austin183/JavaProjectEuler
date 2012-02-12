@@ -297,6 +297,16 @@ public class CalculatorTest
     }
 
     @Test
+    public void ShouldGetSumOfCharactersToMake1To1000InWords()
+    {
+        Calculator calculator = new Calculator();
+
+        int result = calculator.GetCharactersInWordsOneTo(1000);
+
+        Assert.assertEquals(21124, result);
+    }
+
+    @Test
     @Ignore("Runs kinda slowly")
     public void ShouldGetSmallestNumberDivisibleByNumbersBelow20()
     {

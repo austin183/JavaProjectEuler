@@ -224,4 +224,14 @@ class Calculator {
         BigInteger answer = mnBang.divide(mBang.multiply(nBang));
         return answer.longValue();
     }
+
+    public int GetCharactersInWordsOneTo(int number) {
+        int toReturn = 0;
+        NumberToWordTranslator translator = new NumberToWordTranslator();
+        for(int i = 1; i <= number; i++)
+        {
+            toReturn += translator.GetWord(i).length();
+        }
+        return toReturn;
+    }
 }
