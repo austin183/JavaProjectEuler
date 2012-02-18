@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,6 +43,15 @@ class Factorizer {
             if(toReturn.containsKey(numberToTest))
                 toReturn.put(numberToTest, toReturn.get(numberToTest) + 1);
             else toReturn.put(numberToTest, 1);
+        }
+        return toReturn;
+    }
+
+    public List<Integer> GetFactorsOf(int toTest) {
+        List<Integer> toReturn = new ArrayList<Integer>();
+        for(int i = 1; i<(toTest/2) + 2; i++)
+        {
+            if(toTest % i == 0) toReturn.add(i);
         }
         return toReturn;
     }
