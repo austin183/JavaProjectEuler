@@ -16,4 +16,14 @@ class Factorializer {
         }
         return toReturn;
     }
+
+    public int GetSumOfDigitsInFactorialization(int factorialize) {
+        String digits = Factorialize(factorialize).toString();
+        int toReturn = 0;
+        for (int i = 0; i < digits.length(); i++)
+        {
+            toReturn += Integer.parseInt(digits.substring(i, i+1));
+        }
+        return toReturn;
+    }
 }
