@@ -41,4 +41,32 @@ class BigIntegerMath {
         }
         return sum;
     }
+
+    public BigInteger GetNthValueInFibonacciSequence(int n, BigInteger primary, BigInteger next) {
+        if(n == 1) return primary;
+        if(n == 2) return next;
+
+        for(int i = 3; i < n; i++)
+        {
+            BigInteger temp = next;
+            next = primary.add(next);
+            primary = temp;
+        }
+        return primary.add(next);
+    }
+    
+    public int GetFirstFibonacciTermWithNumberOfDigits(int number, BigInteger primary, BigInteger next)
+    {
+        BigInteger toReturn = primary;
+        int i = 3;
+        while (toReturn.toString().length() < number)
+        {
+            BigInteger temp = next;
+            next = primary.add(next);
+            primary = temp;
+            toReturn = primary.add(next);
+            i++;
+        }
+        return i;
+    }
 }

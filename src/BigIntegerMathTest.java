@@ -28,11 +28,72 @@ public class BigIntegerMathTest {
     }
 
     @Test
-    public void ShouldGetSumOfDigitsInString()
+    public void ShouldGetSumOfDigitsIn2ToThe1000()
     {
         BigIntegerMath math = new BigIntegerMath();
         int result = math.GetSumOfDigitsInNumber(new BigInteger("2").pow(1000));
 
         Assert.assertEquals(1366, result);
     }
+
+    @Test
+    public void ShouldGet3rdValueInFibonacciSequence()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        int n = 3;
+        BigInteger result = math.GetNthValueInFibonacciSequence(n, BigInteger.ONE, BigInteger.ONE);
+
+        Assert.assertEquals(new BigInteger("2"), result);
+    }
+
+    @Test
+    public void ShouldGet4thValueInFibonacciSequence()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        int n = 4;
+        BigInteger result = math.GetNthValueInFibonacciSequence(n, BigInteger.ONE, BigInteger.ONE);
+
+        Assert.assertEquals(new BigInteger("3"), result);
+    }
+
+    @Test
+    public void ShouldGet5thValueInFibonacciSequence()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        int n = 5;
+        BigInteger result = math.GetNthValueInFibonacciSequence(n, BigInteger.ONE, BigInteger.ONE);
+
+        Assert.assertEquals(new BigInteger("5"), result);
+    }
+
+    @Test
+    public void ShouldGet6thValueInFibonacciSequence()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        int n = 6;
+        BigInteger result = math.GetNthValueInFibonacciSequence(n, BigInteger.ONE, BigInteger.ONE);
+
+        Assert.assertEquals(new BigInteger("8"), result);
+    }
+
+    @Test
+    public void ShouldGetFirstFibonacciTermWith3Digits()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        int n = 3;
+        int result = math.GetFirstFibonacciTermWithNumberOfDigits(n, BigInteger.ONE, BigInteger.ONE);
+
+        Assert.assertEquals(12, result);
+    }
+
+    @Test
+    public void ShouldGetFirstFibonacciTermWith1000Digits()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        int n = 1000;
+        int result = math.GetFirstFibonacciTermWithNumberOfDigits(n, BigInteger.ONE, BigInteger.ONE);
+
+        Assert.assertEquals(4782, result);
+    }
+
 }
