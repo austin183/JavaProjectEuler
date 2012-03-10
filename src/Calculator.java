@@ -146,13 +146,12 @@ class Calculator {
         Pythagorizer pythagorizer = new Pythagorizer();
         for(int a = 1; a < value; a++)
         {
-            for (int b = 1; b < value; b++)
+            for (int b = a + 1; b < value; b++)
             {
-                for(int c = 1; c < value; c++)
-                {
-                    if(a + b + c == value && pythagorizer.IsTriplet(a, b, c))
-                        return new PythagoreanTriplet(a, b, c);
-                }
+                int c = value - a - b;
+
+                if(pythagorizer.IsTriplet(a, b, c))
+                    return new PythagoreanTriplet(a, b, c);
             }
         }
         return null;
