@@ -1,7 +1,6 @@
 import junit.framework.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,8 +11,7 @@ import java.util.List;
  */
 public class TrianglePathFinderTest {
     @Test
-    public void ShouldLoadTriangleFromFile()
-    {
+    public void ShouldLoadTriangleFromFile() {
         String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom2Lines.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
@@ -25,8 +23,7 @@ public class TrianglePathFinderTest {
     }
 
     @Test
-    public void ShouldGetGreatestSumForAllPathsTopToBottom3Lines()
-    {
+    public void ShouldGetGreatestSumForAllPathsTopToBottom3Lines() {
         String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom3Lines.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
@@ -38,8 +35,7 @@ public class TrianglePathFinderTest {
     }
 
     @Test
-    public void ShouldGetGreatestSumForAllPathsTopToBottom4Lines()
-    {
+    public void ShouldGetGreatestSumForAllPathsTopToBottom4Lines() {
         String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom4Lines.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
@@ -51,8 +47,7 @@ public class TrianglePathFinderTest {
     }
 
     @Test
-    public void ShouldGetGreatestSumForAllPathsTopToBottom15Lines()
-    {
+    public void ShouldGetGreatestSumForAllPathsTopToBottom15Lines() {
         String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
@@ -64,8 +59,7 @@ public class TrianglePathFinderTest {
     }
 
     @Test
-    public void ShouldGetGreatestSumForAllPathsTopToBottom100Lines()
-    {
+    public void ShouldGetGreatestSumForAllPathsTopToBottom100Lines() {
         String filePath = "C:\\Temp\\ProjectEuler\\67.triangle.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();

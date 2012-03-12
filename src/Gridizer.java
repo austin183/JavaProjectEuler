@@ -1,7 +1,5 @@
 import java.io.*;
-import java.security.PrivateKey;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,9 +20,9 @@ class Gridizer {
     //Grid[1][1] is 49
     //Grid[2][2] is 31
     private ArrayList<ArrayList<Integer>> Grid = new ArrayList<ArrayList<Integer>>();
-    
+
     public void InitializeGrid(String s) {
-        if(s.compareTo("") == 0) return;
+        if (s.compareTo("") == 0) return;
 
         Grid = new ArrayList<ArrayList<Integer>>(); // reset if Initialized more than once
 
@@ -38,8 +36,7 @@ class Gridizer {
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
         String line;
         try {
-            while((line = reader.readLine()) != null)
-            {
+            while ((line = reader.readLine()) != null) {
                 String[] lineValues = line.split(" ");
                 ArrayList<Integer> gridLine = new ArrayList<Integer>();
                 for (String lineValue : lineValues) {
@@ -62,15 +59,11 @@ class Gridizer {
 
     public int GetProductRight(int x, int y, int sequenceSize) {
         int toReturn = 1;
-        try
-        {
-            for(int i = sequenceSize - 1; i >= 0; i--)
-            {
+        try {
+            for (int i = sequenceSize - 1; i >= 0; i--) {
                 toReturn *= GetValueAt(x, y + i);
             }
-        }
-        catch (IndexOutOfBoundsException e)
-        {
+        } catch (IndexOutOfBoundsException e) {
             return 0;
         }
         return toReturn;
@@ -78,16 +71,12 @@ class Gridizer {
 
     public int GetProductDown(int x, int y, int sequenceSize) {
         int toReturn = 1;
-        try
-        {
-            for(int i = sequenceSize - 1; i >= 0; i--)
-            {
+        try {
+            for (int i = sequenceSize - 1; i >= 0; i--) {
                 toReturn *= GetValueAt(x + i, y);
             }
 
-        }
-        catch (IndexOutOfBoundsException e)
-        {
+        } catch (IndexOutOfBoundsException e) {
             return 0;
         }
         return toReturn;
@@ -96,15 +85,11 @@ class Gridizer {
     public int GetProductDownAndRight(int x, int y, int sequenceSize) {
         int toReturn = 1;
 
-        try
-        {
-            for(int i = sequenceSize - 1; i >= 0; i--)
-            {
+        try {
+            for (int i = sequenceSize - 1; i >= 0; i--) {
                 toReturn *= GetValueAt(x + i, y + i);
             }
-        }
-        catch (IndexOutOfBoundsException e)
-        {
+        } catch (IndexOutOfBoundsException e) {
             return 0;
         }
         return toReturn;
@@ -113,15 +98,11 @@ class Gridizer {
     public int GetProductDownAndLeft(int x, int y, int sequenceSize) {
         int toReturn = 1;
 
-        try
-        {
-            for(int i = sequenceSize - 1; i >= 0; i--)
-            {
+        try {
+            for (int i = sequenceSize - 1; i >= 0; i--) {
                 toReturn *= GetValueAt(x + i, y - i);
             }
-        }
-        catch (IndexOutOfBoundsException e)
-        {
+        } catch (IndexOutOfBoundsException e) {
             return 0;
         }
         return toReturn;

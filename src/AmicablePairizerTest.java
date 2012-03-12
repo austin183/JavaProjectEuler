@@ -9,8 +9,7 @@ import org.junit.Test;
  */
 public class AmicablePairizerTest {
     @Test
-    public void ShouldFindSumOfProperDivisorsFor220()
-    {
+    public void ShouldFindSumOfProperDivisorsFor220() {
         int toTest = 220;
 
         AmicablePairizer amicablePairizer = new AmicablePairizer();
@@ -20,8 +19,7 @@ public class AmicablePairizerTest {
     }
 
     @Test
-    public void ShouldFindSumOfProperDivisorsFor284()
-    {
+    public void ShouldFindSumOfProperDivisorsFor284() {
         int toTest = 284;
 
         AmicablePairizer amicablePairizer = new AmicablePairizer();
@@ -31,8 +29,7 @@ public class AmicablePairizerTest {
     }
 
     @Test
-    public void ShouldRecognizeAmicablePair()
-    {
+    public void ShouldRecognizeAmicablePair() {
         int first = 220;
         int second = 284;
 
@@ -43,8 +40,7 @@ public class AmicablePairizerTest {
     }
 
     @Test
-    public void ShouldGetSumOfAllAmicablePairsUnder10000()
-    {
+    public void ShouldGetSumOfAllAmicablePairsUnder10000() {
         int toTest = 10000;
 
         AmicablePairizer amicablePairizer = new AmicablePairizer();

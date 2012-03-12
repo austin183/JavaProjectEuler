@@ -10,7 +10,7 @@ import java.util.List;
  */
 class TrianglePathFinder {
     private List<List<Integer>> Triangle;
-    
+
     public void Load(String filePath) {
         FileInputStream fileInputStream = null;
         try {
@@ -23,12 +23,10 @@ class TrianglePathFinder {
         String line;
         Triangle = new ArrayList<List<Integer>>();
         try {
-            while((line = reader.readLine()) != null)
-            {
+            while ((line = reader.readLine()) != null) {
                 List<Integer> width = new ArrayList<Integer>();
                 String[] values = line.split("\\s+");
-                for( String value : values)
-                {
+                for (String value : values) {
                     width.add(Integer.parseInt(value));
                 }
                 Triangle.add(width);
@@ -46,11 +44,9 @@ class TrianglePathFinder {
         //Start with second to last row
         //Take greater value between (row,column + row + 1, column) and (row, column + row + 1, column + 1)
         //Move up and do again
-        
-        for(int rowIndex = Triangle.size() - 2; rowIndex >= 0; rowIndex--)
-        {
-            for(int colIndex = 0; colIndex < Triangle.get(rowIndex).size(); colIndex ++)
-            {
+
+        for (int rowIndex = Triangle.size() - 2; rowIndex >= 0; rowIndex--) {
+            for (int colIndex = 0; colIndex < Triangle.get(rowIndex).size(); colIndex++) {
                 int leftSum = Triangle.get(rowIndex).get(colIndex) + Triangle.get(rowIndex + 1).get(colIndex);
                 int rightSum = Triangle.get(rowIndex).get(colIndex) + Triangle.get(rowIndex + 1).get(colIndex + 1);
                 if (leftSum < rightSum)

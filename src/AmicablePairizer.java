@@ -11,19 +11,19 @@ import java.util.List;
  */
 class AmicablePairizer {
     private final Dictionary<Integer, Integer> SumProperDivisors;
-    public AmicablePairizer()
-    {
+
+    public AmicablePairizer() {
         SumProperDivisors = new Hashtable<Integer, Integer>();
     }
+
     public int GetSumOfProperDivisors(int toTest) {
-        if(SumProperDivisors.get(toTest) != null) return SumProperDivisors.get(toTest);
+        if (SumProperDivisors.get(toTest) != null) return SumProperDivisors.get(toTest);
 
         Factorizer factorizer = new Factorizer();
         List<Integer> factors = factorizer.GetFactorsOf(toTest);
         int toReturn = 0;
 
-        for(int factor : factors)
-        {
+        for (int factor : factors) {
             toReturn += factor;
         }
         return toReturn;
@@ -37,27 +37,22 @@ class AmicablePairizer {
         int toReturn = 0;
         BuildSumOfDivisorsForTestSet(toTest);
         List<Integer> amicableNumbers = new ArrayList<Integer>();
-        for(int i = 1; i< toTest; i++)
-        {
-            for(int j= 1; j< toTest; j++)
-            {
-                if(IsAmicablePair(i, j))
-                {
-                    if(!amicableNumbers.contains(i)) amicableNumbers.add(i);
-                    if(!amicableNumbers.contains(j)) amicableNumbers.add(j);
+        for (int i = 1; i < toTest; i++) {
+            for (int j = 1; j < toTest; j++) {
+                if (IsAmicablePair(i, j)) {
+                    if (!amicableNumbers.contains(i)) amicableNumbers.add(i);
+                    if (!amicableNumbers.contains(j)) amicableNumbers.add(j);
                 }
             }
         }
-        for(int number : amicableNumbers)
-        {
+        for (int number : amicableNumbers) {
             toReturn += number;
         }
         return toReturn;
     }
 
     private void BuildSumOfDivisorsForTestSet(int toTest) {
-        for(int i = 1; i < toTest; i++)
-        {
+        for (int i = 1; i < toTest; i++) {
             SumProperDivisors.put(i, GetSumOfProperDivisors(i));
         }
     }

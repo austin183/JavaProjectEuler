@@ -10,8 +10,7 @@ import org.junit.Test;
  */
 public class IterativeSequencerTest {
     @Test
-    public void ShouldGetNumberTermsInChainFor13()
-    {
+    public void ShouldGetNumberTermsInChainFor13() {
         IterativeSequencer sequencer = new IterativeSequencer();
         int chainLength = sequencer.GetNumberTermsInChain(13);
 
@@ -19,8 +18,7 @@ public class IterativeSequencerTest {
     }
 
     @Test
-    public void ShouldGetNumberTermsInChainFor113383()
-    {
+    public void ShouldGetNumberTermsInChainFor113383() {
         IterativeSequencer sequencer = new IterativeSequencer();
         int chainLength = sequencer.GetNumberTermsInChain(113383);
 
@@ -28,8 +26,7 @@ public class IterativeSequencerTest {
     }
 
     @Test
-    public void ShouldGetLongestChainForNumberUnder113383()
-    {
+    public void ShouldGetLongestChainForNumberUnder113383() {
         IterativeSequencer sequencer = new IterativeSequencer();
         int chainLength = sequencer.GetLongestNumberTermsInChainForStartersUnder(113383);
 
@@ -37,8 +34,7 @@ public class IterativeSequencerTest {
     }
 
     @Test
-    public void ShouldGetLongestChainForNumberUnder20()
-    {
+    public void ShouldGetLongestChainForNumberUnder20() {
         IterativeSequencer sequencer = new IterativeSequencer();
         int chainLength = sequencer.GetLongestNumberTermsInChainForStartersUnder(20);
 
@@ -46,8 +42,7 @@ public class IterativeSequencerTest {
     }
 
     @Test
-    public void ShouldGetLongestChainForNumberUnder1000000()
-    {
+    public void ShouldGetLongestChainForNumberUnder1000000() {
         IterativeSequencer sequencer = new IterativeSequencer();
         int chainLength = sequencer.GetLongestNumberTermsInChainForStartersUnder(1000000);
 

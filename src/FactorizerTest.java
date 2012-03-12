@@ -1,8 +1,6 @@
 import junit.framework.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Austin
@@ -13,8 +11,7 @@ import java.util.List;
 public class FactorizerTest {
 
     @Test
-    public void ShouldGetNumberOfFactorsOf28()
-    {
+    public void ShouldGetNumberOfFactorsOf28() {
         int numberToTest = 28;
         Factorizer factorizer = new Factorizer();
 
@@ -24,8 +21,7 @@ public class FactorizerTest {
     }
 
     @Test
-    public void ShouldGetNumberOfFactorsOf441()
-    {
+    public void ShouldGetNumberOfFactorsOf441() {
         int numberToTest = 441;
         Factorizer factorizer = new Factorizer();
 
@@ -35,8 +31,7 @@ public class FactorizerTest {
     }
 
     @Test
-    public void ShouldGetNumberOfFactorsOf360()
-    {
+    public void ShouldGetNumberOfFactorsOf360() {
         int numberToTest = 360;
         Factorizer factorizer = new Factorizer();
 

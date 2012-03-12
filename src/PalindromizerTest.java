@@ -2,12 +2,12 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 /**
-* Created by IntelliJ IDEA.
-* User: Austin
-* Date: 2/4/12
-* Time: 12:06 PM
-* To change this template use File | Settings | File Templates.
-*/
+ * Created by IntelliJ IDEA.
+ * User: Austin
+ * Date: 2/4/12
+ * Time: 12:06 PM
+ * To change this template use File | Settings | File Templates.
+ */
 public class PalindromizerTest {
     @Test
     public void testIsPalindromeWith9009() throws Exception {

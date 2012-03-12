@@ -5,21 +5,18 @@
  * Time: 2:35 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PythagoreanTriplet
-{
+public class PythagoreanTriplet {
     private final int A;
     private final int B;
     private final int C;
-    
-    public PythagoreanTriplet(int a, int b, int c)
-    {
+
+    public PythagoreanTriplet(int a, int b, int c) {
         A = a;
         B = b;
         C = c;
     }
-    
-    public int GetProductOfTriplet()
-    {
+
+    public int GetProductOfTriplet() {
         return A * B * C;
     }
 }

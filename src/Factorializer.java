@@ -10,8 +10,7 @@ import java.math.BigInteger;
 class Factorializer {
     public BigInteger Factorialize(int factorialize) {
         BigInteger toReturn = BigInteger.ONE;
-        for(int n = 1; n <= factorialize; n++)
-        {
+        for (int n = 1; n <= factorialize; n++) {
             toReturn = toReturn.multiply(new BigInteger(Integer.toString(n)));
         }
         return toReturn;
@@ -20,9 +19,8 @@ class Factorializer {
     public int GetSumOfDigitsInFactorialization(int factorialize) {
         String digits = Factorialize(factorialize).toString();
         int toReturn = 0;
-        for (int i = 0; i < digits.length(); i++)
-        {
-            toReturn += Integer.parseInt(digits.substring(i, i+1));
+        for (int i = 0; i < digits.length(); i++) {
+            toReturn += Integer.parseInt(digits.substring(i, i + 1));
         }
         return toReturn;
     }

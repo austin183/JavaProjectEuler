@@ -12,25 +12,21 @@ import java.util.Map;
  */
 class Factorizer {
 
-    public int GetNumberFactorsOf(long numberToTest){
+    public int GetNumberFactorsOf(long numberToTest) {
         int numFactors = 1;
         Map<Long, Integer> factorOccurrences = GetNumberOccurrencesOfPrimes(numberToTest);
 
-        for(int i : factorOccurrences.values())
-        {
+        for (int i : factorOccurrences.values()) {
             numFactors *= i + 1;
         }
         return numFactors;
     }
-    
-    Map<Long, Integer> GetNumberOccurrencesOfPrimes(long numberToTest)
-    {
+
+    Map<Long, Integer> GetNumberOccurrencesOfPrimes(long numberToTest) {
         Map<Long, Integer> toReturn = new HashMap<Long, Integer>();
-        for(long i = 2; i < numberToTest; i++)
-        {
-            if(numberToTest % i == 0)
-            {
-                if(toReturn.containsKey(i))
+        for (long i = 2; i < numberToTest; i++) {
+            if (numberToTest % i == 0) {
+                if (toReturn.containsKey(i))
                     toReturn.put(i, toReturn.get(i) + 1);
                 else toReturn.put(i, 1);
 
@@ -38,9 +34,8 @@ class Factorizer {
                 i = 1;
             }
         }
-        if(numberToTest > 1)
-        {
-            if(toReturn.containsKey(numberToTest))
+        if (numberToTest > 1) {
+            if (toReturn.containsKey(numberToTest))
                 toReturn.put(numberToTest, toReturn.get(numberToTest) + 1);
             else toReturn.put(numberToTest, 1);
         }
@@ -49,9 +44,8 @@ class Factorizer {
 
     public List<Integer> GetFactorsOf(int toTest) {
         List<Integer> toReturn = new ArrayList<Integer>();
-        for(int i = 1; i<(toTest/2) + 2; i++)
-        {
-            if(toTest % i == 0) toReturn.add(i);
+        for (int i = 1; i < (toTest / 2) + 2; i++) {
+            if (toTest % i == 0) toReturn.add(i);
         }
         return toReturn;
     }

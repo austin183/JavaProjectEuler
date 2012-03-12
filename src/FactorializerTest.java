@@ -12,8 +12,7 @@ import java.math.BigInteger;
  */
 public class FactorializerTest {
     @Test
-    public void ShouldGetFactoriall5()
-    {
+    public void ShouldGetFactoriall5() {
         int factorialize = 5;
         Factorializer factorializer = new Factorializer();
 
@@ -23,8 +22,7 @@ public class FactorializerTest {
     }
 
     @Test
-    public void ShouldGetFactorial400()
-    {
+    public void ShouldGetFactorial400() {
         int factorialize = 400;
         Factorializer factorializer = new Factorializer();
 
@@ -34,8 +32,7 @@ public class FactorializerTest {
     }
 
     @Test
-    public void ShouldGetSumOfDigitsInFactorial()
-    {
+    public void ShouldGetSumOfDigitsInFactorial() {
         int factorialize = 100;
         Factorializer factorializer = new Factorializer();
 

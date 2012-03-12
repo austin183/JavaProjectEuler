@@ -10,8 +10,7 @@ import org.junit.Test;
  */
 public class PythagorizerTest {
     @Test
-    public void ShouldGetTrueFor345()
-    {
+    public void ShouldGetTrueFor345() {
         int a = 3;
         int b = 4;
         int c = 5;
@@ -21,8 +20,7 @@ public class PythagorizerTest {
     }
 
     @Test
-    public void ShouldGetFalseFor234()
-    {
+    public void ShouldGetFalseFor234() {
         int a = 2;
         int b = 3;
         int c = 4;

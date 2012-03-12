@@ -15,8 +15,7 @@ public class GridizerTest {
     private static final String Grid3x3Path = "C:\\Temp\\GridWork\\11.3x3.txt";
 
     @Test
-    public void ShouldLoadGridFromFile()
-    {
+    public void ShouldLoadGridFromFile() {
         Gridizer gridizer = new Gridizer();
 
         gridizer.InitializeGrid(Grid3x3Path);
@@ -26,8 +25,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldReturnGridValueSpecified()
-    {
+    public void ShouldReturnGridValueSpecified() {
         int x = 0;
         int y = 0;
 
@@ -40,8 +38,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetProductRight()
-    {
+    public void ShouldGetProductRight() {
         int x = 0;
         int y = 0;
         int sequenceSize = 3;
@@ -55,8 +52,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShoudGetZeroWhenNotEnoughValuesToTheRight()
-    {
+    public void ShoudGetZeroWhenNotEnoughValuesToTheRight() {
         int x = 0;
         int y = 0;
         int sequenceSize = 4;
@@ -70,8 +66,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetProductDown()
-    {
+    public void ShouldGetProductDown() {
         int x = 0;
         int y = 0;
         int sequenceSize = 3;
@@ -85,8 +80,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetZeroWhenNotEnoughValuesBelow()
-    {
+    public void ShouldGetZeroWhenNotEnoughValuesBelow() {
         int x = 0;
         int y = 0;
         int sequenceSize = 4;
@@ -100,8 +94,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetProductDownAndRight()
-    {
+    public void ShouldGetProductDownAndRight() {
         int x = 0;
         int y = 0;
         int sequenceSize = 3;
@@ -115,8 +108,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetZeroWhenNotEnoughValuesBelowAndToTheRight()
-    {
+    public void ShouldGetZeroWhenNotEnoughValuesBelowAndToTheRight() {
         int x = 0;
         int y = 0;
         int sequenceSize = 4;
@@ -130,8 +122,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetProductDownAndLeft()
-    {
+    public void ShouldGetProductDownAndLeft() {
         int x = 0;
         int y = 2;
         int sequenceSize = 3;
@@ -145,8 +136,7 @@ public class GridizerTest {
     }
 
     @Test
-    public void ShouldGetZeroWhenNotEnoughValuesBelowAndToTheLeft()
-    {
+    public void ShouldGetZeroWhenNotEnoughValuesBelowAndToTheLeft() {
         int x = 0;
         int y = 2;
         int sequenceSize = 4;

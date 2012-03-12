@@ -2,7 +2,6 @@ import junit.framework.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.math.BigInteger;
 import java.util.Date;
 
 /**
@@ -12,17 +11,16 @@ import java.util.Date;
  * Time: 9:37 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CalculatorTest
-{
+public class CalculatorTest {
     @Test
     public void ShouldCalculate23() throws Exception {
-       int[] multiples = {3, 5};
-       int maxValue = 10;
+        int[] multiples = {3, 5};
+        int maxValue = 10;
 
-       Calculator calculator = new Calculator();
-       int result = calculator.CalculateSumFromMultiplesUnderMaxValue(multiples, maxValue);
+        Calculator calculator = new Calculator();
+        int result = calculator.CalculateSumFromMultiplesUnderMaxValue(multiples, maxValue);
 
-       Assert.assertEquals(23, result);
+        Assert.assertEquals(23, result);
     }
 
     @Test
@@ -37,8 +35,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldCalculateEvenFibSeqNumbersUnder89()
-    {
+    public void ShouldCalculateEvenFibSeqNumbersUnder89() {
         int start1 = 1;
         int start2 = 2;
         int maxValue = 100;
@@ -50,8 +47,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldCalculateEvenFibSeqNumbersUnder4million()
-    {
+    public void ShouldCalculateEvenFibSeqNumbersUnder4million() {
         int start1 = 1;
         int start2 = 2;
         int maxValue = 4000000;
@@ -63,8 +59,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetPrimeFactorsUnder26()
-    {
+    public void ShouldGetPrimeFactorsUnder26() {
         long maxValue = 26;
 
         Calculator calculator = new Calculator();
@@ -74,8 +69,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetPrimeFactorsUnder38()
-    {
+    public void ShouldGetPrimeFactorsUnder38() {
         long maxValue = 38;
 
         Calculator calculator = new Calculator();
@@ -85,8 +79,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetPrimeFactorsUnder1670()
-    {
+    public void ShouldGetPrimeFactorsUnder1670() {
         long maxValue = 1670;
 
         Calculator calculator = new Calculator();
@@ -96,8 +89,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetPrimeFactorsUnder15()
-    {
+    public void ShouldGetPrimeFactorsUnder15() {
         long maxValue = 15;
 
         Calculator calculator = new Calculator();
@@ -107,8 +99,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetPrimeFactorsUnder13195()
-    {
+    public void ShouldGetPrimeFactorsUnder13195() {
         long maxValue = 13195;
 
         Calculator calculator = new Calculator();
@@ -118,8 +109,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetPrimeFactorsUnder600851475143()
-    {
+    public void ShouldGetPrimeFactorsUnder600851475143() {
         long maxValue = 600851475143L;
 
         Calculator calculator = new Calculator();
@@ -127,21 +117,19 @@ public class CalculatorTest
 
         Assert.assertEquals(6857, result);
     }
-    
+
     @Test
-    public void ShouldGetLargestPalindromeFromTwoNumbers2Digits()
-    {
+    public void ShouldGetLargestPalindromeFromTwoNumbers2Digits() {
         int digits = 2;
-        
+
         Calculator calculator = new Calculator();
         int result = calculator.GetLargestPalindromeByTwoNumbersXDigits(digits);
-        
+
         Assert.assertEquals(9009, result);
     }
 
     @Test
-    public void ShouldGetLargestPalindromeFromTwoNumbers3Digits()
-    {
+    public void ShouldGetLargestPalindromeFromTwoNumbers3Digits() {
         int digits = 3;
 
         Calculator calculator = new Calculator();
@@ -151,8 +139,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetLargestPalindromeFromTwoNumbers4Digits()
-    {
+    public void ShouldGetLargestPalindromeFromTwoNumbers4Digits() {
         int digits = 4;
 
         Calculator calculator = new Calculator();
@@ -162,8 +149,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetSmallestNumberDivisibleByNumbersBelow10()
-    {
+    public void ShouldGetSmallestNumberDivisibleByNumbersBelow10() {
         int numbersBelow = 10;
 
         Calculator calculator = new Calculator();
@@ -173,8 +159,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetDifferenceBetweenSumOfSquaresAndSquaresOfSumForNumbersBelow10()
-    {
+    public void ShouldGetDifferenceBetweenSumOfSquaresAndSquaresOfSumForNumbersBelow10() {
         int firstNnumbers = 10;
 
         Calculator calculator = new Calculator();
@@ -184,8 +169,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetDifferenceBetweenSumOfSquaresAndSquaresOfSumForNumbersBelow100()
-    {
+    public void ShouldGetDifferenceBetweenSumOfSquaresAndSquaresOfSumForNumbersBelow100() {
         int firstNnumbers = 100;
 
         Calculator calculator = new Calculator();
@@ -195,17 +179,15 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetHighestProductOf5DigitsInAStringOfConsecutiveDigits()
-    {
+    public void ShouldGetHighestProductOf5DigitsInAStringOfConsecutiveDigits() {
         Calculator calculator = new Calculator();
         int result = calculator.GetHighestProductof5DigitsInAStringOfConsecutiveDigits();
 
         Assert.assertEquals(40824, result);
     }
-    
+
     @Test
-    public void ShouldGetPythagoreanTripletThatSumsTo1000()
-    {
+    public void ShouldGetPythagoreanTripletThatSumsTo1000() {
         int value = 1000;
         Calculator calculator = new Calculator();
         PythagoreanTriplet result = calculator.GetFirstPythagoreanTripletThatSumsTo(value);
@@ -214,8 +196,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetSumOfPrimesUnder17()
-    {
+    public void ShouldGetSumOfPrimesUnder17() {
         int maxValue = 10;
 
         Calculator calculator = new Calculator();
@@ -223,12 +204,11 @@ public class CalculatorTest
 
         Assert.assertEquals(17, result);
     }
-    
+
     @Test
-    public void ShouldGetHighestProductOf3ValuesFrom3x3File()
-    {
+    public void ShouldGetHighestProductOf3ValuesFrom3x3File() {
         int sequenceSize = 3;
-        
+
         Calculator calculator = new Calculator();
         Gridizer gridizer = new Gridizer();
         gridizer.InitializeGrid("C:\\Temp\\GridWork\\11.3x3.txt");
@@ -239,8 +219,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetHighestProductOf4ValuesFrom20x20File()
-    {
+    public void ShouldGetHighestProductOf4ValuesFrom20x20File() {
         int sequenceSize = 4;
 
         Calculator calculator = new Calculator();
@@ -253,8 +232,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetFirstTriangleNumberToHaveOverFiveDivisors()
-    {
+    public void ShouldGetFirstTriangleNumberToHaveOverFiveDivisors() {
         int numDivisors = 5;
 
         Calculator calculator = new Calculator();
@@ -264,8 +242,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetFirstTriangleNumberToHaveOverFiveHundredDivisors()
-    {
+    public void ShouldGetFirstTriangleNumberToHaveOverFiveHundredDivisors() {
         int numDivisors = 500;
 
         Calculator calculator = new Calculator();
@@ -275,8 +252,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetGridRoutesFor2x2Grid()
-    {
+    public void ShouldGetGridRoutesFor2x2Grid() {
         //http://joaoff.com/2008/01/20/a-square-grid-path-problem/
         //for n -> 2n : (2n!) / n! (n!)
         Calculator calculator = new Calculator();
@@ -286,8 +262,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetGridRoutesFor20x20Grid()
-    {
+    public void ShouldGetGridRoutesFor20x20Grid() {
         //http://joaoff.com/2008/01/20/a-square-grid-path-problem/
         //for n -> 2n : (2n!) / n! (n!)
         Calculator calculator = new Calculator();
@@ -297,8 +272,7 @@ public class CalculatorTest
     }
 
     @Test
-    public void ShouldGetSumOfCharactersToMake1To1000InWords()
-    {
+    public void ShouldGetSumOfCharactersToMake1To1000InWords() {
         Calculator calculator = new Calculator();
 
         int result = calculator.GetCharactersInWordsOneTo(1000);
@@ -308,8 +282,7 @@ public class CalculatorTest
 
     @Test
     @Ignore("Runs kinda slowly")
-    public void ShouldGetSmallestNumberDivisibleByNumbersBelow20()
-    {
+    public void ShouldGetSmallestNumberDivisibleByNumbersBelow20() {
         int numbersBelow = 20;
 
         Calculator calculator = new Calculator();
@@ -319,9 +292,17 @@ public class CalculatorTest
     }
 
     @Test
+    public void ShouldFindLongestRecurringCycleForValuesUnder1000() {
+        int max = 1000;
+        Calculator calculator = new Calculator();
+        int result = calculator.GetLongestRecurringCycleForValuesUnderMax(max);
+
+        Assert.assertEquals(983, result);
+    }
+
+    @Test
     @Ignore("Verrry Slow.  Like 23 minutes slow!")
-    public void ShouldGetSumOfPrimesUnder2000000()
-    {
+    public void ShouldGetSumOfPrimesUnder2000000() {
         Date start = new Date();
 
         int maxValue = 2000000;
@@ -330,7 +311,7 @@ public class CalculatorTest
         long result = calculator.GetSumPrimesUnderMaxValue(maxValue);
 
         Date end = new Date();
-        int timeInSeconds = (int) ((end.getTime() - start.getTime())/1000);
+        int timeInSeconds = (int) ((end.getTime() - start.getTime()) / 1000);
         System.out.println(Integer.toString(timeInSeconds));
 
         Assert.assertEquals(0, result);
@@ -338,8 +319,7 @@ public class CalculatorTest
 
     @Test
     @Ignore("Manual Test to generate more Primes for the PrimeRecord")
-    public void ShouldWritePrimesToFile()
-    {
+    public void ShouldWritePrimesToFile() {
         int maxValue = 2000000;
 
         PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();

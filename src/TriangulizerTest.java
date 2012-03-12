@@ -1,8 +1,6 @@
 import junit.framework.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Austin
@@ -12,8 +10,7 @@ import java.util.List;
  */
 public class TriangulizerTest {
     @Test
-    public void ShouldGetTriangleNumberFor1()
-    {
+    public void ShouldGetTriangleNumberFor1() {
         int triangleIndex = 1;
         Triangulizer triangulizer = new Triangulizer();
 
@@ -23,8 +20,7 @@ public class TriangulizerTest {
     }
 
     @Test
-    public void ShouldGetTriangleNumberFor7()
-    {
+    public void ShouldGetTriangleNumberFor7() {
         int triangleIndex = 7;
         Triangulizer triangulizer = new Triangulizer();
 

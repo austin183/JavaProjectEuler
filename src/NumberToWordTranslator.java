@@ -7,30 +7,28 @@
 class NumberToWordTranslator {
 
     public String GetWord(int number) {
-        if(number < 20)
+        if (number < 20)
             return GetWordOneThroughTwenty(number);
         return GetWordsTwentyAndAbove(number);
 
     }
 
     private String GetWordsTwentyAndAbove(int number) {
-        if(number % 10 == 0 && number < 100)
+        if (number % 10 == 0 && number < 100)
             return GetDoubleDigitWord(number);
-        if(number < 100)
+        if (number < 100)
             return GetDoubleDigitWord(number - (number % 10)) + GetWordOneThroughTwenty(number % 10);
-        if(number < 1000)
-        {
+        if (number < 1000) {
             String currentNumber = GetTripleDigitWord(number - (number % 100));
-            if(number % 100 != 0)
+            if (number % 100 != 0)
                 currentNumber = currentNumber + "and";
-            if((number % 100) < 20)
+            if ((number % 100) < 20)
                 currentNumber = currentNumber + GetWordOneThroughTwenty(number % 100);
             else
-            currentNumber = currentNumber + GetDoubleDigitWord((number % 100) - (number % 10)) + GetWordOneThroughTwenty(number % 10);
+                currentNumber = currentNumber + GetDoubleDigitWord((number % 100) - (number % 10)) + GetWordOneThroughTwenty(number % 10);
             return currentNumber;
         }
-        if(number == 1000)
-        {
+        if (number == 1000) {
             return "onethousand";
         }
         return "";
@@ -41,8 +39,7 @@ class NumberToWordTranslator {
     }
 
     private String GetDoubleDigitWord(int number) {
-        switch (number)
-        {
+        switch (number) {
             case 20:
                 return "twenty";
             case 30:
@@ -64,8 +61,7 @@ class NumberToWordTranslator {
     }
 
     private String GetWordOneThroughTwenty(int number) {
-        switch(number)
-        {
+        switch (number) {
             case 1:
                 return "one";
             case 2:

@@ -8,12 +8,11 @@ import org.junit.Test;
  * Time: 6:39 PM
  */
 public class NumberToWordTranslatorTest {
-    
+
     @Test
-    public void ShouldGetWordFor1()
-    {
+    public void ShouldGetWordFor1() {
         int number = 1;
-        
+
         NumberToWordTranslator translator = new NumberToWordTranslator();
         String result = translator.GetWord(number);
 
@@ -21,8 +20,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor10()
-    {
+    public void ShouldGetWordFor10() {
         int number = 10;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -32,8 +30,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor19()
-    {
+    public void ShouldGetWordFor19() {
         int number = 19;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -43,8 +40,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor20()
-    {
+    public void ShouldGetWordFor20() {
         int number = 20;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -54,8 +50,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor21()
-    {
+    public void ShouldGetWordFor21() {
         int number = 21;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -65,8 +60,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor39()
-    {
+    public void ShouldGetWordFor39() {
         int number = 39;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -76,8 +70,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor99()
-    {
+    public void ShouldGetWordFor99() {
         int number = 99;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -87,8 +80,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor100()
-    {
+    public void ShouldGetWordFor100() {
         int number = 100;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -98,8 +90,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor101()
-    {
+    public void ShouldGetWordFor101() {
         int number = 101;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -109,8 +100,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor219()
-    {
+    public void ShouldGetWordFor219() {
         int number = 219;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -120,8 +110,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor999()
-    {
+    public void ShouldGetWordFor999() {
         int number = 999;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();
@@ -131,8 +120,7 @@ public class NumberToWordTranslatorTest {
     }
 
     @Test
-    public void ShouldGetWordFor1000()
-    {
+    public void ShouldGetWordFor1000() {
         int number = 1000;
 
         NumberToWordTranslator translator = new NumberToWordTranslator();

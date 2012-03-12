@@ -2,7 +2,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 /**
  * Go IntelliJ IDEA!
@@ -24,9 +23,8 @@ class Calendarizer {
         }
         return GetDayOfWeek(date);
     }
-    
-    String GetDayOfWeek(Date date)
-    {
+
+    String GetDayOfWeek(Date date) {
         return weekFormat.format(date);
     }
 
@@ -43,9 +41,8 @@ class Calendarizer {
         }
         Calendar currentMonth = Calendar.getInstance();
         currentMonth.setTime(stDate);
-        while(currentMonth.getTime().before(edDate) || currentMonth.getTime().equals(edDate))
-        {
-            if(GetDayOfWeek(currentMonth.getTime()).compareTo(dayOfWeek) == 0) toReturn ++;
+        while (currentMonth.getTime().before(edDate) || currentMonth.getTime().equals(edDate)) {
+            if (GetDayOfWeek(currentMonth.getTime()).compareTo(dayOfWeek) == 0) toReturn++;
             currentMonth.add(Calendar.MONTH, 1);
         }
         return toReturn;

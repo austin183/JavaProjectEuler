@@ -22,11 +22,9 @@ class NameListAnalyzer {
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
         String line;
         try {
-            while((line = reader.readLine()) != null)
-            {
+            while ((line = reader.readLine()) != null) {
                 String[] names = line.split(",+");
-                for(String name: names)
-                {
+                for (String name : names) {
                     NameList.add(name.replaceAll("\"+", ""));
                 }
             }
@@ -47,11 +45,10 @@ class NameListAnalyzer {
     public int GetAlphabeticalValue(String name) {
         Dictionary<String, Integer> charValues = GetCharValues();
         int toReturn = 0;
-        for(int i = 0; i < name.length(); i++)
-        {
-            toReturn += charValues.get(name.substring(i, i+1).toLowerCase());
+        for (int i = 0; i < name.length(); i++) {
+            toReturn += charValues.get(name.substring(i, i + 1).toLowerCase());
         }
-        
+
         return toReturn;
     }
 
@@ -59,8 +56,7 @@ class NameListAnalyzer {
     public int GetSumOfAlphabeticalValuesTimesAlphabeticalOrdering() {
         Sort();
         int toReturn = 0;
-        for(int i = 0; i < NameList.size(); i++)
-        {
+        for (int i = 0; i < NameList.size(); i++) {
             toReturn += GetAlphabeticalValue(NameList.get(i)) * (i + 1);
         }
         return toReturn;

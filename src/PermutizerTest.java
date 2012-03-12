@@ -11,8 +11,7 @@ import java.util.List;
  */
 public class PermutizerTest {
     @Test
-    public void ShouldGetPermutationsFor012()
-    {
+    public void ShouldGetPermutationsFor012() {
         String permuteThis = "012";
         Permutizer permutizer = new Permutizer();
         List<String> result = permutizer.Permute(permuteThis);
@@ -24,10 +23,9 @@ public class PermutizerTest {
         Assert.assertEquals("201", result.get(4));
         Assert.assertEquals("210", result.get(5));
     }
-    
+
     @Test
-    public void ShouldGet1stPermutationFor012()
-    {
+    public void ShouldGet1stPermutationFor012() {
         String permuteThis = "012";
         Permutizer permutizer = new Permutizer();
         String result = permutizer.GetNthPermutation(permuteThis, 0);
@@ -36,8 +34,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGet2ndPermutationFor012()
-    {
+    public void ShouldGet2ndPermutationFor012() {
         String permuteThis = "012";
         Permutizer permutizer = new Permutizer();
         String result = permutizer.GetNthPermutation(permuteThis, 1);
@@ -46,8 +43,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGet3rdPermutationFor012()
-    {
+    public void ShouldGet3rdPermutationFor012() {
         String permuteThis = "012";
         Permutizer permutizer = new Permutizer();
         String result = permutizer.GetNthPermutation(permuteThis, 2);
@@ -56,8 +52,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGet1000000thPermutationFor0123456789()
-    {
+    public void ShouldGet1000000thPermutationFor0123456789() {
         String permuteThis = "0123456789";
         Permutizer permutizer = new Permutizer();
         String result = permutizer.GetNthPermutation(permuteThis, 999999);

@@ -11,8 +11,7 @@ import java.util.List;
  */
 public class NameListAnalyzerTest {
     @Test
-    public void ShouldLoadNameList()
-    {
+    public void ShouldLoadNameList() {
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
         analyzer.Load("C:\\Temp\\ProjectEuler\\22.names.txt");
@@ -20,26 +19,23 @@ public class NameListAnalyzerTest {
 
         Assert.assertNotNull(result);
     }
-    
+
     @Test
-    public void ShouldSortNames()
-    {
+    public void ShouldSortNames() {
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
         analyzer.Load("C:\\Temp\\ProjectEuler\\22.names.txt");
         analyzer.Sort();
-        
+
         String prev = "";
-        for(String name : analyzer.GetNamesList())
-        {
+        for (String name : analyzer.GetNamesList()) {
             Assert.assertTrue(prev.compareTo(name) < 0);
             prev = name;
         }
     }
-    
+
     @Test
-    public void ShouldGetAlphabeticalValueOfAustin()
-    {
+    public void ShouldGetAlphabeticalValueOfAustin() {
         String name = "Austin";
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
@@ -49,8 +45,7 @@ public class NameListAnalyzerTest {
     }
 
     @Test
-    public void ShouldGetSumOfAlphabeticalValuesTimesAlphabeticalOrderingFromList()
-    {
+    public void ShouldGetSumOfAlphabeticalValuesTimesAlphabeticalOrderingFromList() {
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
         analyzer.Load("C:\\Temp\\ProjectEuler\\22.names.txt");
