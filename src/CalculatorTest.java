@@ -301,32 +301,6 @@ public class CalculatorTest {
     }
 
     @Test
-    @Ignore("Verrry Slow.  Like 23 minutes slow!")
-    public void ShouldGetSumOfPrimesUnder2000000() {
-        Date start = new Date();
-
-        int maxValue = 2000000;
-
-        Calculator calculator = new Calculator();
-        long result = calculator.GetSumPrimesUnderMaxValue(maxValue);
-
-        Date end = new Date();
-        int timeInSeconds = (int) ((end.getTime() - start.getTime()) / 1000);
-        System.out.println(Integer.toString(timeInSeconds));
-
-        Assert.assertEquals(0, result);
-    }
-
-    @Test
-    @Ignore("Manual Test to generate more Primes for the PrimeRecord")
-    public void ShouldWritePrimesToFile() {
-        int maxValue = 2000000;
-
-        PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
-        PrimeFactorizer.MakePrimesList(maxValue, "C:\\Temp\\PrimeTemp.txt");
-    }
-
-    @Test
     public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormula1And41()
     {
         int a = 1;
@@ -372,5 +346,105 @@ public class CalculatorTest {
         int result = calculator.GetCoefficientOfAandBWithHighestCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(min, max);
 
         Assert.assertEquals(-59231, result);
+    }
+
+    @Test
+    public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And5()
+    {
+        int min = 2;
+        int max = 5;
+        int expected = 15;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetCountOfDistinctSequenceFromAToBthPowerBetween(min, max);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And100()
+    {
+        int min = 2;
+        int max = 100;
+        int expected = 9183;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetCountOfDistinctSequenceFromAToBthPowerBetween(min, max);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf4PowerOfDigits()
+    {
+        int power = 4;
+        int expected = 19316;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetSumOfAllDigitsThatCanBeWrittenAsSumOfPowerOfDigits(power);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf5PowerOfDigits()
+    {
+        int power = 5;
+        int expected = 443839;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetSumOfAllDigitsThatCanBeWrittenAsSumOfPowerOfDigits(power);
+
+        Assert.assertEquals(expected, result);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Test
+    @Ignore("Verrry Slow.  Like 23 minutes slow!")
+    public void ShouldGetSumOfPrimesUnder2000000() {
+        Date start = new Date();
+
+        int maxValue = 2000000;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.GetSumPrimesUnderMaxValue(maxValue);
+
+        Date end = new Date();
+        int timeInSeconds = (int) ((end.getTime() - start.getTime()) / 1000);
+        System.out.println(Integer.toString(timeInSeconds));
+
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    @Ignore("Manual Test to generate more Primes for the PrimeRecord")
+    public void ShouldWritePrimesToFile() {
+        int maxValue = 2000000;
+
+        PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
+        PrimeFactorizer.MakePrimesList(maxValue, "C:\\Temp\\PrimeTemp.txt");
     }
 }
