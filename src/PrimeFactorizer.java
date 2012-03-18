@@ -44,6 +44,23 @@ class PrimeFactorizer {
 
         return true;
     }
+    
+    boolean IsPrime(int candidate, boolean noCache)
+    {
+        if(!noCache)
+            return IsPrime(candidate);
+
+        return IsPrimeNoCache(candidate);
+    }
+
+    private boolean IsPrimeNoCache(int candidate) {
+        for (int i = 2; i < (candidate / 2) + 1; i++) {
+            //System.out.printf("Testing prime candidate %s to %s%n", Integer.toString(candidate), Integer.toString(i));
+            if (candidate % i == 0)
+                return false;
+        }
+        return true;
+    }
 
     public long GetLargestPrimeFactor(long maxValue) {
         if (knownPrimes.size() > 0) {
@@ -95,36 +112,6 @@ class PrimeFactorizer {
         return toReturn;
     }
 
-    // --Commented out by Inspection START (2/10/12 10:13 PM):
-//    public PrimeFactorizer(String PrimeRecord)
-//    {
-//        knownPrimes = new ArrayList<Integer>();
-//        //System.out.println("Adding Prime Records (This can take time...)");
-//        AddPrimesFromRecord(PrimeRecord);
-//    }
-// --Commented out by Inspection STOP (2/10/12 10:13 PM)
 
-// --Commented out by Inspection START (2/10/12 10:14 PM):
-//    private void AddPrimesFromRecord(String primeRecord) {
-//        FileInputStream fileInputStream = null;
-//        try {
-//            fileInputStream = new FileInputStream(primeRecord);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        DataInputStream in = new DataInputStream(fileInputStream);
-//        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-//        String line;
-//        try {
-//            while((line = reader.readLine()) != null)
-//            {
-//                if(!knownPrimes.contains(Integer.parseInt(line)))
-//                    knownPrimes.add(Integer.parseInt(line));
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-// --Commented out by Inspection STOP (2/10/12 10:14 PM)
 }
 

@@ -1,5 +1,7 @@
 import java.io.*;
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -222,6 +224,63 @@ class Calculator {
                 toReturn = i;
             }
 
+        }
+        return toReturn;
+    }
+
+    public int GetCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(int a, int b) {
+        PrimeFactorizer factorizer = new PrimeFactorizer();
+        int count = 0;
+        boolean stillPrime;
+        do
+        {
+            int result = (count * count) + (a * count) + b;
+            stillPrime = factorizer.IsPrime (Math.abs(result), true);
+            if(stillPrime) count ++;
+        }while(stillPrime);
+        return count;
+    }
+
+    public int GetHighestCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(int min, int max) {
+        int toReturn = 0;
+        for(int b = min; b <= max; b++)
+        {
+            for (int a = min; a <= max; a++)
+            {
+                int result = GetCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(a, b);
+                if (toReturn < result) toReturn = result;
+            }
+        }
+        return toReturn;
+    }
+
+    public int GetCoefficientOfAandBWithHighestCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(int min, int max) {
+        int toReturn = 0;
+        int highestCount = 0;
+        List<Integer> primesBetweenMinAndMax = GetPrimesBetweenMinAndMax(min, max);
+        for (Integer b : primesBetweenMinAndMax) {
+            for (int a = min; a <= max; a++) {
+                int result = GetCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(a, b);
+                if (highestCount < result) {
+                    highestCount = result;
+                    toReturn = a * b;
+                }
+            }
+        }
+        return toReturn;
+    }
+
+    private List<Integer> GetPrimesBetweenMinAndMax(int min, int max) {
+        List<Integer> toReturn = new ArrayList<Integer>();
+        int realMax = Math.abs(min) < Math.abs(max) ? Math.abs(max) : Math.abs(min);
+        PrimeFactorizer factorizer = new PrimeFactorizer();
+        for(int i = 0; i <= realMax; i++)
+        {
+            if(factorizer.IsPrime(i, true))
+            {
+                if(i < Math.abs(min)) toReturn.add(i * (min/Math.abs(min)));
+                if(i < Math.abs(max)) toReturn.add(i * (max/Math.abs(max)));
+            }
         }
         return toReturn;
     }

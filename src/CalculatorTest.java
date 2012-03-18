@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class CalculatorTest {
     @Test
-    public void ShouldCalculate23() throws Exception {
+    public void ShouldCalculateSumOfMultiplesOf3and5Under10() throws Exception {
         int[] multiples = {3, 5};
         int maxValue = 10;
 
@@ -24,7 +24,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldCalculateSomething() throws Exception {
+    public void ShouldCalculateSumOfMultiples3and5Under1000() throws Exception {
         int[] multiples = {3, 5};
         int maxValue = 1000;
 
@@ -324,5 +324,53 @@ public class CalculatorTest {
 
         PrimeFactorizer PrimeFactorizer = new PrimeFactorizer();
         PrimeFactorizer.MakePrimesList(maxValue, "C:\\Temp\\PrimeTemp.txt");
+    }
+
+    @Test
+    public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormula1And41()
+    {
+        int a = 1;
+        int b = 41;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(a, b);
+
+        Assert.assertEquals(40, result);
+    }
+
+    @Test
+    public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaNeg79And1601()
+    {
+        int a = -79;
+        int b = 1601;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(a, b);
+
+        Assert.assertEquals(80, result);
+    }
+
+    @Test
+    public void ShouldFindHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000()
+    {
+        int min = -1000;
+        int max = 1000;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetHighestCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(min, max);
+
+        Assert.assertEquals(71, result);
+    }
+
+    @Test
+    public void ShouldFindCoefficientOfAandBWithHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000()
+    {
+        int min = -1000;
+        int max = 1000;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetCoefficientOfAandBWithHighestCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(min, max);
+
+        Assert.assertEquals(-59231, result);
     }
 }
