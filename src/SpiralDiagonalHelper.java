@@ -14,8 +14,7 @@ class SpiralDiagonalHelper {
 
     public int GetSumOffullDiagonalsToLevel(int level) {
         int sum = 0;
-        for(int i = 1; i <= level; i += 2)
-        {
+        for (int i = 1; i <= level; i += 2) {
             sum += GetSumDiagonalsPointsAtLevel(i);
         }
         return sum - 3;

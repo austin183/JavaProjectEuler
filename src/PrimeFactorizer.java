@@ -44,10 +44,9 @@ class PrimeFactorizer {
 
         return true;
     }
-    
-    boolean IsPrime(int candidate, boolean noCache)
-    {
-        if(!noCache)
+
+    boolean IsPrime(int candidate, boolean noCache) {
+        if (!noCache)
             return IsPrime(candidate);
 
         return IsPrimeNoCache(candidate);

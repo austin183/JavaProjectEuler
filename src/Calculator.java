@@ -232,21 +232,18 @@ class Calculator {
         PrimeFactorizer factorizer = new PrimeFactorizer();
         int count = 0;
         boolean stillPrime;
-        do
-        {
+        do {
             int result = (count * count) + (a * count) + b;
-            stillPrime = factorizer.IsPrime (Math.abs(result), true);
-            if(stillPrime) count ++;
-        }while(stillPrime);
+            stillPrime = factorizer.IsPrime(Math.abs(result), true);
+            if (stillPrime) count++;
+        } while (stillPrime);
         return count;
     }
 
     public int GetHighestCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(int min, int max) {
         int toReturn = 0;
-        for(int b = min; b <= max; b++)
-        {
-            for (int a = min; a <= max; a++)
-            {
+        for (int b = min; b <= max; b++) {
+            for (int a = min; a <= max; a++) {
                 int result = GetCountOfFirstPrimeConsecutiveNumbersInQuadraticFormula(a, b);
                 if (toReturn < result) toReturn = result;
             }
@@ -274,12 +271,10 @@ class Calculator {
         List<Integer> toReturn = new ArrayList<Integer>();
         int realMax = Math.abs(min) < Math.abs(max) ? Math.abs(max) : Math.abs(min);
         PrimeFactorizer factorizer = new PrimeFactorizer();
-        for(int i = 0; i <= realMax; i++)
-        {
-            if(factorizer.IsPrime(i, true))
-            {
-                if(i < Math.abs(min)) toReturn.add(i * (min/Math.abs(min)));
-                if(i < Math.abs(max)) toReturn.add(i * (max/Math.abs(max)));
+        for (int i = 0; i <= realMax; i++) {
+            if (factorizer.IsPrime(i, true)) {
+                if (i < Math.abs(min)) toReturn.add(i * (min / Math.abs(min)));
+                if (i < Math.abs(max)) toReturn.add(i * (max / Math.abs(max)));
             }
         }
         return toReturn;
@@ -287,12 +282,10 @@ class Calculator {
 
     public int GetCountOfDistinctSequenceFromAToBthPowerBetween(int min, int max) {
         List<Double> distinctValues = new ArrayList<Double>();
-        for (int a = min; a <= max; a++)
-        {
-            for (int b= min; b <= max; b++)
-            {
+        for (int a = min; a <= max; a++) {
+            for (int b = min; b <= max; b++) {
                 double result = Math.pow(a, b);
-                if(!distinctValues.contains(result)) distinctValues.add(result);
+                if (!distinctValues.contains(result)) distinctValues.add(result);
             }
         }
         return distinctValues.size();
@@ -302,17 +295,15 @@ class Calculator {
         List<Integer> valuesThatCanBeWritten = new ArrayList<Integer>();
         IntegerMath math = new IntegerMath();
         int max = math.Pow(10, power + 1);
-        for(int i = 2; i < max; i ++)
-        {
-            if(GetSumOfDigits(i, power) == i) valuesThatCanBeWritten.add(i);
+        for (int i = 2; i < max; i++) {
+            if (GetSumOfDigits(i, power) == i) valuesThatCanBeWritten.add(i);
         }
         return GetSum(valuesThatCanBeWritten);
     }
 
     private int GetSum(List<Integer> valuesThatCanBeWritten) {
         int toReturn = 0;
-        for(double i : valuesThatCanBeWritten)
-        {
+        for (double i : valuesThatCanBeWritten) {
             toReturn += i;
         }
         return toReturn;
@@ -322,9 +313,8 @@ class Calculator {
         double toReturn = 0;
         String digits = Integer.toString(value);
         IntegerMath math = new IntegerMath();
-        for(int i = 0; i < digits.length(); i ++)
-        {
-            int digit = Integer.parseInt(digits.substring(i, i+1));
+        for (int i = 0; i < digits.length(); i++) {
+            int digit = Integer.parseInt(digits.substring(i, i + 1));
             toReturn += math.Pow(digit, power);
         }
         return toReturn;

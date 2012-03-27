@@ -1,4 +1,5 @@
 import junit.framework.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -40,6 +41,7 @@ public class AmicablePairizerTest {
     }
 
     @Test
+    @Ignore("Slow Test :(")
     public void ShouldGetSumOfAllAmicablePairsUnder10000() {
         int toTest = 10000;
 

@@ -9,8 +9,7 @@ import org.junit.Test;
  */
 public class SpiralDiagonalHelperTest {
     @Test
-    public void ShouldFindSumOfDiagonalPointsAtLevel1()
-    {
+    public void ShouldFindSumOfDiagonalPointsAtLevel1() {
         int level = 1;
         int expected = 4;
 
@@ -21,8 +20,7 @@ public class SpiralDiagonalHelperTest {
     }
 
     @Test
-    public void ShouldFindSumOfDiagonalPointsAtLevel3()
-    {
+    public void ShouldFindSumOfDiagonalPointsAtLevel3() {
         int level = 3;
         int expected = 24;
 
@@ -33,10 +31,9 @@ public class SpiralDiagonalHelperTest {
     }
 
     @Test
-    public void ShouldFindSumOfFullDiagonalsToLevel3()
-    {
+    public void ShouldFindSumOfFullDiagonalsToLevel3() {
         int level = 3;
-        int expected = 28;
+        int expected = 25;
 
         SpiralDiagonalHelper helper = new SpiralDiagonalHelper();
         int result = helper.GetSumOffullDiagonalsToLevel(level);
@@ -45,8 +42,7 @@ public class SpiralDiagonalHelperTest {
     }
 
     @Test
-    public void ShouldFindSumOfFullDiagonalsToLevel5()
-    {
+    public void ShouldFindSumOfFullDiagonalsToLevel5() {
         int level = 5;
         int expected = 101;
 
@@ -57,8 +53,7 @@ public class SpiralDiagonalHelperTest {
     }
 
     @Test
-    public void ShouldFindSumOfFullDiagonalsToLevel1001()
-    {
+    public void ShouldFindSumOfFullDiagonalsToLevel1001() {
         int level = 1001;
         int expected = 669171001;
 

@@ -6,10 +6,9 @@
  */
 class IntegerMath {
     public int Pow(int a, int b) {
-        if(b == 0) return 1;
+        if (b == 0) return 1;
         int toReturn = a;
-        for(int i = 1; i < b; i++)
-        {
+        for (int i = 1; i < b; i++) {
             toReturn *= a;
         }
         return toReturn;

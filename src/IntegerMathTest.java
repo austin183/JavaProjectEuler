@@ -9,8 +9,7 @@ import org.junit.Test;
  */
 public class IntegerMathTest {
     @Test
-    public void ShouldGet1ToThe0Power()
-    {
+    public void ShouldGet1ToThe0Power() {
         int a = 1;
         int b = 0;
         int expected = 1;
@@ -22,8 +21,7 @@ public class IntegerMathTest {
     }
 
     @Test
-    public void ShouldGet2ToThe3Power()
-    {
+    public void ShouldGet2ToThe3Power() {
         int a = 2;
         int b = 3;
         int expected = 8;
@@ -35,8 +33,7 @@ public class IntegerMathTest {
     }
 
     @Test
-    public void ShouldGet8ToThe4Power()
-    {
+    public void ShouldGet8ToThe4Power() {
         int a = 8;
         int b = 4;
         int expected = 4096;

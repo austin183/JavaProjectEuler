@@ -301,8 +301,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormula1And41()
-    {
+    public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormula1And41() {
         int a = 1;
         int b = 41;
 
@@ -313,8 +312,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaNeg79And1601()
-    {
+    public void ShouldFindCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaNeg79And1601() {
         int a = -79;
         int b = 1601;
 
@@ -325,8 +323,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldFindHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000()
-    {
+    public void ShouldFindHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000() {
         int min = -1000;
         int max = 1000;
 
@@ -337,8 +334,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldFindCoefficientOfAandBWithHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000()
-    {
+    public void ShouldFindCoefficientOfAandBWithHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000() {
         int min = -1000;
         int max = 1000;
 
@@ -349,8 +345,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And5()
-    {
+    public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And5() {
         int min = 2;
         int max = 5;
         int expected = 15;
@@ -362,8 +357,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And100()
-    {
+    public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And100() {
         int min = 2;
         int max = 100;
         int expected = 9183;
@@ -375,8 +369,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf4PowerOfDigits()
-    {
+    public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf4PowerOfDigits() {
         int power = 4;
         int expected = 19316;
 
@@ -387,8 +380,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf5PowerOfDigits()
-    {
+    public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf5PowerOfDigits() {
         int power = 5;
         int expected = 443839;
 
@@ -397,29 +389,6 @@ public class CalculatorTest {
 
         Assert.assertEquals(expected, result);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Test

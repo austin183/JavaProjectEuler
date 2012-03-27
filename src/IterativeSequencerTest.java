@@ -30,7 +30,7 @@ public class IterativeSequencerTest {
         IterativeSequencer sequencer = new IterativeSequencer();
         int chainLength = sequencer.GetLongestNumberTermsInChainForStartersUnder(113383);
 
-        Assert.assertEquals(354, chainLength);
+        Assert.assertEquals(106239, chainLength);
     }
 
     @Test
