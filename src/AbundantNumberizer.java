@@ -32,12 +32,12 @@ class AbundantNumberizer {
     }
 
     public int GetSumOfAllNumbersThatCannotBeWrittenAsTheSumOfTwoAbundantNumbers() {
-        int toReturn = 0;
+        int sum = 0;
         for (int numberToTest = 1; numberToTest <= Max; numberToTest++) {
-            if (numberToTest % 1000 == 0) System.out.println("Testing " + numberToTest + " CurrentSum: " + toReturn);
-            if (!CanBeSummedByTwoAbundantNumbers(numberToTest)) toReturn += numberToTest;
+            if (numberToTest % 1000 == 0) System.out.println("Testing " + numberToTest + " CurrentSum: " + sum);
+            if (!CanBeSummedByTwoAbundantNumbers(numberToTest)) sum += numberToTest;
         }
-        return toReturn;
+        return sum;
     }
 
     public boolean CanBeSummedByTwoAbundantNumbers(int number) {
