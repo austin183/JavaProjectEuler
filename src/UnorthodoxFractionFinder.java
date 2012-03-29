@@ -7,7 +7,7 @@ import java.util.List;
  * Date: 3/28/12
  * Time: 8:08 AM
  */
-public class UnorthodoxFractionFinder {
+class UnorthodoxFractionFinder {
     public boolean IsUnorthodoxFraction(double numerator, double denominator) {
         double enFirst = (int)numerator / 10;
         double enSecond = (int)numerator % 10;

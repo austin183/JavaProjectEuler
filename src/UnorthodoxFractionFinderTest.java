@@ -55,5 +55,10 @@ public class UnorthodoxFractionFinderTest {
         Assert.assertEquals(expected.get(1).Numerator, result.get(1).Numerator);
         Assert.assertEquals(expected.get(2).Numerator, result.get(2).Numerator);
         Assert.assertEquals(expected.get(3).Numerator, result.get(3).Numerator);
+
+        Assert.assertEquals(expected.get(0).Denominator, result.get(0).Denominator);
+        Assert.assertEquals(expected.get(1).Denominator, result.get(1).Denominator);
+        Assert.assertEquals(expected.get(2).Denominator, result.get(2).Denominator);
+        Assert.assertEquals(expected.get(3).Denominator, result.get(3).Denominator);
     }
 }

@@ -14,11 +14,23 @@ public class FactorializerTest {
     @Test
     public void ShouldGetFactoriall5() {
         int factorialize = 5;
-        Factorializer factorializer = new Factorializer();
+        BigInteger expected = new BigInteger("120");
 
+        Factorializer factorializer = new Factorializer();
         BigInteger result = factorializer.Factorialize(factorialize);
 
-        Assert.assertEquals(new BigInteger("120"), result);
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetFactoriallSmallNumber5() {
+        int factorialize = 5;
+        int expected = 120;
+
+        Factorializer factorializer = new Factorializer();
+        int result = factorializer.FactorializeSmallNumber(factorialize);
+
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -39,5 +51,28 @@ public class FactorializerTest {
         int result = factorializer.GetSumOfDigitsInFactorialization(factorialize);
 
         Assert.assertEquals(648, result);
+    }
+    
+    @Test
+    public void ShouldGetSumOfFactorialsOfDigitsInNumber()
+    {
+        int candidate = 145;
+        int expected = 145;
+        
+        Factorializer factorializer = new Factorializer();
+        int result = factorializer.GetSumOfFactorialsOfDigitsInNumber(candidate);
+        
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetSumOfAllNumbersWhichAreEqualToSumOfFactorialsOfDigitsInNumber()
+    {
+        int expected = 40730;
+
+        Factorializer factorializer = new Factorializer();
+        int result = factorializer.GetSumOfAllNumbersWhichAreEqualToSumOfFactorialsOfDigitsInNumber();
+
+        Assert.assertEquals(expected, result);
     }
 }
