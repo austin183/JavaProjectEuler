@@ -12,8 +12,7 @@ import java.util.List;
  */
 public class UnorthodoxFractionFinderTest {
     @Test
-    public void ShouldFind49Over98AsUnorthodox()
-    {
+    public void ShouldFind49Over98AsUnorthodox() {
         double numerator = 49;
         double denominator = 98;
 
@@ -26,8 +25,7 @@ public class UnorthodoxFractionFinderTest {
     }
 
     @Test
-    public void ShouldFind50Over90AsUnorthodox()
-    {
+    public void ShouldFind50Over90AsUnorthodox() {
         double numerator = 50;
         double denominator = 90;
 
@@ -40,13 +38,12 @@ public class UnorthodoxFractionFinderTest {
     }
 
     @Test
-    public void ShouldFindListOfUnorthodoxFractionsBetween10Over11And98Over99()
-    {
+    public void ShouldFindListOfUnorthodoxFractionsBetween10Over11And98Over99() {
         List<Fraction> expected = new ArrayList<Fraction>();
-        expected.add(new Fraction(16,64));
-        expected.add(new Fraction(26,65));
-        expected.add(new Fraction(19,95));
-        expected.add(new Fraction(49,98));
+        expected.add(new Fraction(16, 64));
+        expected.add(new Fraction(26, 65));
+        expected.add(new Fraction(19, 95));
+        expected.add(new Fraction(49, 98));
 
         UnorthodoxFractionFinder finder = new UnorthodoxFractionFinder();
         List<Fraction> result = finder.GetUnorthodoxFractions();

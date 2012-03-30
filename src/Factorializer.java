@@ -15,12 +15,10 @@ class Factorializer {
         }
         return toReturn;
     }
-    
-    public int FactorializeSmallNumber(int factorialize)
-    {
+
+    public int FactorializeSmallNumber(int factorialize) {
         int toReturn = 1;
-        for(int n = 1; n<=factorialize; n++)
-        {
+        for (int n = 1; n <= factorialize; n++) {
             toReturn *= n;
         }
         return toReturn;
@@ -38,8 +36,7 @@ class Factorializer {
     public int GetSumOfFactorialsOfDigitsInNumber(int candidate) {
         String digits = Integer.toString(candidate);
         int toReturn = 0;
-        for(int i = 0; i < digits.length(); i++)
-        {
+        for (int i = 0; i < digits.length(); i++) {
             toReturn += FactorializeSmallNumber(Integer.parseInt(digits.substring(i, i + 1)));
         }
         return toReturn;
@@ -48,11 +45,10 @@ class Factorializer {
 
     public int GetSumOfAllNumbersWhichAreEqualToSumOfFactorialsOfDigitsInNumber() {
         int toReturn = 0;
-        
-        for(int i = 10; i < 40730; i++)
-        {
+
+        for (int i = 10; i < 40730; i++) {
             int sumOfFactorialsOfDigitsInI = GetSumOfFactorialsOfDigitsInNumber(i);
-            if(i == sumOfFactorialsOfDigitsInI)
+            if (i == sumOfFactorialsOfDigitsInI)
                 toReturn += i;
         }
 

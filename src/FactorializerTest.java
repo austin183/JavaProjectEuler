@@ -52,22 +52,20 @@ public class FactorializerTest {
 
         Assert.assertEquals(648, result);
     }
-    
+
     @Test
-    public void ShouldGetSumOfFactorialsOfDigitsInNumber()
-    {
+    public void ShouldGetSumOfFactorialsOfDigitsInNumber() {
         int candidate = 145;
         int expected = 145;
-        
+
         Factorializer factorializer = new Factorializer();
         int result = factorializer.GetSumOfFactorialsOfDigitsInNumber(candidate);
-        
+
         Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void ShouldGetSumOfAllNumbersWhichAreEqualToSumOfFactorialsOfDigitsInNumber()
-    {
+    public void ShouldGetSumOfAllNumbersWhichAreEqualToSumOfFactorialsOfDigitsInNumber() {
         int expected = 40730;
 
         Factorializer factorializer = new Factorializer();

@@ -1,6 +1,4 @@
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +14,42 @@ class PrimeFactorizer {
 
     public PrimeFactorizer() {
         knownPrimes = new ArrayList<Integer>();
+    }
+
+    public PrimeFactorizer(String knownPrimeFile) {
+        knownPrimes = new ArrayList<Integer>();
+        LoadKnownPrimes(knownPrimeFile);
+    }
+
+    public List<Integer> GetKnownPrimes() {
+        return knownPrimes;
+    }
+
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
+    public boolean HasNoCache() {
+        return knownPrimes.size() == 0;
+    }
+
+    private void LoadKnownPrimes(String knownPrimeFile) {
+        System.out.println("Loading Primes from " + knownPrimeFile);
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = new FileInputStream(knownPrimeFile);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        DataInputStream in = new DataInputStream(fileInputStream);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        String line;
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (!line.trim().equals(""))
+                    knownPrimes.add(Integer.parseInt(line));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Primes Loaded");
     }
 
     boolean IsKnownPrime(int candidate) {

@@ -8,8 +8,7 @@ class Fraction {
     public final double Numerator;
     public final double Denominator;
 
-    public Fraction(double numerator, double denominator)
-    {
+    public Fraction(double numerator, double denominator) {
         Numerator = numerator;
         Denominator = denominator;
     }
