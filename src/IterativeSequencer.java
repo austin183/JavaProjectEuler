@@ -1,9 +1,8 @@
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/10/12
  * Time: 8:45 PM
- * To change this template use File | Settings | File Templates.
  */
 class IterativeSequencer {
     public int GetNumberTermsInChain(int number) {

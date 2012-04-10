@@ -3,11 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/5/12
  * Time: 11:05 PM
- * To change this template use File | Settings | File Templates.
  */
 class PrimeFactorizer {
     private final List<Integer> knownPrimes;

@@ -1,9 +1,8 @@
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/4/12
  * Time: 2:35 PM
- * To change this template use File | Settings | File Templates.
  */
 public class PythagoreanTriplet {
     private final int A;

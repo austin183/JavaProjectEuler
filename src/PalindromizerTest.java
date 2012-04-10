@@ -2,11 +2,10 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/4/12
  * Time: 12:06 PM
- * To change this template use File | Settings | File Templates.
  */
 public class PalindromizerTest {
     @Test
@@ -42,5 +41,16 @@ public class PalindromizerTest {
         int candidate = 9101119;
         Palindromizer palindromizer = new Palindromizer();
         Assert.assertFalse(palindromizer.IsPalindrome(candidate));
+    }
+
+    @Test
+    public void ShouldRecognize585AsPalindromeInBinary()
+    {
+        int candidate = 585;
+        boolean expected = true;
+
+        Palindromizer palindromizer = new Palindromizer();
+        boolean actual = palindromizer.IsBinaryPalindrome(candidate);
+        Assert.assertEquals(expected, actual);
     }
 }

@@ -5,11 +5,10 @@ import org.junit.Test;
 import java.util.Date;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 1/30/12
  * Time: 9:37 PM
- * To change this template use File | Settings | File Templates.
  */
 public class CalculatorTest {
     @Test
@@ -386,6 +385,19 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
         int result = calculator.GetSumOfAllDigitsThatCanBeWrittenAsSumOfPowerOfDigits(power);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetSumOfAllNumbersUnder1MillionWhichArePalindromicInBase10And2()
+    {
+        int limit = 1000000;
+        int expected = 872187;
+
+        Calculator calculator = new Calculator();
+
+        int result = calculator.GetSumOfAllNumbersUnder1MillionWhichArePalindromicInBase10And2UnderLimit(limit);
 
         Assert.assertEquals(expected, result);
     }

@@ -2,11 +2,10 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/8/12
  * Time: 12:31 PM
- * To change this template use File | Settings | File Templates.
  */
 public class TriangulizerTest {
     @Test

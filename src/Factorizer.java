@@ -4,11 +4,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/8/12
  * Time: 12:48 PM
- * To change this template use File | Settings | File Templates.
  */
 class Factorizer {
 

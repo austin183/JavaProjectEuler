@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 1/30/12
  * Time: 9:31 PM
- * To change this template use File | Settings | File Templates.
  */
 class Calculator {
 
@@ -317,6 +316,19 @@ class Calculator {
             int digit = Integer.parseInt(digits.substring(i, i + 1));
             toReturn += math.Pow(digit, power);
         }
+        return toReturn;
+    }
+
+    public int GetSumOfAllNumbersUnder1MillionWhichArePalindromicInBase10And2UnderLimit(int limit) {
+        int toReturn = 0;
+
+        Palindromizer palindromizer = new Palindromizer();
+        for(int i = 1; i <= limit; i++)
+        {
+            if(palindromizer.IsBinaryPalindrome(i) && palindromizer.IsPalindrome(i))
+                toReturn += i;
+        }
+
         return toReturn;
     }
 }

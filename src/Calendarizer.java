@@ -19,7 +19,7 @@ class Calendarizer {
         try {
             date = stringFormat.parse(dateString);
         } catch (ParseException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         return GetDayOfWeek(date);
     }
@@ -37,7 +37,7 @@ class Calendarizer {
             stDate = stringFormat.parse(startDate);
             edDate = stringFormat.parse(endDate);
         } catch (ParseException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         Calendar currentMonth = Calendar.getInstance();
         currentMonth.setTime(stDate);

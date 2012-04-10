@@ -2,11 +2,10 @@ import java.io.*;
 import java.math.BigInteger;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/10/12
  * Time: 8:34 PM
- * To change this template use File | Settings | File Templates.
  */
 class BigIntegerMath {
     public BigInteger GetSumOfNumbersInFile(String filePath) {

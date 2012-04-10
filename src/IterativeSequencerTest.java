@@ -2,11 +2,10 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/10/12
  * Time: 8:46 PM
- * To change this template use File | Settings | File Templates.
  */
 public class IterativeSequencerTest {
     @Test

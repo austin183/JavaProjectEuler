@@ -4,11 +4,10 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 /**
- * Created by IntelliJ IDEA.
+ * Go IntelliJ IDEA!
  * User: Austin
  * Date: 2/7/12
  * Time: 10:14 PM
- * To change this template use File | Settings | File Templates.
  */
 public class GridizerTest {
 
