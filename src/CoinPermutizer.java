@@ -21,9 +21,9 @@ class CoinPermutizer {
         Collections.sort(Denoms);
     }
 
-    private int findAllCombinationsRecursive(int startIx,
+    private int findAllCombinationsRecursive(int startIndex,
                                              int remainingTarget) {
-        for (int i = startIx; i < Denoms.size(); i++) {
+        for (int i = startIndex; i < Denoms.size(); i++) {
             int differenceCoinAndTarget = remainingTarget - Denoms.get(i);
             if (differenceCoinAndTarget == 0) {
                 Permutations++;

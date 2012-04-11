@@ -331,4 +331,62 @@ class Calculator {
 
         return toReturn;
     }
+
+    public int GetSumOfOnly11PrimesThatAreTruncatableBothDirections() {
+        int sumToReturn = 0;
+        int count = 0;
+
+        PrimeFactorizer factorizer = new PrimeFactorizer();
+        for(int i = 11; count < 11; i++)
+        {
+            if(factorizer.IsPrimeAndTruncatablyPrimeBothDirections(i))
+            {
+                sumToReturn += i;
+                count++;
+                System.out.println("Found " + i + ". " + count + " so far. Total: " + sumToReturn);
+            }
+            if(i % 100000 == 0)
+                System.out.println("Testing " + i);
+        }
+
+        return sumToReturn;
+    }
+
+    public String GetLargest1Through9PandigitalFoundUsingConcatenatedProductOfAnIntegerWith12NList() {
+        String currentCandidate = "987654321";
+        String currentConcatenatedProduct;
+        PanDigitizer digitizer = new PanDigitizer();
+        Permutizer permutizer = new Permutizer();
+        while(Integer.parseInt(currentCandidate) > Integer.parseInt("918273645"))
+        {
+            for(int i = 8; i > 1; i--)
+            {
+                int trialNumber = (int) (Integer.parseInt(currentCandidate) / Math.pow(10, i));
+                currentConcatenatedProduct = Integer.toString(trialNumber);
+                int k = 2;
+                boolean isStillViable = true;
+                while(isStillViable)
+                {
+                    currentConcatenatedProduct += Integer.toString(trialNumber * k);
+                    if(currentCandidate.length() < currentConcatenatedProduct.length())
+                    {
+                        isStillViable = false;
+                        continue;
+                    }
+                    if(!digitizer.IsPartialPanDigital(Integer.parseInt(currentConcatenatedProduct)))
+                    {
+                        isStillViable = false;
+                        continue;
+                    }
+                    if(digitizer.IsPanDigital1Through9(Integer.parseInt(currentConcatenatedProduct)))
+                    {
+                        return currentConcatenatedProduct;
+                    }
+                }
+            }
+            currentCandidate = permutizer.GetPreviousPermutation(currentCandidate);
+
+        }
+        return currentCandidate;
+    }
 }

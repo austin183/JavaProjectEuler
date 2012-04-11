@@ -60,4 +60,64 @@ public class PermutizerTest {
         Assert.assertEquals("2783915460", result);
     }
 
+    @Test
+    public void ShouldGetPermutationHigherThan918273654()
+    {
+        String permuteThis = "918273654";
+        String expected = "918274356";
+
+        Permutizer permutizer = new Permutizer();
+        String result = permutizer.GetNextPermutation(permuteThis);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetPermutationLowerThan918274356()
+    {
+        String permuteThis = "918274356";
+        String expected = "918273654";
+
+        Permutizer permutizer = new Permutizer();
+        String result = permutizer.GetPreviousPermutation(permuteThis);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetPermutationHigherThan918274356()
+    {
+        String permuteThis = "918274356";
+        String expected = "918274365";
+
+        Permutizer permutizer = new Permutizer();
+        String result = permutizer.GetNextPermutation(permuteThis);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldGetPreviousPermutationOf918274365()
+    {
+        String permuteThis = "918274365";
+        String expected = "918274356";
+
+        Permutizer permutizer = new Permutizer();
+        String result = permutizer.GetPreviousPermutation(permuteThis);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShoulGetPreviousPermutationOf987654321()
+    {
+        String permuteThis = "987654321";
+        String expected = "987654312";
+
+        Permutizer permutizer = new Permutizer();
+        String result = permutizer.GetPreviousPermutation(permuteThis);
+
+        Assert.assertEquals(expected, result);
+    }
+
 }

@@ -9,17 +9,10 @@ import java.util.Map;
  */
 class PanDigitizer {
 
-    private boolean IsPanDigital1Through9(String value) {
-        Map<Integer, Boolean> usedNumbers = InitializeNumberMap();
+    boolean IsPanDigital1Through9(String value) {
+        Map<Integer, Boolean> usedNumbers = DeterminPandigitiness(value);
+        return usedNumbers != null && AllNumbersUsed(usedNumbers);
 
-        if (value.contains("0")) return false;
-        for (int i = 0; i < value.length(); i++) {
-            int currentValue = Integer.parseInt(value.substring(i, i + 1));
-            if (!usedNumbers.get(currentValue)) {
-                usedNumbers.put(currentValue, true);
-            } else return false;
-        }
-        return AllNumbersUsed(usedNumbers);
     }
 
     public boolean IsPanDigital1Through9(int testValue) {
@@ -27,17 +20,27 @@ class PanDigitizer {
         return IsPanDigital1Through9(value);
     }
 
-    public boolean IsPartialPanDigital(int testValue) {
+    private Map<Integer, Boolean> DeterminPandigitiness(String value)
+    {
         Map<Integer, Boolean> usedNumbers = InitializeNumberMap();
-        String value = Integer.toString(testValue);
-        if (value.contains("0")) return false;
+        if (value.contains("0"))
+            return null;
         for (int i = 0; i < value.length(); i++) {
             int currentValue = Integer.parseInt(value.substring(i, i + 1));
             if (!usedNumbers.get(currentValue)) {
                 usedNumbers.put(currentValue, true);
-            } else return false;
+            }
+            else
+                return null;
         }
-        return true;
+        return usedNumbers;
+    }
+
+
+    public boolean IsPartialPanDigital(int testValue) {
+        String value = Integer.toString(testValue);
+
+        return DeterminPandigitiness(value) != null;
     }
 
     private boolean AllNumbersUsed(Map<Integer, Boolean> usedNumbers) {

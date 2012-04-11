@@ -44,6 +44,42 @@ class Permutizer {
         return toReturn;
     }
 
+    public String GetNextPermutation(String permuteThis)
+    {
+        List<Integer> toPermute = GetIntList(permuteThis);
+        return GetStringValue(GetNextResult(toPermute));
+    }
+
+    public String GetPreviousPermutation(String permuteThis)
+    {
+        List<Integer> toPermute = GetIntList(permuteThis);
+        return GetStringValue(GetPreviousResult(toPermute));
+    }
+
+    private List<Integer> GetPreviousResult(List<Integer> toPermute)
+    {
+        int i = toPermute.size() - 2;
+        while ((i >= 0) && (toPermute.get(i) < toPermute.get(i + 1)))
+            i--;
+
+        if (i < 0) return new ArrayList<Integer>();
+
+        int k = toPermute.size() - 1;
+        while (toPermute.get(i) < toPermute.get(k))
+            k--;
+
+        Swap(toPermute, i, k);
+
+        i++;
+        k = toPermute.size() - 1;
+        while (i < k) {
+            Swap(toPermute, i, k);
+            i++;
+            k--;
+        }
+        return toPermute;
+    }
+
     private List<Integer> GetNextResult(List<Integer> toPermute) {
         int i = toPermute.size() - 2;
         while ((i >= 0) && (toPermute.get(i) > toPermute.get(i + 1)))
@@ -65,7 +101,6 @@ class Permutizer {
             k--;
         }
         return toPermute;
-
     }
 
     private void Swap(List<Integer> toPermute, int i, int k) {

@@ -402,6 +402,30 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    @Test
+    public void ShouldFindLargest1Through9PandigitalFoundUsingConcatenatedProductOfAnIntegerWith12NList()
+    {
+        String expected = "932718654";
+
+        Calculator calculator = new Calculator();
+        String result = calculator.GetLargest1Through9PandigitalFoundUsingConcatenatedProductOfAnIntegerWith12NList();
+
+        Assert.assertEquals(expected, result);
+    }
+
+
+    @Test
+    @Ignore("Slow like a minute")
+    public void ShouldFindSumOfOnly11PrimesThatAreTruncatableBothDirections()
+    {
+        int expected = 748317;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetSumOfOnly11PrimesThatAreTruncatableBothDirections();
+
+        Assert.assertEquals(expected, result);
+    }
+
 
     @Test
     @Ignore("Verrry Slow.  Like 23 minutes slow!")
