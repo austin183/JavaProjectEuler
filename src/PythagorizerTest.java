@@ -27,4 +27,16 @@ public class PythagorizerTest {
         Pythagorizer pythagorizer = new Pythagorizer();
         Assert.assertFalse(pythagorizer.IsTriplet(a, b, c));
     }
+
+    @Test
+    public void ShouldGetCountOf3ForPythagoreanTripletsThatAddTo120()
+    {
+        int value = 120;
+        int expected = 3;
+
+        Pythagorizer pythagorizer = new Pythagorizer();
+        int result = pythagorizer.GetCountOfPythagoreanTripletsThatSumsTo(value);
+
+        Assert.assertEquals(expected, result);
+    }
 }

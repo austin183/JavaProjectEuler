@@ -195,6 +195,18 @@ public class CalculatorTest {
     }
 
     @Test
+    public void ShouldGetHighestCountOfPythagoreanTripletsForValuesUnder1000()
+    {
+        int max = 1000;
+        int expected = 840;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.GetHighestCountOfPythagoreanTripletsForValuesUnderMax(max);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
     public void ShouldGetSumOfPrimesUnder17() {
         int maxValue = 10;
 

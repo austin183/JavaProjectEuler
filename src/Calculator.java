@@ -389,4 +389,20 @@ class Calculator {
         }
         return currentCandidate;
     }
+
+    public int GetHighestCountOfPythagoreanTripletsForValuesUnderMax(int max) {
+        int toReturn = 0;
+        int highestCount = 0;
+        Pythagorizer pythagorizer = new Pythagorizer();
+        for(int i = 1; i <= max; i++)
+        {
+            int currentCount = pythagorizer.GetCountOfPythagoreanTripletsThatSumsTo(i);
+            if(highestCount < currentCount)
+            {
+                toReturn = i;
+                highestCount = currentCount;
+            }
+        }
+        return toReturn;
+    }
 }
