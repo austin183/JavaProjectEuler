@@ -1,5 +1,4 @@
 import junit.framework.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -63,7 +62,6 @@ public class IrrationalDecimalFractionIndexerTest {
     }
 
     @Test
-    @Ignore("Slow 21 mins")
     public void ShouldSolveProblem40() {
         //d1 * d10 ... * d1000000
         int expected = 210;

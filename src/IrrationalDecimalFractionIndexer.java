@@ -5,19 +5,16 @@
  * Time: 6:35 PM
  */
 class IrrationalDecimalFractionIndexer {
-    private String DecimalValue = "";
-    private int LastAddedValue = 0;
-
-    private void BuildDecimalValueToNumberOfDigits(int maxLength) {
-        while (DecimalValue.length() < maxLength) {
-            LastAddedValue++;
-            System.out.println("Adding " + LastAddedValue + " to DecimalValue");
-            DecimalValue += Integer.toString(LastAddedValue);
-        }
-    }
-
     public int GetNthDigitInDecimalMadeOfConcatenatedPositiveIntegers(int index) {
-        BuildDecimalValueToNumberOfDigits(index);
-        return Integer.parseInt(DecimalValue.substring(index - 1, index));
+        int currentLength = 0;
+        int currentNumber = 0;
+        int thisLength = 0;
+        while (currentLength < index) {
+            currentNumber++;
+            thisLength = Integer.toString(currentNumber).length();
+            currentLength += thisLength;
+        }
+        int remainingLength = thisLength - (currentLength - index) - 1;
+        return Integer.parseInt(Integer.toString(currentNumber).substring(remainingLength, remainingLength + 1));
     }
 }
