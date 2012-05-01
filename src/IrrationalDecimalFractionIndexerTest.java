@@ -10,8 +10,7 @@ import org.junit.Test;
  */
 public class IrrationalDecimalFractionIndexerTest {
     @Test
-    public void ShouldFind12thDigitInDecimalMadeOfConcatenatedPositiveIntegers()
-    {
+    public void ShouldFind12thDigitInDecimalMadeOfConcatenatedPositiveIntegers() {
         int index = 12;
         int expected = 1;
 
@@ -22,8 +21,7 @@ public class IrrationalDecimalFractionIndexerTest {
     }
 
     @Test
-    public void ShouldFind11thDigitInDecimalMadeOfConcatenatedPositiveIntegers()
-    {
+    public void ShouldFind11thDigitInDecimalMadeOfConcatenatedPositiveIntegers() {
         int index = 11;
         int expected = 0;
 
@@ -34,8 +32,7 @@ public class IrrationalDecimalFractionIndexerTest {
     }
 
     @Test
-    public void ShouldFind13thDigitInDecimalMadeOfConcatenatedPositiveIntegers()
-    {
+    public void ShouldFind13thDigitInDecimalMadeOfConcatenatedPositiveIntegers() {
         int index = 15;
         int expected = 2;
 
@@ -46,8 +43,7 @@ public class IrrationalDecimalFractionIndexerTest {
     }
 
     @Test
-    public void ShouldFindValueOf12thAnd15thDigits()
-    {
+    public void ShouldFindValueOf12thAnd15thDigits() {
         int expected = 3;
         IrrationalDecimalFractionIndexer indexer = new IrrationalDecimalFractionIndexer();
         int result = indexer.GetNthDigitInDecimalMadeOfConcatenatedPositiveIntegers(12) + indexer.GetNthDigitInDecimalMadeOfConcatenatedPositiveIntegers(15);
@@ -56,8 +52,7 @@ public class IrrationalDecimalFractionIndexerTest {
     }
 
     @Test
-    public void ShouldFindValueOf1000000thDigit()
-    {
+    public void ShouldFindValueOf1000000thDigit() {
         int index = 1000000;
         int expected = 1;
 
@@ -69,8 +64,7 @@ public class IrrationalDecimalFractionIndexerTest {
 
     @Test
     @Ignore("Slow 21 mins")
-    public void ShouldSolveProblem40()
-    {
+    public void ShouldSolveProblem40() {
         //d1 * d10 ... * d1000000
         int expected = 210;
 
@@ -82,5 +76,5 @@ public class IrrationalDecimalFractionIndexerTest {
                 * indexer.GetNthDigitInDecimalMadeOfConcatenatedPositiveIntegers(10000)
                 * indexer.GetNthDigitInDecimalMadeOfConcatenatedPositiveIntegers(100000);
         Assert.assertEquals(expected, result);
-     }
+    }
 }

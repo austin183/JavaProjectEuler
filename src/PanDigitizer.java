@@ -20,8 +20,7 @@ class PanDigitizer {
         return IsPanDigital1Through9(value);
     }
 
-    private Map<Integer, Boolean> DeterminPandigitiness(String value)
-    {
+    private Map<Integer, Boolean> DeterminPandigitiness(String value) {
         Map<Integer, Boolean> usedNumbers = InitializeNumberMap();
         if (value.contains("0"))
             return null;
@@ -29,8 +28,7 @@ class PanDigitizer {
             int currentValue = Integer.parseInt(value.substring(i, i + 1));
             if (!usedNumbers.get(currentValue)) {
                 usedNumbers.put(currentValue, true);
-            }
-            else
+            } else
                 return null;
         }
         return usedNumbers;

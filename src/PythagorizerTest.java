@@ -29,8 +29,7 @@ public class PythagorizerTest {
     }
 
     @Test
-    public void ShouldGetCountOf3ForPythagoreanTripletsThatAddTo120()
-    {
+    public void ShouldGetCountOf3ForPythagoreanTripletsThatAddTo120() {
         int value = 120;
         int expected = 3;
 

@@ -61,8 +61,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGetPermutationHigherThan918273654()
-    {
+    public void ShouldGetPermutationHigherThan918273654() {
         String permuteThis = "918273654";
         String expected = "918274356";
 
@@ -73,8 +72,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGetPermutationLowerThan918274356()
-    {
+    public void ShouldGetPermutationLowerThan918274356() {
         String permuteThis = "918274356";
         String expected = "918273654";
 
@@ -85,8 +83,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGetPermutationHigherThan918274356()
-    {
+    public void ShouldGetPermutationHigherThan918274356() {
         String permuteThis = "918274356";
         String expected = "918274365";
 
@@ -97,8 +94,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShouldGetPreviousPermutationOf918274365()
-    {
+    public void ShouldGetPreviousPermutationOf918274365() {
         String permuteThis = "918274365";
         String expected = "918274356";
 
@@ -109,8 +105,7 @@ public class PermutizerTest {
     }
 
     @Test
-    public void ShoulGetPreviousPermutationOf987654321()
-    {
+    public void ShoulGetPreviousPermutationOf987654321() {
         String permuteThis = "987654321";
         String expected = "987654312";
 

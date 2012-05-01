@@ -44,8 +44,7 @@ public class PalindromizerTest {
     }
 
     @Test
-    public void ShouldRecognize585AsPalindromeInBinary()
-    {
+    public void ShouldRecognize585AsPalindromeInBinary() {
         int candidate = 585;
         boolean expected = true;
 

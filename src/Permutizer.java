@@ -44,20 +44,17 @@ class Permutizer {
         return toReturn;
     }
 
-    public String GetNextPermutation(String permuteThis)
-    {
+    public String GetNextPermutation(String permuteThis) {
         List<Integer> toPermute = GetIntList(permuteThis);
         return GetStringValue(GetNextResult(toPermute));
     }
 
-    public String GetPreviousPermutation(String permuteThis)
-    {
+    public String GetPreviousPermutation(String permuteThis) {
         List<Integer> toPermute = GetIntList(permuteThis);
         return GetStringValue(GetPreviousResult(toPermute));
     }
 
-    private List<Integer> GetPreviousResult(List<Integer> toPermute)
-    {
+    private List<Integer> GetPreviousResult(List<Integer> toPermute) {
         int i = toPermute.size() - 2;
         while ((i >= 0) && (toPermute.get(i) < toPermute.get(i + 1)))
             i--;

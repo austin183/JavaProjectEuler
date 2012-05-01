@@ -323,9 +323,8 @@ class Calculator {
         int toReturn = 0;
 
         Palindromizer palindromizer = new Palindromizer();
-        for(int i = 1; i <= limit; i++)
-        {
-            if(palindromizer.IsBinaryPalindrome(i) && palindromizer.IsPalindrome(i))
+        for (int i = 1; i <= limit; i++) {
+            if (palindromizer.IsBinaryPalindrome(i) && palindromizer.IsPalindrome(i))
                 toReturn += i;
         }
 
@@ -337,15 +336,13 @@ class Calculator {
         int count = 0;
 
         PrimeFactorizer factorizer = new PrimeFactorizer();
-        for(int i = 11; count < 11; i++)
-        {
-            if(factorizer.IsPrimeAndTruncatablyPrimeBothDirections(i))
-            {
+        for (int i = 11; count < 11; i++) {
+            if (factorizer.IsPrimeAndTruncatablyPrimeBothDirections(i)) {
                 sumToReturn += i;
                 count++;
                 System.out.println("Found " + i + ". " + count + " so far. Total: " + sumToReturn);
             }
-            if(i % 100000 == 0)
+            if (i % 100000 == 0)
                 System.out.println("Testing " + i);
         }
 
@@ -357,29 +354,23 @@ class Calculator {
         String currentConcatenatedProduct;
         PanDigitizer digitizer = new PanDigitizer();
         Permutizer permutizer = new Permutizer();
-        while(Integer.parseInt(currentCandidate) > Integer.parseInt("918273645"))
-        {
-            for(int i = 8; i > 1; i--)
-            {
+        while (Integer.parseInt(currentCandidate) > Integer.parseInt("918273645")) {
+            for (int i = 8; i > 1; i--) {
                 int trialNumber = (int) (Integer.parseInt(currentCandidate) / Math.pow(10, i));
                 currentConcatenatedProduct = Integer.toString(trialNumber);
                 int k = 2;
                 boolean isStillViable = true;
-                while(isStillViable)
-                {
+                while (isStillViable) {
                     currentConcatenatedProduct += Integer.toString(trialNumber * k);
-                    if(currentCandidate.length() < currentConcatenatedProduct.length())
-                    {
+                    if (currentCandidate.length() < currentConcatenatedProduct.length()) {
                         isStillViable = false;
                         continue;
                     }
-                    if(!digitizer.IsPartialPanDigital(Integer.parseInt(currentConcatenatedProduct)))
-                    {
+                    if (!digitizer.IsPartialPanDigital(Integer.parseInt(currentConcatenatedProduct))) {
                         isStillViable = false;
                         continue;
                     }
-                    if(digitizer.IsPanDigital1Through9(Integer.parseInt(currentConcatenatedProduct)))
-                    {
+                    if (digitizer.IsPanDigital1Through9(Integer.parseInt(currentConcatenatedProduct))) {
                         return currentConcatenatedProduct;
                     }
                 }
@@ -394,15 +385,28 @@ class Calculator {
         int toReturn = 0;
         int highestCount = 0;
         Pythagorizer pythagorizer = new Pythagorizer();
-        for(int i = 1; i <= max; i++)
-        {
+        for (int i = 1; i <= max; i++) {
             int currentCount = pythagorizer.GetCountOfPythagoreanTripletsThatSumsTo(i);
-            if(highestCount < currentCount)
-            {
+            if (highestCount < currentCount) {
                 toReturn = i;
                 highestCount = currentCount;
             }
         }
         return toReturn;
+    }
+
+    public int GetLargestPandigitalPrime() {
+        //9,8,6, and 5 are out because 1 + ... n is divisible by three
+        //I hypothesize that a 7 digit pandigital exists and can be found!
+        Permutizer permutizer = new Permutizer();
+        PrimeFactorizer factorizer = new PrimeFactorizer();
+        String currentPandigitalString = "7654321";
+        int currentPandigital = Integer.parseInt(currentPandigitalString);
+        while (!factorizer.IsPrime(currentPandigital)) {
+            currentPandigitalString = permutizer.GetPreviousPermutation(currentPandigitalString);
+            currentPandigital = Integer.parseInt(currentPandigitalString);
+        }
+
+        return currentPandigital;
     }
 }

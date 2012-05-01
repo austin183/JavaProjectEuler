@@ -2,15 +2,14 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 /**
-* Go IntelliJ IDEA!
-* User: Austin
-* Date: 4/10/12
-* Time: 6:58 PM
-*/
+ * Go IntelliJ IDEA!
+ * User: Austin
+ * Date: 4/10/12
+ * Time: 6:58 PM
+ */
 public class PrimeFactorizerTest {
     @Test
-    public void ShoulRecognize3797AsPrimeAndTruncatablyPrimeBothDirections()
-    {
+    public void ShoulRecognize3797AsPrimeAndTruncatablyPrimeBothDirections() {
         int candidate = 3797;
         boolean expected = true;
 
@@ -21,8 +20,7 @@ public class PrimeFactorizerTest {
     }
 
     @Test
-    public void ShoulRecognize10AsNotPrimeAndTruncatablyPrimeBothDirections()
-    {
+    public void ShoulRecognize10AsNotPrimeAndTruncatablyPrimeBothDirections() {
         int candidate = 10;
         boolean expected = false;
 

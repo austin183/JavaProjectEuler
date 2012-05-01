@@ -195,8 +195,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldGetHighestCountOfPythagoreanTripletsForValuesUnder1000()
-    {
+    public void ShouldGetHighestCountOfPythagoreanTripletsForValuesUnder1000() {
         int max = 1000;
         int expected = 840;
 
@@ -402,8 +401,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldGetSumOfAllNumbersUnder1MillionWhichArePalindromicInBase10And2()
-    {
+    public void ShouldGetSumOfAllNumbersUnder1MillionWhichArePalindromicInBase10And2() {
         int limit = 1000000;
         int expected = 872187;
 
@@ -415,8 +413,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void ShouldFindLargest1Through9PandigitalFoundUsingConcatenatedProductOfAnIntegerWith12NList()
-    {
+    public void ShouldFindLargest1Through9PandigitalFoundUsingConcatenatedProductOfAnIntegerWith12NList() {
         String expected = "932718654";
 
         Calculator calculator = new Calculator();
@@ -425,11 +422,18 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    @Test
+    public void ShouldFindLargestPandigitalPrime() {
+        Calculator calculator = new Calculator();
+        int result = calculator.GetLargestPandigitalPrime();
+
+        Assert.assertEquals(0, result);
+    }
+
 
     @Test
     @Ignore("Slow like a minute")
-    public void ShouldFindSumOfOnly11PrimesThatAreTruncatableBothDirections()
-    {
+    public void ShouldFindSumOfOnly11PrimesThatAreTruncatableBothDirections() {
         int expected = 748317;
 
         Calculator calculator = new Calculator();

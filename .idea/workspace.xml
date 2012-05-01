@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java" />
+    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="Solved Problem 40.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator.java" afterPath="$PROJECT_DIR$/src/Calculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalculatorTest.java" afterPath="$PROJECT_DIR$/src/CalculatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java" afterPath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java" afterPath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PalindromizerTest.java" afterPath="$PROJECT_DIR$/src/PalindromizerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PanDigitizer.java" afterPath="$PROJECT_DIR$/src/PanDigitizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Permutizer.java" afterPath="$PROJECT_DIR$/src/Permutizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PermutizerTest.java" afterPath="$PROJECT_DIR$/src/PermutizerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PrimeFactorizer.java" afterPath="$PROJECT_DIR$/src/PrimeFactorizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PrimeFactorizerTest.java" afterPath="$PROJECT_DIR$/src/PrimeFactorizerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pythagorizer.java" afterPath="$PROJECT_DIR$/src/Pythagorizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PythagorizerTest.java" afterPath="$PROJECT_DIR$/src/PythagorizerTest.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -75,8 +85,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -84,28 +94,7 @@
     <favorites_list name="SumMultiple3and5Under1000" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="IrrationalDecimalFractionIndexer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.6306028">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IrrationalDecimalFractionIndexerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="46" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -131,14 +120,14 @@
         <option value="$PROJECT_DIR$/src/CoinPermutizer.java" />
         <option value="$PROJECT_DIR$/src/Permutizer.java" />
         <option value="$PROJECT_DIR$/src/PermutizerTest.java" />
-        <option value="$PROJECT_DIR$/src/PanDigitizer.java" />
         <option value="$PROJECT_DIR$/src/PythagoreanTriplet.java" />
         <option value="$PROJECT_DIR$/src/Pythagorizer.java" />
         <option value="$PROJECT_DIR$/src/PythagorizerTest.java" />
-        <option value="$PROJECT_DIR$/src/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java" />
         <option value="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java" />
+        <option value="$PROJECT_DIR$/src/CalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/PanDigitizer.java" />
+        <option value="$PROJECT_DIR$/src/Calculator.java" />
       </list>
     </option>
   </component>
@@ -146,10 +135,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1272" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -196,18 +185,21 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
-        <subPane subId="Tests" />
         <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -216,6 +208,7 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+        <subPane subId="Tests" />
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -269,16 +262,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -299,9 +288,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="last.edited.regexp" value=" " />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -314,14 +303,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IrrationalDecimalFractionIndexerTest.ShouldSolveProblem40">
-    <configuration default="false" name="IrrationalDecimalFractionIndexerTest.ShouldFindValueOf12thAnd15thDigits" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.CalculatorTest.ShouldFindLargestPandigitalPrime">
+    <configuration default="false" name="PanDigitizerTest.ShouldNotRecognize1AsPanDigital" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IrrationalDecimalFractionIndexerTest" />
-      <option name="METHOD_NAME" value="ShouldFindValueOf12thAnd15thDigits" />
+      <option name="MAIN_CLASS_NAME" value="PanDigitizerTest" />
+      <option name="METHOD_NAME" value="ShouldNotRecognize1AsPanDigital" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -337,13 +326,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="IrrationalDecimalFractionIndexerTest.ShouldSolveProblem40" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="PanDigitizerTest.ShouldRecognize725439186AsPandigital" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IrrationalDecimalFractionIndexerTest" />
-      <option name="METHOD_NAME" value="ShouldSolveProblem40" />
+      <option name="MAIN_CLASS_NAME" value="PanDigitizerTest" />
+      <option name="METHOD_NAME" value="ShouldRecognize725439186AsPandigital" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -359,13 +348,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="IrrationalDecimalFractionIndexerTest.ShouldFind12thDigitInDecimalMadeOfConcatenatedPositiveIntegers" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="PanDigitizerTest.ShouldFind7254ToBePandigitalWithCorrectMultiplicandAndMultiplier" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IrrationalDecimalFractionIndexerTest" />
-      <option name="METHOD_NAME" value="ShouldFind12thDigitInDecimalMadeOfConcatenatedPositiveIntegers" />
+      <option name="MAIN_CLASS_NAME" value="PanDigitizerTest" />
+      <option name="METHOD_NAME" value="ShouldFind7254ToBePandigitalWithCorrectMultiplicandAndMultiplier" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -381,14 +370,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="IrrationalDecimalFractionIndexerTest.ShouldFind13thDigitInDecimalMadeOfConcatenatedPositiveIntegers" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="PanDigitizerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IrrationalDecimalFractionIndexerTest" />
-      <option name="METHOD_NAME" value="ShouldFind13thDigitInDecimalMadeOfConcatenatedPositiveIntegers" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="PanDigitizerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -403,13 +392,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="IrrationalDecimalFractionIndexerTest.ShouldFindValueOf1000000thDigit" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="CalculatorTest.ShouldFindLargestPandigitalPrime" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IrrationalDecimalFractionIndexerTest" />
-      <option name="METHOD_NAME" value="ShouldFindValueOf1000000thDigit" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="ShouldFindLargestPandigitalPrime" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -448,24 +437,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -491,6 +462,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -618,11 +607,11 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.IrrationalDecimalFractionIndexerTest.ShouldFindValueOf12thAnd15thDigits" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.IrrationalDecimalFractionIndexerTest.ShouldSolveProblem40" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.IrrationalDecimalFractionIndexerTest.ShouldFind12thDigitInDecimalMadeOfConcatenatedPositiveIntegers" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.IrrationalDecimalFractionIndexerTest.ShouldFind13thDigitInDecimalMadeOfConcatenatedPositiveIntegers" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.IrrationalDecimalFractionIndexerTest.ShouldFindValueOf1000000thDigit" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PanDigitizerTest.ShouldNotRecognize1AsPanDigital" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PanDigitizerTest.ShouldRecognize725439186AsPandigital" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PanDigitizerTest.ShouldFind7254ToBePandigitalWithCorrectMultiplicandAndMultiplier" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.PanDigitizerTest" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindLargestPandigitalPrime" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -675,7 +664,11 @@
       <created>1334531401953</created>
       <updated>1334531401953</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solved Problem 40.">
+      <created>1334539080269</created>
+      <updated>1334539080269</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -699,29 +692,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.49715677" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32748538" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.6432818" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5312883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.49715677" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20064987" sideWeight="0.22711058" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32619047" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32613635" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2112104" sideWeight="0.32738096" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2112104" sideWeight="0.7659091" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23409091" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3659091" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2112104" sideWeight="0.6345238" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3654762" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23409091" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -761,7 +754,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved Problem 39." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved Problem 40." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -774,7 +767,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Fixed failing Prime Tests using long implementation in PrimeFactorizer." />
     <MESSAGE value="Added GetNumberOfFactors a Number and GetTriangleNumberAt an Index logic." />
     <MESSAGE value="Added BigInteger for summing up BigIntegers." />
     <MESSAGE value="Adding IterativeSequencer." />
@@ -799,6 +791,7 @@
     <MESSAGE value="Fixed Templates.&#10;&#10;Solved Problem 36." />
     <MESSAGE value="Solved Problem 38." />
     <MESSAGE value="Solved Problem 39." />
+    <MESSAGE value="Solved Problem 40." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -843,63 +836,55 @@
         <state line="114" column="36" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PanDigitizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PanDigitizerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PythagoreanTriplet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="291" selection-end="291" vertical-scroll-proportion="0.46532845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="405" column="24" selection-start="14459" selection-end="14459" vertical-scroll-proportion="0.9359699">
-          <folding />
-        </state>
+        <state line="15" column="5" selection-start="291" selection-end="291" vertical-scroll-proportion="0.46532845" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PythagorizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.38418078">
-          <folding />
-        </state>
+        <state line="28" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.38418078" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pythagorizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="611" selection-end="611" vertical-scroll-proportion="0.80037665">
+        <state line="25" column="1" selection-start="611" selection-end="611" vertical-scroll-proportion="0.80037665" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="61" selection-start="498" selection-end="498" vertical-scroll-proportion="0.42040184" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="46" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.7586751" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PanDigitizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="49" selection-start="812" selection-end="812" vertical-scroll-proportion="0.020910209">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PanDigitizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.9743083">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="41" selection-start="5850" selection-end="5850" vertical-scroll-proportion="0.35564855">
+        <state line="428" column="26" selection-start="12912" selection-end="12912" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="46" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.6306028">
+        <state line="406" column="5" selection-start="14465" selection-end="14465" vertical-scroll-proportion="0.2964427">
           <folding />
         </state>
       </provider>

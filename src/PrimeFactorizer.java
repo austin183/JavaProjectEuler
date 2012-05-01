@@ -24,8 +24,7 @@ class PrimeFactorizer {
         return knownPrimes;
     }
 
-    public boolean HasNoCache()
-    {
+    public boolean HasNoCache() {
         return knownPrimes.size() == 0;
     }
 
@@ -56,7 +55,7 @@ class PrimeFactorizer {
     }
 
     boolean IsPrime(int candidate) {
-        if(candidate < 2) return false;
+        if (candidate < 2) return false;
         //System.out.printf("Testing prime candidate %d to known primes%n", candidate);
         if (IsKnownPrime(candidate)) return true;
 
@@ -87,7 +86,7 @@ class PrimeFactorizer {
     }
 
     private boolean IsPrimeNoCache(int candidate) {
-        if(candidate < 2) return false;
+        if (candidate < 2) return false;
         for (int i = 2; i < (candidate / 2) + 1; i++) {
             //System.out.printf("Testing prime candidate %s to %s%n", Integer.toString(candidate), Integer.toString(i));
             if (candidate % i == 0)
@@ -148,12 +147,11 @@ class PrimeFactorizer {
 
 
     public boolean IsPrimeAndTruncatablyPrimeBothDirections(int candidate) {
-        if(!IsPrime(candidate, true)) return false;
+        if (!IsPrime(candidate, true)) return false;
 
         String sCandidate = Integer.toString(candidate);
 
-        for(int i = 1; i< sCandidate.length(); i++)
-        {
+        for (int i = 1; i < sCandidate.length(); i++) {
 
             int canL2R = Integer.parseInt(sCandidate.substring(0, i));
             int canR2L = Integer.parseInt(sCandidate.substring(i, sCandidate.length()));

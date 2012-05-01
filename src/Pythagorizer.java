@@ -18,7 +18,7 @@ class Pythagorizer {
                 int c = value - a - b;
 
                 if (IsTriplet(a, b, c))
-                    count ++;
+                    count++;
             }
         }
         return count;
