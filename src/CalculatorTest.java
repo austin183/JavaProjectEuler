@@ -427,7 +427,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.GetLargestPandigitalPrime();
 
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(7652413, result);
     }
 
 
