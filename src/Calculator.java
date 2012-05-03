@@ -93,15 +93,10 @@ class Calculator {
 
     public int GetHighestProductof5DigitsInAStringOfConsecutiveDigits() {
         int highestValue = 0;
-        FileInputStream fileInputStream = null;
-        try {
-            String DIGIT_STRING = "C:\\Temp\\PrimeWork\\1000DigitString.txt";
-            fileInputStream = new FileInputStream(DIGIT_STRING);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        DataInputStream in = new DataInputStream(fileInputStream);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        String DIGIT_STRING = "C:\\Temp\\PrimeWork\\1000DigitString.txt";
+
+        FileHelper fileHelper = new FileHelper();
+        BufferedReader reader = fileHelper.GetReader(DIGIT_STRING);
         String line;
         try {
             while ((line = reader.readLine()) != null) {
@@ -409,4 +404,85 @@ class Calculator {
 
         return currentPandigital;
     }
+
+    public long FindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty() {
+        Permutizer permutizer = new Permutizer();
+        long toReturn = 0;
+        String currentPandigitalNumber = "0123456789";
+
+        do{
+            int twothreefour = Integer.parseInt(
+                    currentPandigitalNumber.substring(1, 2)
+                    + currentPandigitalNumber.substring(2, 3)
+                    + currentPandigitalNumber.substring(3, 4) );
+
+            int threefourfive = Integer.parseInt(
+                    currentPandigitalNumber.substring(2, 3)
+                    + currentPandigitalNumber.substring(3, 4)
+                    + currentPandigitalNumber.substring(4, 5) );
+
+            int fourfivesix = Integer.parseInt(
+                    currentPandigitalNumber.substring(3, 4)
+                    + currentPandigitalNumber.substring(4, 5)
+                    + currentPandigitalNumber.substring(5, 6) );
+
+
+            int fivesixseven = Integer.parseInt(
+                            currentPandigitalNumber.substring(4, 5)
+                            + currentPandigitalNumber.substring(5, 6)
+                            + currentPandigitalNumber.substring(6, 7));
+
+            int sixseveneight = Integer.parseInt(
+                            currentPandigitalNumber.substring(5, 6)
+                            + currentPandigitalNumber.substring(6, 7)
+                            + currentPandigitalNumber.substring(7, 8));
+
+            int seveneightnine = Integer.parseInt(
+                    currentPandigitalNumber.substring(6, 7)
+                            + currentPandigitalNumber.substring(7, 8)
+                            + currentPandigitalNumber.substring(8, 9));
+
+            int eightnineten = Integer.parseInt(
+                    currentPandigitalNumber.substring(7, 8)
+                            + currentPandigitalNumber.substring(8, 9)
+                            + currentPandigitalNumber.substring(9, 10));
+
+            if(twothreefour % 2 == 0 && threefourfive % 3 ==0 && fourfivesix % 5 == 0
+                    && fivesixseven % 7 == 0 && sixseveneight % 11 == 0 && seveneightnine % 13== 0
+                    && eightnineten % 17 == 0)
+            {
+                System.out.println("Adding " + currentPandigitalNumber + " to " + toReturn);
+                toReturn += Long.parseLong(currentPandigitalNumber);
+            }
+            currentPandigitalNumber = permutizer.GetNextPermutation(currentPandigitalNumber);
+
+        }while (!currentPandigitalNumber.equals(""));
+
+        return toReturn;
+    }
+
+    public int FindCountWordsThatSummedNumericallyAreTriangleNumbers(String filepath) {
+        int toReturn = 0;
+
+        FileHelper fileHelper = new FileHelper();
+        BufferedReader reader = fileHelper.GetReader(filepath);
+        Triangulizer triangulizer = new Triangulizer();
+        AlphaNumericTranslator translator = new AlphaNumericTranslator();
+        String line;
+        try {
+            if ((line = reader.readLine()) != null) {
+                String[] words = line.split(",");
+                for (String word : words) {
+                    int sum = translator.GetNumericValue(word);
+                    if(triangulizer.IsTriangleNumber(sum))
+                        toReturn++;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return toReturn;
+    }
+
 }

@@ -430,6 +430,30 @@ public class CalculatorTest {
         Assert.assertEquals(7652413, result);
     }
 
+    @Test
+    public void ShouldFindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty()
+    {
+        //Problem 43
+        long expected = 16695334890l;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.FindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty();
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldFindCountWordsThatSummedNumericallyAreTriangleNumbers()
+    {
+        int expected = 162;
+        String filepath = "C:\\Temp\\ProjectEuler\\42.TriangleWords.txt";
+
+        Calculator calculator = new Calculator();
+        int result = calculator.FindCountWordsThatSummedNumericallyAreTriangleNumbers(filepath);
+
+        Assert.assertEquals(expected, result);
+    }
+
 
     @Test
     @Ignore("Slow like a minute")

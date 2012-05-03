@@ -12,14 +12,8 @@ class TrianglePathFinder {
     private List<List<Integer>> Triangle;
 
     public void Load(String filePath) {
-        FileInputStream fileInputStream = null;
-        try {
-            fileInputStream = new FileInputStream(filePath);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        DataInputStream in = new DataInputStream(fileInputStream);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        FileHelper fileHelper = new FileHelper();
+        BufferedReader reader = fileHelper.GetReader(filePath);
         String line;
         Triangle = new ArrayList<List<Integer>>();
         try {

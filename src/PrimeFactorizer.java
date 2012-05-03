@@ -30,14 +30,8 @@ class PrimeFactorizer {
 
     private void LoadKnownPrimes(String knownPrimeFile) {
         System.out.println("Loading Primes from " + knownPrimeFile);
-        FileInputStream fileInputStream = null;
-        try {
-            fileInputStream = new FileInputStream(knownPrimeFile);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        DataInputStream in = new DataInputStream(fileInputStream);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        FileHelper fileHelper = new FileHelper();
+        BufferedReader reader = fileHelper.GetReader(knownPrimeFile);
         String line;
         try {
             while ((line = reader.readLine()) != null) {
@@ -49,6 +43,8 @@ class PrimeFactorizer {
         }
         System.out.println("Primes Loaded");
     }
+
+
 
     boolean IsKnownPrime(int candidate) {
         return knownPrimes.contains(candidate);

@@ -20,19 +20,13 @@ class Gridizer {
     //Grid[2][2] is 31
     private ArrayList<ArrayList<Integer>> Grid = new ArrayList<ArrayList<Integer>>();
 
-    public void InitializeGrid(String s) {
-        if (s.compareTo("") == 0) return;
+    public void InitializeGrid(String gridFile) {
+        if (gridFile.compareTo("") == 0) return;
 
         Grid = new ArrayList<ArrayList<Integer>>(); // reset if Initialized more than once
 
-        FileInputStream fileInputStream = null;
-        try {
-            fileInputStream = new FileInputStream(s);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        DataInputStream in = new DataInputStream(fileInputStream);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        FileHelper fileHelper = new FileHelper();
+        BufferedReader reader = fileHelper.GetReader(gridFile);
         String line;
         try {
             while ((line = reader.readLine()) != null) {

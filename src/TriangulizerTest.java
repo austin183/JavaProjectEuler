@@ -27,4 +27,40 @@ public class TriangulizerTest {
 
         Assert.assertEquals(28, result);
     }
+
+    @Test
+    public void ShouldRecognize28AsTriangleNumber()
+    {
+        int candidate = 28;
+        boolean expected = true;
+
+        Triangulizer triangulizer = new Triangulizer();
+        boolean  result = triangulizer.IsTriangleNumber(candidate);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldNotRecognize27AsTriangleNumber()
+    {
+        int candidate = 27;
+        boolean expected = false;
+
+        Triangulizer triangulizer = new Triangulizer();
+        boolean  result = triangulizer.IsTriangleNumber(candidate);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldNotRecognize29AsTriangleNumber()
+    {
+        int candidate = 29;
+        boolean expected = false;
+
+        Triangulizer triangulizer = new Triangulizer();
+        boolean  result = triangulizer.IsTriangleNumber(candidate);
+
+        Assert.assertEquals(expected, result);
+    }
 }
