@@ -454,6 +454,18 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    @Test
+    @Ignore("17 seconds slow")
+    public void ShouldFindLowestPentagonalPairWhereSumAndDifferenceAreAlsoPentagonal()
+    {
+        int expected = 5482660;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.FindLowestPentagonalPairWhereSumAndDifferenceAreAlsoPentagonal();
+
+        Assert.assertEquals(expected, result);
+    }
+
 
     @Test
     @Ignore("Slow like a minute")

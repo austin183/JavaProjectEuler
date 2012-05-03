@@ -485,4 +485,27 @@ class Calculator {
         return toReturn;
     }
 
+    public int FindLowestPentagonalPairWhereSumAndDifferenceAreAlsoPentagonal() {
+        int toReturn = 0;
+        int index = 1;
+
+        PentagonalNumberizer numberizer = new PentagonalNumberizer();
+
+        while(toReturn == 0)
+        {
+            index++;
+            int pi = numberizer.GetPentagonalNumberAt(index);
+            for(int i = 1; i < index; i++)
+            {
+                int pj = numberizer.GetPentagonalNumberAt(i);
+                int pk = pi - pj;
+                if(numberizer.IsPentagonalNumber(pk) && numberizer.IsPentagonalNumber(pk + pj) && numberizer.IsPentagonalNumber(Math.abs(pk - pj)))
+                {
+                    toReturn = Math.abs(pk - pj);
+                }
+            }
+        }
+        return toReturn;
+
+    }
 }
