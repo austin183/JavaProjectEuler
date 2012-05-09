@@ -455,13 +455,36 @@ public class CalculatorTest {
     }
 
     @Test
-    @Ignore("17 seconds slow")
     public void ShouldFindLowestPentagonalPairWhereSumAndDifferenceAreAlsoPentagonal()
     {
         int expected = 5482660;
 
         Calculator calculator = new Calculator();
         int result = calculator.FindLowestPentagonalPairWhereSumAndDifferenceAreAlsoPentagonal();
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldFindThat40755IsTriPentHexagonalNumber()
+    {
+        boolean expected = true;
+        int value = 40755;
+
+        Calculator calculator = new Calculator();
+        boolean result = calculator.IsTriPentHexagonalNumber(value);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldFindNextTriPentHexagonalNumberAfterHex143()
+    {
+        long expected = 1533776805;
+        int hexStart = 144;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.FindNextTriPentHexagonalNumberAfterHex(hexStart);
 
         Assert.assertEquals(expected, result);
     }

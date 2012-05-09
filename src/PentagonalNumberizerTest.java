@@ -73,4 +73,15 @@ public class PentagonalNumberizerTest {
 
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void ShouldRecognize35AsPentagonal()
+    {
+        boolean expected = true;
+
+        PentagonalNumberizer numberizer = new PentagonalNumberizer();
+        boolean result = numberizer.IsPentagonalNumber(35);
+
+        Assert.assertEquals(expected, result);
+    }
 }

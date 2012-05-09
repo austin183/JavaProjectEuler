@@ -9,15 +9,8 @@ class PentagonalNumberizer {
         return (i * ((3 * i) -1))/2;
     }
 
-    public boolean IsPentagonalNumber(int i) {
-        int index = 1;
-        int currentPent;
-        do{
-            currentPent = GetPentagonalNumberAt(index);
-            if(currentPent == i) return true;
-            index++;
-        }while (currentPent < i);
-
-        return false;
+    public boolean IsPentagonalNumber(long i) {
+        double value = (1 + (Math.sqrt(1 + (24 * i)))) / 6;
+        return value % 1 == 0;
     }
 }

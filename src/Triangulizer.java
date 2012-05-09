@@ -10,15 +10,9 @@ class Triangulizer {
         return (int) ((double)triangleIndex * (double)(triangleIndex + 1) * .5);
     }
 
-    public boolean IsTriangleNumber(int value)
+    public boolean IsTriangleNumber(long i)
     {
-        int triangleNumber = 0;
-        for(int i = 1; triangleNumber < value; i++)
-        {
-            triangleNumber = GetTriangleNumberAt(i);
-            if(triangleNumber == value)
-                return true;
-        }
-        return false;
+        double value = (1 + (Math.sqrt(1 + (8 * i)))) / 2;
+        return value % 1 == 0;
     }
 }

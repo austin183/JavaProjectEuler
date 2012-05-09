@@ -508,4 +508,33 @@ class Calculator {
         return toReturn;
 
     }
+
+    public boolean IsTriPentHexagonalNumber(long value) {
+        Triangulizer triangulizer = new Triangulizer();
+        if(triangulizer.IsTriangleNumber(value))
+        {
+            PentagonalNumberizer pentagonalNumberizer = new PentagonalNumberizer();
+            if(pentagonalNumberizer.IsPentagonalNumber(value))
+            {
+                HexagonalNumberizer hexagonalNumberizer = new HexagonalNumberizer();
+                if(hexagonalNumberizer.IsHexagonalNumber(value))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    public long FindNextTriPentHexagonalNumberAfterHex(int hexStart) {
+        HexagonalNumberizer hexagonalNumberizer = new HexagonalNumberizer();
+        boolean go = true;
+        long currentValue = 0;
+        while(go)
+        {
+            currentValue =  hexagonalNumberizer.GetHexagonalNumberAt(hexStart);
+            if(IsTriPentHexagonalNumber(currentValue))
+                go = false;
+            hexStart++;
+        }
+        return currentValue;
+    }
 }
