@@ -46,6 +46,7 @@ public class TrianglePathFinderTest {
         Assert.assertEquals(308, result);
     }
 
+    //Problem 18
     @Test
     public void ShouldGetGreatestSumForAllPathsTopToBottom15Lines() {
         String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom.txt";

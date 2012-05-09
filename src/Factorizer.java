@@ -21,6 +21,11 @@ class Factorizer {
         return numFactors;
     }
 
+    public int GetNumberPrimeFactorsOf(long numberToTest) {
+        Map<Long, Integer> factorOccurrences = GetNumberOccurrencesOfPrimes(numberToTest);
+        return factorOccurrences.keySet().size();
+    }
+
     Map<Long, Integer> GetNumberOccurrencesOfPrimes(long numberToTest) {
         Map<Long, Integer> toReturn = new HashMap<Long, Integer>();
         for (long i = 2; i < numberToTest; i++) {

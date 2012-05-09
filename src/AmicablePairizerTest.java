@@ -40,6 +40,7 @@ public class AmicablePairizerTest {
         Assert.assertEquals(true, result);
     }
 
+    //Problem 21
     @Test
     @Ignore("Slow Test :(")
     public void ShouldGetSumOfAllAmicablePairsUnder10000() {

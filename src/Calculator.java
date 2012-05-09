@@ -537,4 +537,26 @@ class Calculator {
         }
         return currentValue;
     }
+
+    public int FindFirstOfFirstFourConsecutiveIntegersToHave4DistinctPrimeFactors() {
+        int toReturn = 0;
+        boolean go = true;
+        int countWith4DistinctPrimes = 0;
+        Factorizer factorizer = new Factorizer();
+        while (go)
+        {
+            toReturn++;
+            int numDistinctPrimeFactors = factorizer.GetNumberPrimeFactorsOf(toReturn);
+            if(numDistinctPrimeFactors == 4)
+                countWith4DistinctPrimes++;
+            else countWith4DistinctPrimes = 0;
+
+            if(countWith4DistinctPrimes == 4)
+            {
+                toReturn = toReturn - 3;
+                go = false;
+            }
+        }
+        return toReturn;
+    }
 }

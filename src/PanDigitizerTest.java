@@ -81,6 +81,7 @@ public class PanDigitizerTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 32
     @Test
     public void ShouldFindSumOfProductsWhereProductIsPandigital1Through9WithMultiplicandAndMultiplier() {
         int expected = 45228;

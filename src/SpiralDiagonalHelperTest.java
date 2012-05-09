@@ -52,6 +52,7 @@ public class SpiralDiagonalHelperTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 28
     @Test
     public void ShouldFindSumOfFullDiagonalsToLevel1001() {
         int level = 1001;

@@ -61,6 +61,7 @@ public class IrrationalDecimalFractionIndexerTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 40
     @Test
     public void ShouldSolveProblem40() {
         //d1 * d10 ... * d1000000

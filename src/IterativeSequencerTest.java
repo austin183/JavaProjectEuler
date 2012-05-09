@@ -40,6 +40,7 @@ public class IterativeSequencerTest {
         Assert.assertEquals(18, chainLength);
     }
 
+    //Problem 14
     @Test
     public void ShouldGetLongestChainForNumberUnder1000000() {
         IterativeSequencer sequencer = new IterativeSequencer();

@@ -78,6 +78,7 @@ public class CoinPermutizerTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 31
     @Test
     public void ShouldPermute8Coins() {
         int target = 200;

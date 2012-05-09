@@ -140,6 +140,7 @@ public class ChristianGoldbachDisproverTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 46
     @Test
     public void ShouldFindSmallestOddCompositeThatCannotBeWrittenAsTheSumOfPrimeAndTwiceASquare()
     {

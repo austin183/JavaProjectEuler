@@ -81,6 +81,7 @@ public class CircularPrimeFinderTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 35
     @Test
     @Ignore("Slow test.  About 2 or 3 mins")
     public void ShouldGetCountOfAllCircularPrimesBelow1million() {

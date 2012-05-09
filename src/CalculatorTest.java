@@ -22,6 +22,7 @@ public class CalculatorTest {
         Assert.assertEquals(23, result);
     }
 
+    //Problem 1
     @Test
     public void ShouldCalculateSumOfMultiples3and5Under1000() throws Exception {
         int[] multiples = {3, 5};
@@ -45,6 +46,7 @@ public class CalculatorTest {
         Assert.assertEquals(44, result);
     }
 
+    //Problem 2
     @Test
     public void ShouldCalculateEvenFibSeqNumbersUnder4million() {
         int start1 = 1;
@@ -107,6 +109,7 @@ public class CalculatorTest {
         Assert.assertEquals(29, result);
     }
 
+    //Problem 3
     @Test
     public void ShouldGetPrimeFactorsUnder600851475143() {
         long maxValue = 600851475143L;
@@ -127,6 +130,7 @@ public class CalculatorTest {
         Assert.assertEquals(9009, result);
     }
 
+    //Problem 4
     @Test
     public void ShouldGetLargestPalindromeFromTwoNumbers3Digits() {
         int digits = 3;
@@ -167,6 +171,7 @@ public class CalculatorTest {
         Assert.assertEquals(2640, result);
     }
 
+    //Problem 6
     @Test
     public void ShouldGetDifferenceBetweenSumOfSquaresAndSquaresOfSumForNumbersBelow100() {
         int firstNnumbers = 100;
@@ -177,6 +182,7 @@ public class CalculatorTest {
         Assert.assertEquals(25164150, result);
     }
 
+    //Problem 8
     @Test
     public void ShouldGetHighestProductOf5DigitsInAStringOfConsecutiveDigits() {
         Calculator calculator = new Calculator();
@@ -185,6 +191,7 @@ public class CalculatorTest {
         Assert.assertEquals(40824, result);
     }
 
+    //Problem 9
     @Test
     public void ShouldGetPythagoreanTripletThatSumsTo1000() {
         int value = 1000;
@@ -194,6 +201,7 @@ public class CalculatorTest {
         Assert.assertEquals(31875000, result.GetProductOfTriplet());
     }
 
+    //Problem 39
     @Test
     public void ShouldGetHighestCountOfPythagoreanTripletsForValuesUnder1000() {
         int max = 1000;
@@ -228,6 +236,7 @@ public class CalculatorTest {
         Assert.assertEquals(237699, result);
     }
 
+    //Problem 11
     @Test
     public void ShouldGetHighestProductOf4ValuesFrom20x20File() {
         int sequenceSize = 4;
@@ -251,6 +260,7 @@ public class CalculatorTest {
         Assert.assertEquals(28, result);
     }
 
+    //Problem 12
     @Test
     public void ShouldGetFirstTriangleNumberToHaveOverFiveHundredDivisors() {
         int numDivisors = 500;
@@ -271,6 +281,7 @@ public class CalculatorTest {
         Assert.assertEquals(6, result);
     }
 
+    //Problem 15
     @Test
     public void ShouldGetGridRoutesFor20x20Grid() {
         //http://joaoff.com/2008/01/20/a-square-grid-path-problem/
@@ -281,6 +292,7 @@ public class CalculatorTest {
         Assert.assertEquals(137846528820L, result);
     }
 
+    //Problem 17
     @Test
     public void ShouldGetSumOfCharactersToMake1To1000InWords() {
         Calculator calculator = new Calculator();
@@ -290,6 +302,7 @@ public class CalculatorTest {
         Assert.assertEquals(21124, result);
     }
 
+    //Problem 5
     @Test
     @Ignore("Runs kinda slowly")
     public void ShouldGetSmallestNumberDivisibleByNumbersBelow20() {
@@ -301,6 +314,7 @@ public class CalculatorTest {
         Assert.assertEquals(232792560, result);
     }
 
+    //Problem 26
     @Test
     public void ShouldFindLongestRecurringCycleForValuesUnder1000() {
         int max = 1000;
@@ -343,6 +357,7 @@ public class CalculatorTest {
         Assert.assertEquals(71, result);
     }
 
+    //Problem 27
     @Test
     public void ShouldFindCoefficientOfAandBWithHighestCountOfFirstConsecutivePrimeNumbersInQuadraticFormulaForAorBNeg1000To1000() {
         int min = -1000;
@@ -366,6 +381,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 29
     @Test
     public void ShouldGetCountOfDistinctSequenceFromAtoBthPowerAnBBetween2And100() {
         int min = 2;
@@ -389,6 +405,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 30
     @Test
     public void ShouldGetSumOfAllDigitsThatCanBeWrittenAsSumOf5PowerOfDigits() {
         int power = 5;
@@ -400,6 +417,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 36
     @Test
     public void ShouldGetSumOfAllNumbersUnder1MillionWhichArePalindromicInBase10And2() {
         int limit = 1000000;
@@ -412,6 +430,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 38
     @Test
     public void ShouldFindLargest1Through9PandigitalFoundUsingConcatenatedProductOfAnIntegerWith12NList() {
         String expected = "932718654";
@@ -422,6 +441,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 41
     @Test
     public void ShouldFindLargestPandigitalPrime() {
         Calculator calculator = new Calculator();
@@ -430,10 +450,10 @@ public class CalculatorTest {
         Assert.assertEquals(7652413, result);
     }
 
+    //Problem 43
     @Test
     public void ShouldFindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty()
     {
-        //Problem 43
         long expected = 16695334890l;
 
         Calculator calculator = new Calculator();
@@ -442,6 +462,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 42
     @Test
     public void ShouldFindCountWordsThatSummedNumericallyAreTriangleNumbers()
     {
@@ -454,6 +475,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 44
     @Test
     public void ShouldFindLowestPentagonalPairWhereSumAndDifferenceAreAlsoPentagonal()
     {
@@ -477,6 +499,7 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 45
     @Test
     public void ShouldFindNextTriPentHexagonalNumberAfterHex143()
     {
@@ -489,7 +512,21 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 47
+    @Test
+    @Ignore("21 seconds slow")
+    public void ShouldFindFirstOfFirstFourConsecutiveIntegersToHave4DistinctPrimeFactors()
+    {
+        int expected = 134043;
 
+        Calculator calculator = new Calculator();
+        int result = calculator.FindFirstOfFirstFourConsecutiveIntegersToHave4DistinctPrimeFactors();
+
+        Assert.assertEquals(expected, result);
+    }
+
+
+    //Problem 37
     @Test
     @Ignore("Slow like a minute")
     public void ShouldFindSumOfOnly11PrimesThatAreTruncatableBothDirections() {

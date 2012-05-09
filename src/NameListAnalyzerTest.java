@@ -44,6 +44,7 @@ public class NameListAnalyzerTest {
         Assert.assertEquals(84, result);
     }
 
+    //Problem 22
     @Test
     public void ShouldGetSumOfAlphabeticalValuesTimesAlphabeticalOrderingFromList() {
         NameListAnalyzer analyzer = new NameListAnalyzer();

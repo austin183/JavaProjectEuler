@@ -51,6 +51,7 @@ public class PermutizerTest {
         Assert.assertEquals("102", result);
     }
 
+    //Problem 24
     @Test
     public void ShouldGet1000000thPermutationFor0123456789() {
         String permuteThis = "0123456789";

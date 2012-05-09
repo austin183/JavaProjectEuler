@@ -38,4 +38,27 @@ public class FactorizerTest {
 
         Assert.assertEquals(24, result);
     }
+
+    @Test
+    public void ShouldGetNumberPrimeFactorsOf14()
+    {
+        int numberToTest = 14;
+        Factorizer factorizer = new Factorizer();
+
+        int result = factorizer.GetNumberPrimeFactorsOf(numberToTest);
+
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void ShouldGetNumberPrimeFactorsOf644()
+    {
+        int numberToTest = 644;
+        Factorizer factorizer = new Factorizer();
+
+        int result = factorizer.GetNumberPrimeFactorsOf(numberToTest);
+
+        Assert.assertEquals(3, result);
+    }
+
 }
