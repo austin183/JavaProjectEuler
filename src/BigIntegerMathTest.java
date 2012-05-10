@@ -88,4 +88,30 @@ public class BigIntegerMathTest {
         Assert.assertEquals(4782, result);
     }
 
+    @Test
+    public void ShouldFindLast4DigitsOfSumOfSequentiallyExponentialSeriesTo10()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        String expected = "1317";
+        int numberOfLastDigits = 4;
+        int seriesTo = 10;
+
+        String result = math.FindLastDigitsOfSumOfSequentiallyExponentialSeriesTo(numberOfLastDigits, seriesTo);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    //Problem 48
+    @Test
+    public void ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo1000()
+    {
+        BigIntegerMath math = new BigIntegerMath();
+        String expected = "9110846700";
+        int numberOfLastDigits = 10;
+        int seriesTo = 1000;
+
+        String result = math.FindLastDigitsOfSumOfSequentiallyExponentialSeriesTo(numberOfLastDigits, seriesTo);
+
+        Assert.assertEquals(expected, result);
+    }
 }

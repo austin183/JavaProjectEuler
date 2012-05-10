@@ -57,4 +57,15 @@ class BigIntegerMath {
         }
         return i;
     }
+
+    public String FindLastDigitsOfSumOfSequentiallyExponentialSeriesTo(int numberOfLastDigits, int seriesTo) {
+        BigInteger toReturn = BigInteger.ZERO;
+
+        for(int i = 1; i<= seriesTo; i++)
+        {
+            toReturn = toReturn.add(BigInteger.valueOf(i).pow(i));
+        }
+
+        return toReturn.toString().substring(toReturn.toString().length() - numberOfLastDigits);
+    }
 }

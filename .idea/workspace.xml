@@ -3,25 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AmicablePairizerTest.java" afterPath="$PROJECT_DIR$/src/AmicablePairizerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BigIntegerMath.java" afterPath="$PROJECT_DIR$/src/BigIntegerMath.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BigIntegerMathTest.java" afterPath="$PROJECT_DIR$/src/BigIntegerMathTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator.java" afterPath="$PROJECT_DIR$/src/Calculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalculatorTest.java" afterPath="$PROJECT_DIR$/src/CalculatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalendarizerTest.java" afterPath="$PROJECT_DIR$/src/CalendarizerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChristianGoldbachDisproverTest.java" afterPath="$PROJECT_DIR$/src/ChristianGoldbachDisproverTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CircularPrimeFinderTest.java" afterPath="$PROJECT_DIR$/src/CircularPrimeFinderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoinPermutizerTest.java" afterPath="$PROJECT_DIR$/src/CoinPermutizerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FactorializerTest.java" afterPath="$PROJECT_DIR$/src/FactorializerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Factorizer.java" afterPath="$PROJECT_DIR$/src/Factorizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FactorizerTest.java" afterPath="$PROJECT_DIR$/src/FactorizerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java" afterPath="$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IterativeSequencerTest.java" afterPath="$PROJECT_DIR$/src/IterativeSequencerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NameListAnalyzerTest.java" afterPath="$PROJECT_DIR$/src/NameListAnalyzerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PanDigitizerTest.java" afterPath="$PROJECT_DIR$/src/PanDigitizerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PermutizerTest.java" afterPath="$PROJECT_DIR$/src/PermutizerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SpiralDiagonalHelperTest.java" afterPath="$PROJECT_DIR$/src/SpiralDiagonalHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TrianglePathFinderTest.java" afterPath="$PROJECT_DIR$/src/TrianglePathFinderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java" afterPath="$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -92,8 +75,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -101,7 +84,26 @@
     <favorites_list name="SumMultiple3and5Under1000" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="BigIntegerMathTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BigIntegerMathTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="31" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BigIntegerMath.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BigIntegerMath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="9" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.5471311">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -119,8 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BigIntegerMathTest.java" />
-        <option value="$PROJECT_DIR$/src/TrianglePathFinderTest.java" />
         <option value="$PROJECT_DIR$/src/CalendarizerTest.java" />
         <option value="$PROJECT_DIR$/src/AmicablePairizerTest.java" />
         <option value="$PROJECT_DIR$/src/NameListAnalyzerTest.java" />
@@ -135,6 +135,8 @@
         <option value="$PROJECT_DIR$/src/ChristianGoldbachDisproverTest.java" />
         <option value="$PROJECT_DIR$/src/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/Factorizer.java" />
+        <option value="$PROJECT_DIR$/src/BigIntegerMath.java" />
+        <option value="$PROJECT_DIR$/src/BigIntegerMathTest.java" />
       </list>
     </option>
   </component>
@@ -202,7 +204,22 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
+        <subPane subId="Tests" />
         <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -211,7 +228,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Tests" />
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -265,20 +281,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,9 +297,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="last.edited.regexp" value=" " />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -310,51 +312,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FactorizerTest.ShouldGetNumberPrimeFactorsOf644">
-    <configuration default="false" name="ChristianGoldbachDisproverTest.ShouldFindSmallestOddCompositeThatCannotBeWrittenAsTheSumOfPrimeAndTwiceASquare" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChristianGoldbachDisproverTest" />
-      <option name="METHOD_NAME" value="ShouldFindSmallestOddCompositeThatCannotBeWrittenAsTheSumOfPrimeAndTwiceASquare" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChristianGoldbachDisproverTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChristianGoldbachDisproverTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.BigIntegerMathTest.ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo1000">
     <configuration default="false" name="FactorizerTest.ShouldGetNumberPrimeFactorsOf14" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -421,6 +379,50 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="BigIntegerMathTest.ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo10" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BigIntegerMathTest" />
+      <option name="METHOD_NAME" value="ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo10" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BigIntegerMathTest.ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo1000" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BigIntegerMathTest" />
+      <option name="METHOD_NAME" value="ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo1000" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -441,6 +443,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -469,24 +489,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -614,11 +616,11 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ChristianGoldbachDisproverTest.ShouldFindSmallestOddCompositeThatCannotBeWrittenAsTheSumOfPrimeAndTwiceASquare" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ChristianGoldbachDisproverTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FactorizerTest.ShouldGetNumberPrimeFactorsOf14" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.FactorizerTest.ShouldGetNumberPrimeFactorsOf644" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindFirstOfFirstFourConsecutiveIntegersToHave4DistinctPrimeFactors" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FactorizerTest.ShouldGetNumberPrimeFactorsOf14" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FactorizerTest.ShouldGetNumberPrimeFactorsOf644" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindFirstOfFirstFourConsecutiveIntegersToHave4DistinctPrimeFactors" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.BigIntegerMathTest.ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo10" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.BigIntegerMathTest.ShouldFindLast10DigitsOfSumOfSequentiallyExponentialSeriesTo1000" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -703,7 +705,11 @@
       <created>1336529585618</created>
       <updated>1336529585618</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Solved Problem 47.&#10;&#10;Marked most of the Tests for Problems with the Problem Number">
+      <created>1336533850706</created>
+      <updated>1336533850706</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -744,12 +750,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2112104" sideWeight="0.6130952" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22619048" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38690478" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38690478" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22619048" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -836,116 +842,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CalendarizerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="409" selection-end="409" vertical-scroll-proportion="-9.730769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmicablePairizerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="57" selection-start="1261" selection-end="1261" vertical-scroll-proportion="-9.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NameListAnalyzerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="16" selection-start="1124" selection-end="1124" vertical-scroll-proportion="-6.5">
-          <folding />
-        </state>
+        <state line="46" column="16" selection-start="1124" selection-end="1124" vertical-scroll-proportion="-6.5" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PermutizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="1529" selection-end="1529" vertical-scroll-proportion="-1.6923077">
-          <folding />
-        </state>
+        <state line="53" column="16" selection-start="1529" selection-end="1529" vertical-scroll-proportion="-1.6923077" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SpiralDiagonalHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="16" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.33766234">
-          <folding />
-        </state>
+        <state line="54" column="16" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.33766234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoinPermutizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="16" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.20562771">
-          <folding />
-        </state>
+        <state line="80" column="16" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.20562771" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PanDigitizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="16" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.34545454">
-          <folding />
-        </state>
+        <state line="83" column="16" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.34545454" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="981" selection-end="981" vertical-scroll-proportion="0.30686694">
-          <folding />
-        </state>
+        <state line="39" column="16" selection-start="981" selection-end="981" vertical-scroll-proportion="0.30686694" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FactorializerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="16" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.35634744">
-          <folding />
-        </state>
+        <state line="66" column="16" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.35634744" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CircularPrimeFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="16" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.22727273">
-          <folding />
-        </state>
+        <state line="83" column="16" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.22727273" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PalindromizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.23809524">
-          <folding />
-        </state>
+        <state line="9" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.23809524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IrrationalDecimalFractionIndexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="16" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.17439294">
-          <folding />
-        </state>
+        <state line="63" column="16" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.17439294" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ChristianGoldbachDisproverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="16" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.34318182">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="142" column="16" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.34318182" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="514" column="16" selection-start="15262" selection-end="15262" vertical-scroll-proportion="0.73368144">
-          <folding />
-        </state>
+        <state line="514" column="16" selection-start="15262" selection-end="15262" vertical-scroll-proportion="0.73368144" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FactorizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="25" selection-start="1237" selection-end="1237" vertical-scroll-proportion="1.0737705">
-          <folding />
-        </state>
+        <state line="53" column="25" selection-start="1237" selection-end="1237" vertical-scroll-proportion="1.0737705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Factorizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="533" selection-end="533" vertical-scroll-proportion="0.522541">
+        <state line="23" column="31" selection-start="533" selection-end="533" vertical-scroll-proportion="0.522541" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BigIntegerMathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="31" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BigIntegerMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="9" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.5471311">
           <folding />
         </state>
       </provider>
