@@ -55,49 +55,57 @@ class Permutizer {
     }
 
     private List<Integer> GetPreviousResult(List<Integer> toPermute) {
+        if(toPermute.size() < 2) return new ArrayList<Integer>();
+
         int i = toPermute.size() - 2;
-        while ((i >= 0) && (toPermute.get(i) < toPermute.get(i + 1)))
+        int i1 = toPermute.size() - 1;
+
+        while(true)
+        {
+            if(toPermute.get(i) > toPermute.get(i1))
+            {
+                int j = toPermute.size() - 1;
+                while (!(toPermute.get(i) > toPermute.get(j)))
+                    j--;
+                Swap(toPermute, i, j);
+                Reverse(toPermute, i1);
+                return toPermute;
+            }
+            if(i == 0)
+            {
+                return new ArrayList<Integer>();
+            }
             i--;
-
-        if (i < 0) return new ArrayList<Integer>();
-
-        int k = toPermute.size() - 1;
-        while (toPermute.get(i) < toPermute.get(k))
-            k--;
-
-        Swap(toPermute, i, k);
-
-        i++;
-        k = toPermute.size() - 1;
-        while (i < k) {
-            Swap(toPermute, i, k);
-            i++;
-            k--;
+            i1--;
         }
-        return toPermute;
     }
 
+    //Thank you MyCareerStack!
+    //http://www.mycareerstack.com/codes/15/permutation-with-duplicates/
     private List<Integer> GetNextResult(List<Integer> toPermute) {
+        if(toPermute.size() < 2) return new ArrayList<Integer>();
+
         int i = toPermute.size() - 2;
-        while ((i >= 0) && (toPermute.get(i) > toPermute.get(i + 1)))
+        int i1 = toPermute.size() - 1;
+
+        while(true)
+        {
+            if(toPermute.get(i) < toPermute.get(i1))
+            {
+                int j = toPermute.size() - 1;
+                while (!(toPermute.get(i) < toPermute.get(j)))
+                    j--;
+                Swap(toPermute, i, j);
+                Reverse(toPermute, i1);
+                return toPermute;
+            }
+            if(i == 0)
+            {
+                return new ArrayList<Integer>();
+            }
             i--;
-
-        if (i < 0) return new ArrayList<Integer>();
-
-        int k = toPermute.size() - 1;
-        while (toPermute.get(i) > toPermute.get(k))
-            k--;
-
-        Swap(toPermute, i, k);
-
-        i++;
-        k = toPermute.size() - 1;
-        while (i < k) {
-            Swap(toPermute, i, k);
-            i++;
-            k--;
+            i1--;
         }
-        return toPermute;
     }
 
     private void Swap(List<Integer> toPermute, int i, int k) {
@@ -112,5 +120,17 @@ class Permutizer {
             toReturn += number.toString();
         }
         return toReturn;
+    }
+
+    void Reverse(List<Integer> toPermute, int start)
+    {
+        int end = toPermute.size() - 1;
+        while(start < end)
+        {
+            Swap(toPermute, start, end);
+            start++;
+            end--;
+        }
+
     }
 }

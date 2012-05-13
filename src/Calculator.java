@@ -93,7 +93,7 @@ class Calculator {
 
     public int GetHighestProductof5DigitsInAStringOfConsecutiveDigits() {
         int highestValue = 0;
-        String DIGIT_STRING = "C:\\Temp\\PrimeWork\\1000DigitString.txt";
+        String DIGIT_STRING = "C:\\Temp\\ProjectEuler\\1000DigitString.txt";
 
         FileHelper fileHelper = new FileHelper();
         BufferedReader reader = fileHelper.GetReader(DIGIT_STRING);
@@ -451,7 +451,6 @@ class Calculator {
                     && fivesixseven % 7 == 0 && sixseveneight % 11 == 0 && seveneightnine % 13== 0
                     && eightnineten % 17 == 0)
             {
-                System.out.println("Adding " + currentPandigitalNumber + " to " + toReturn);
                 toReturn += Long.parseLong(currentPandigitalNumber);
             }
             currentPandigitalNumber = permutizer.GetNextPermutation(currentPandigitalNumber);
@@ -558,5 +557,30 @@ class Calculator {
             }
         }
         return toReturn;
+    }
+
+    public String GetPermutativePrimeNot1487() {
+        FileHelper helper = new FileHelper();
+        PermutativePrimeFinder finder = new PermutativePrimeFinder();
+        BufferedReader reader =  helper.GetReader("C:\\Temp\\ProjectEuler\\49.4DigitPrimes.txt");
+
+        String line;
+        try {
+            while ((line = reader.readLine()) != null) {
+                if (!line.trim().equals(""))
+                {
+                    int value = Integer.parseInt(line);
+                    if(value == 1487)
+                        continue;
+
+                    String toReturn = finder.IsPermutativePrimeIncreasingSeries(value);
+                    if(!toReturn.equals(""))
+                        return toReturn;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
     }
 }

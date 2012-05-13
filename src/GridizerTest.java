@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class GridizerTest {
 
-    private static final String Grid3x3Path = "C:\\Temp\\GridWork\\11.3x3.txt";
+    private static final String Grid3x3Path = "C:\\Temp\\ProjectEuler\\11.3x3.txt";
 
     @Test
     public void ShouldLoadGridFromFile() {

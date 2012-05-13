@@ -229,7 +229,7 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid("C:\\Temp\\GridWork\\11.3x3.txt");
+        gridizer.InitializeGrid("C:\\Temp\\ProjectEuler\\11.3x3.txt");
 
         int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
 
@@ -243,7 +243,7 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid("C:\\Temp\\GridWork\\11.20x20.txt");
+        gridizer.InitializeGrid("C:\\Temp\\ProjectEuler\\11.20x20.txt");
 
         int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
 
@@ -450,18 +450,6 @@ public class CalculatorTest {
         Assert.assertEquals(7652413, result);
     }
 
-    //Problem 43
-    @Test
-    public void ShouldFindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty()
-    {
-        long expected = 16695334890l;
-
-        Calculator calculator = new Calculator();
-        long result = calculator.FindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty();
-
-        Assert.assertEquals(expected, result);
-    }
-
     //Problem 42
     @Test
     public void ShouldFindCountWordsThatSummedNumericallyAreTriangleNumbers()
@@ -512,6 +500,18 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 49
+    @Test
+    public void ShouldFindOtherPermutativePrimeIncreasingSeriesOtherThan1487()
+    {
+        String expected = "296962999629";
+
+        Calculator calculator = new Calculator();
+        String result = calculator.GetPermutativePrimeNot1487();
+
+        Assert.assertEquals(expected, result);
+    }
+
     //Problem 47
     @Test
     @Ignore("21 seconds slow")
@@ -525,6 +525,19 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+
+    //Problem 43
+    @Test
+    @Ignore("29 seconds Slow Test")
+    public void ShouldFindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty()
+    {
+        long expected = 16695334890l;
+
+        Calculator calculator = new Calculator();
+        long result = calculator.FindSumOfPandigitalNumbersWithAscendingPrimeSubStringDivisibilityProperty();
+
+        Assert.assertEquals(expected, result);
+    }
 
     //Problem 37
     @Test

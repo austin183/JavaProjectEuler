@@ -11,6 +11,18 @@ import java.util.List;
  */
 public class PermutizerTest {
     @Test
+    public void ShouldGetPermutationsFor001()
+    {
+        String permuteThis = "100";
+        Permutizer permutizer = new Permutizer();
+        List<String> result = permutizer.Permute(permuteThis);
+
+        Assert.assertEquals("001", result.get(0));
+        Assert.assertEquals("010", result.get(1));
+        Assert.assertEquals("100", result.get(2));
+    }
+
+    @Test
     public void ShouldGetPermutationsFor012() {
         String permuteThis = "012";
         Permutizer permutizer = new Permutizer();
