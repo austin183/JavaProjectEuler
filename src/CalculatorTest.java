@@ -525,6 +525,44 @@ public class CalculatorTest {
         Assert.assertEquals(expected, result);
     }
 
+    @Test
+    public void ShouldFindLongestSumOfConsecutivePrimesUnder100()
+    {
+        int max = 100;
+        int expected = 41;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.FindLongestSumOfConsecutivePrimesUnderMax(max);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldFindLongestSumOfConsecutivePrimesUnder1000()
+    {
+        int max = 1000;
+        int expected = 953;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.FindLongestSumOfConsecutivePrimesUnderMax(max);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    //Problem 50
+    @Test
+    @Ignore("5 - 6 mins slow")
+    public void ShouldFindLongestSumOfConsecutivePrimesUnder1000000()
+    {
+        int max = 1000000;
+        int expected = 997651;
+
+        Calculator calculator = new Calculator();
+        int result = calculator.FindLongestSumOfConsecutivePrimesUnderMax(max);
+
+        Assert.assertEquals(expected, result);
+    }
+
 
     //Problem 43
     @Test

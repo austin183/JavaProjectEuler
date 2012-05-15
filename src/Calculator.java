@@ -583,4 +583,31 @@ class Calculator {
         }
         return "";
     }
+
+    public int FindLongestSumOfConsecutivePrimesUnderMax(int max) {
+        int currentPrime = 0;
+        int currentSum = 0;
+        int currentConsecutivePrimeLength = 0;
+        PrimeFactorizer factorizer = new PrimeFactorizer("C:\\Temp\\ProjectEuler\\PrimesUnder1million.txt");
+        List<Integer> primes = factorizer.GetKnownPrimes();
+
+        int maxPrimeForSumming = (max / 2) + 1;
+
+        for(int j = 0; primes.get(j) < maxPrimeForSumming; j++)
+        {
+            for(int i = j; currentSum + primes.get(i) < max; i++)
+            {
+                currentSum += primes.get(i);
+                if(factorizer.IsKnownPrime(currentSum) && (currentConsecutivePrimeLength < i - j))
+                {
+                    currentPrime = currentSum;
+                    currentConsecutivePrimeLength = i - j;
+                    System.out.println("Current Prime: " + currentPrime + ". Number Of Primes: " + currentConsecutivePrimeLength + ". Starting with: " + primes.get(j));
+                }
+            }
+            currentSum = 0;
+        }
+
+        return currentPrime;
+    }
 }
