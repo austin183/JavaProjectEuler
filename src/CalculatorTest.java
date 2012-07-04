@@ -226,10 +226,10 @@ public class CalculatorTest {
     @Test
     public void ShouldGetHighestProductOf3ValuesFrom3x3File() {
         int sequenceSize = 3;
-
+        SupportFiles files = new SupportFiles();
         Calculator calculator = new Calculator();
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid("C:\\Temp\\ProjectEuler\\11.3x3.txt");
+        gridizer.InitializeGrid(files.Location + "11.3x3.txt");
 
         int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
 
@@ -243,7 +243,8 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid("C:\\Temp\\ProjectEuler\\11.20x20.txt");
+        SupportFiles files = new SupportFiles();
+        gridizer.InitializeGrid(files.Location + "11.20x20.txt");
 
         int result = calculator.GetHighestProductOfValuesInGrid(gridizer, sequenceSize);
 
@@ -455,7 +456,8 @@ public class CalculatorTest {
     public void ShouldFindCountWordsThatSummedNumericallyAreTriangleNumbers()
     {
         int expected = 162;
-        String filepath = "C:\\Temp\\ProjectEuler\\42.TriangleWords.txt";
+        SupportFiles files = new SupportFiles();
+        String filepath = files.Location + "42.TriangleWords.txt";
 
         Calculator calculator = new Calculator();
         int result = calculator.FindCountWordsThatSummedNumericallyAreTriangleNumbers(filepath);

@@ -10,11 +10,16 @@ import java.util.List;
  * Time: 4:12 PM
  */
 public class NameListAnalyzerTest {
+    private String Names(){
+        SupportFiles files = new SupportFiles();
+        return files.Location + "22.names.txt";
+    }
+
     @Test
     public void ShouldLoadNameList() {
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
-        analyzer.Load("C:\\Temp\\ProjectEuler\\22.names.txt");
+        analyzer.Load(Names());
         List<String> result = analyzer.GetNamesList();
 
         Assert.assertNotNull(result);
@@ -24,7 +29,7 @@ public class NameListAnalyzerTest {
     public void ShouldSortNames() {
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
-        analyzer.Load("C:\\Temp\\ProjectEuler\\22.names.txt");
+        analyzer.Load(Names());
         analyzer.Sort();
 
         String prev = "";
@@ -49,7 +54,7 @@ public class NameListAnalyzerTest {
     public void ShouldGetSumOfAlphabeticalValuesTimesAlphabeticalOrderingFromList() {
         NameListAnalyzer analyzer = new NameListAnalyzer();
 
-        analyzer.Load("C:\\Temp\\ProjectEuler\\22.names.txt");
+        analyzer.Load(Names());
         int result = analyzer.GetSumOfAlphabeticalValuesTimesAlphabeticalOrdering();
 
         Assert.assertEquals(871198282, result);

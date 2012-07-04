@@ -13,8 +13,9 @@ public class BigIntegerMathTest {
     //Problem 13
     @Test
     public void ShouldGetSumOfNumbersFromFile() {
+        SupportFiles files = new SupportFiles();
         BigIntegerMath math = new BigIntegerMath();
-        BigInteger sum = math.GetSumOfNumbersInFile("C:\\Temp\\ProjectEuler\\13.SumOfOneHundred50DigitNumbers.txt");
+        BigInteger sum = math.GetSumOfNumbersInFile(files.Location + "13.SumOfOneHundred50DigitNumbers.txt");
 
         Assert.assertEquals(new BigInteger("5537376230390876637302048746832985971773659831892672"), sum);
     }

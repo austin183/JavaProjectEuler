@@ -11,13 +11,17 @@ import java.util.ArrayList;
  */
 public class GridizerTest {
 
-    private static final String Grid3x3Path = "C:\\Temp\\ProjectEuler\\11.3x3.txt";
+    private String Grid3x3Path()
+    {
+        SupportFiles files = new SupportFiles();
+        return files.Location + "11.3x3.txt";
+    }
 
     @Test
     public void ShouldLoadGridFromFile() {
         Gridizer gridizer = new Gridizer();
 
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         ArrayList<ArrayList<Integer>> grid = gridizer.GetGrid();
         Assert.assertNotNull(grid);
@@ -29,7 +33,7 @@ public class GridizerTest {
         int y = 0;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetValueAt(x, y);
 
@@ -43,7 +47,7 @@ public class GridizerTest {
         int sequenceSize = 3;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductRight(x, y, sequenceSize);
 
@@ -57,7 +61,7 @@ public class GridizerTest {
         int sequenceSize = 4;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductRight(x, y, sequenceSize);
 
@@ -71,7 +75,7 @@ public class GridizerTest {
         int sequenceSize = 3;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductDown(x, y, sequenceSize);
 
@@ -85,7 +89,7 @@ public class GridizerTest {
         int sequenceSize = 4;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductDown(x, y, sequenceSize);
 
@@ -99,7 +103,7 @@ public class GridizerTest {
         int sequenceSize = 3;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductDownAndRight(x, y, sequenceSize);
 
@@ -113,7 +117,7 @@ public class GridizerTest {
         int sequenceSize = 4;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductDownAndRight(x, y, sequenceSize);
 
@@ -127,7 +131,7 @@ public class GridizerTest {
         int sequenceSize = 3;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductDownAndLeft(x, y, sequenceSize);
 
@@ -141,7 +145,7 @@ public class GridizerTest {
         int sequenceSize = 4;
 
         Gridizer gridizer = new Gridizer();
-        gridizer.InitializeGrid(Grid3x3Path);
+        gridizer.InitializeGrid(Grid3x3Path());
 
         int result = gridizer.GetProductDownAndLeft(x, y, sequenceSize);
 
