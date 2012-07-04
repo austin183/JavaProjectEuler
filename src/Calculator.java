@@ -93,7 +93,8 @@ class Calculator {
 
     public int GetHighestProductof5DigitsInAStringOfConsecutiveDigits() {
         int highestValue = 0;
-        String DIGIT_STRING = "C:\\Temp\\ProjectEuler\\1000DigitString.txt";
+        SupportFiles files = new SupportFiles();
+        String DIGIT_STRING = files.Location + "1000DigitString.txt";
 
         FileHelper fileHelper = new FileHelper();
         BufferedReader reader = fileHelper.GetReader(DIGIT_STRING);
@@ -562,7 +563,8 @@ class Calculator {
     public String GetPermutativePrimeNot1487() {
         FileHelper helper = new FileHelper();
         PermutativePrimeFinder finder = new PermutativePrimeFinder();
-        BufferedReader reader =  helper.GetReader("C:\\Temp\\ProjectEuler\\49.4DigitPrimes.txt");
+        SupportFiles files = new SupportFiles();
+        BufferedReader reader =  helper.GetReader(files.Location + "49.4DigitPrimes.txt");
 
         String line;
         try {
@@ -588,7 +590,8 @@ class Calculator {
         int currentPrime = 0;
         int currentSum = 0;
         int currentConsecutivePrimeLength = 0;
-        PrimeFactorizer factorizer = new PrimeFactorizer("C:\\Temp\\ProjectEuler\\PrimesUnder1million.txt");
+        SupportFiles files = new SupportFiles();
+        PrimeFactorizer factorizer = new PrimeFactorizer(files.Location + "PrimesUnder1million.txt");
         List<Integer> primes = factorizer.GetKnownPrimes();
 
         int maxPrimeForSumming = (max / 2) + 1;

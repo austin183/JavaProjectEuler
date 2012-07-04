@@ -10,9 +10,16 @@ import java.util.List;
  * Time: 11:03 AM
  */
 public class TrianglePathFinderTest {
+    String ProjectEulerSupportFilePath()
+    {
+        SupportFiles files = new SupportFiles();
+        return files.Location;
+    }
+
+
     @Test
     public void ShouldLoadTriangleFromFile() {
-        String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom2Lines.txt";
+        String filePath = ProjectEulerSupportFilePath() + "18.SumOfPathsOnTriangleTopToBottom2Lines.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
         finder.Load(filePath);
@@ -24,7 +31,7 @@ public class TrianglePathFinderTest {
 
     @Test
     public void ShouldGetGreatestSumForAllPathsTopToBottom3Lines() {
-        String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom3Lines.txt";
+        String filePath = ProjectEulerSupportFilePath() + "18.SumOfPathsOnTriangleTopToBottom3Lines.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
         finder.Load(filePath);
@@ -36,7 +43,7 @@ public class TrianglePathFinderTest {
 
     @Test
     public void ShouldGetGreatestSumForAllPathsTopToBottom4Lines() {
-        String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom4Lines.txt";
+        String filePath = ProjectEulerSupportFilePath() + "18.SumOfPathsOnTriangleTopToBottom4Lines.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
         finder.Load(filePath);
@@ -49,7 +56,7 @@ public class TrianglePathFinderTest {
     //Problem 18
     @Test
     public void ShouldGetGreatestSumForAllPathsTopToBottom15Lines() {
-        String filePath = "C:\\Temp\\ProjectEuler\\18.SumOfPathsOnTriangleTopToBottom.txt";
+        String filePath = ProjectEulerSupportFilePath() + "18.SumOfPathsOnTriangleTopToBottom.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
         finder.Load(filePath);
@@ -61,7 +68,7 @@ public class TrianglePathFinderTest {
 
     @Test
     public void ShouldGetGreatestSumForAllPathsTopToBottom100Lines() {
-        String filePath = "C:\\Temp\\ProjectEuler\\67.triangle.txt";
+        String filePath = ProjectEulerSupportFilePath() + "67.triangle.txt";
 
         TrianglePathFinder finder = new TrianglePathFinder();
         finder.Load(filePath);
