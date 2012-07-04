@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ListManipulator.java" afterPath="$PROJECT_DIR$/src/ListManipulator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Permutizer.java" afterPath="$PROJECT_DIR$/src/Permutizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SubstitutePrimeFinder.java" afterPath="$PROJECT_DIR$/src/SubstitutePrimeFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" afterPath="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -141,7 +137,7 @@
       <file leaf-file-name="SubstitutePrimeFinderTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.2907712">
+            <state line="27" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.5221239">
               <folding />
             </state>
           </provider>
@@ -678,14 +674,14 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindLongestSumOfConsecutivePrimesUnder1000" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindLongestSumOfConsecutivePrimesUnder1000000" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute2" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute13" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute56003" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindLongestSumOfConsecutivePrimesUnder1000" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CalculatorTest.ShouldFindLongestSumOfConsecutivePrimesUnder1000000" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute2" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute13" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute56003" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -786,7 +782,11 @@
       <created>1337089326252</created>
       <updated>1337089326252</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Commiting to prepare to merge with origin.">
+      <created>1341428925332</created>
+      <updated>1341428925332</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -820,6 +820,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.49715677" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20064987" sideWeight="0.22711058" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32380953" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2112104" sideWeight="0.32738096" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="4" side_tool="false" content_ui="tabs" />
@@ -829,7 +830,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32619047" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32380953" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22619048" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -872,7 +872,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved problem 50." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commiting to prepare to merge with origin." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -885,7 +885,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Finished Problem 25" />
     <MESSAGE value="Refactored PythagoreanTriplet to run more efficiently." />
     <MESSAGE value="Solved Problem 26" />
     <MESSAGE value="Solved Problem 26.  Ran Refomatter and optimized imports." />
@@ -910,6 +909,7 @@
     <MESSAGE value="Solved Problem 47.&#10;&#10;Marked most of the Tests for Problems with the Problem Number" />
     <MESSAGE value="Solved Problem 49.&#10;&#10;Rewrote Permutizer to handle duplicates in the permutation set, thanks to the internet!" />
     <MESSAGE value="Solved problem 50." />
+    <MESSAGE value="Commiting to prepare to merge with origin." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -998,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.2907712">
+        <state line="27" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.5221239">
           <folding />
         </state>
       </provider>
