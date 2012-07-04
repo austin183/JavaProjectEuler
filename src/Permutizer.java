@@ -59,7 +59,7 @@ class Permutizer {
 
         int i = toPermute.size() - 2;
         int i1 = toPermute.size() - 1;
-
+        ListManipulator manipulator = new ListManipulator();
         while(true)
         {
             if(toPermute.get(i) > toPermute.get(i1))
@@ -67,8 +67,8 @@ class Permutizer {
                 int j = toPermute.size() - 1;
                 while (!(toPermute.get(i) > toPermute.get(j)))
                     j--;
-                Swap(toPermute, i, j);
-                Reverse(toPermute, i1);
+                manipulator.Swap(toPermute, i, j);
+                manipulator.Reverse(toPermute, i1);
                 return toPermute;
             }
             if(i == 0)
@@ -87,6 +87,7 @@ class Permutizer {
 
         int i = toPermute.size() - 2;
         int i1 = toPermute.size() - 1;
+        ListManipulator manipulator = new ListManipulator();
 
         while(true)
         {
@@ -95,8 +96,8 @@ class Permutizer {
                 int j = toPermute.size() - 1;
                 while (!(toPermute.get(i) < toPermute.get(j)))
                     j--;
-                Swap(toPermute, i, j);
-                Reverse(toPermute, i1);
+                manipulator.Swap(toPermute, i, j);
+                manipulator.Reverse(toPermute, i1);
                 return toPermute;
             }
             if(i == 0)
@@ -108,11 +109,7 @@ class Permutizer {
         }
     }
 
-    private void Swap(List<Integer> toPermute, int i, int k) {
-        int temp = toPermute.get(i);
-        toPermute.set(i, toPermute.get(k));
-        toPermute.set(k, temp);
-    }
+
 
     private String GetStringValue(List<Integer> intList) {
         String toReturn = "";
@@ -122,15 +119,5 @@ class Permutizer {
         return toReturn;
     }
 
-    void Reverse(List<Integer> toPermute, int start)
-    {
-        int end = toPermute.size() - 1;
-        while(start < end)
-        {
-            Swap(toPermute, start, end);
-            start++;
-            end--;
-        }
 
-    }
 }
