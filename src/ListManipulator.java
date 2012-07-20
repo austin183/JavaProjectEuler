@@ -6,7 +6,7 @@ import java.util.List;
  * Date: 5/18/12
  * Time: 8:37 AM
  */
-public class ListManipulator {
+class ListManipulator {
 
     public void Swap(List<Integer> toPermute, int i, int k) {
         int temp = toPermute.get(i);
