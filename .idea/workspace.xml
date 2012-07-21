@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="Solved Problem 52.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Combinatoricizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CombinatoricizerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ListManipulator.java" afterPath="$PROJECT_DIR$/src/ListManipulator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SubstitutePrimeFinder.java" afterPath="$PROJECT_DIR$/src/SubstitutePrimeFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" afterPath="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -88,7 +84,17 @@
     <favorites_list name="SumMultiple3and5Under1000" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Combinatoricizer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Combinatoricizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="8" selection-start="629" selection-end="629" vertical-scroll-proportion="0.5140187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -106,8 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BigIntegerMath.java" />
-        <option value="$PROJECT_DIR$/src/PermutativePrimeFinderTest.java" />
         <option value="$PROJECT_DIR$/src/PermutativePrimeFinder.java" />
         <option value="$PROJECT_DIR$/src/PermutizerTest.java" />
         <option value="$PROJECT_DIR$/src/Permutizer.java" />
@@ -122,6 +126,8 @@
         <option value="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" />
         <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinder.java" />
         <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/CombinatoricizerTest.java" />
+        <option value="$PROJECT_DIR$/src/Combinatoricizer.java" />
       </list>
     </option>
   </component>
@@ -178,16 +184,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -237,12 +239,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -282,94 +288,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in SumMultiple3and5Under1000">
-    <configuration default="false" name="SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute2" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SubstitutePrimeFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFindNumberPrimesInSubstitute2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NumbersWithSameDigitsInMultiplesFinderTest.ShouldFind125874ToHaveTheSameDigitsAsItsDoubledValue" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NumbersWithSameDigitsInMultiplesFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFind125874ToHaveTheSameDigitsAsItsDoubledValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NumbersWithSameDigitsInMultiplesFinderTest.ShouldFind125875ToNotHaveTheSameDigitsAsItsDoubledValue" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NumbersWithSameDigitsInMultiplesFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFind125875ToNotHaveTheSameDigitsAsItsDoubledValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NumbersWithSameDigitsInMultiplesFinderTest.ShouldFind125874ToNotHaveTheSameDigitsAsItsTripledValue" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NumbersWithSameDigitsInMultiplesFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFind125874ToNotHaveTheSameDigitsAsItsTripledValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="NumbersWithSameDigitsInMultiplesFinderTest.ShouldFindSmallestValueThatHasTheSameDigitsThroughFirstSixMultiples" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -377,6 +295,94 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NumbersWithSameDigitsInMultiplesFinderTest" />
       <option name="METHOD_NAME" value="ShouldFindSmallestValueThatHasTheSameDigitsThroughFirstSixMultiples" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CombinatoricizerTest.ShouldFind5C3Equals10" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CombinatoricizerTest" />
+      <option name="METHOD_NAME" value="ShouldFind5C3Equals10" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CombinatoricizerTest.ShouldFind23C10Equals1144066" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CombinatoricizerTest" />
+      <option name="METHOD_NAME" value="ShouldFind23C10Equals1144066" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CombinatoricizerTest.ShouldFindBig5C3Equals10" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CombinatoricizerTest" />
+      <option name="METHOD_NAME" value="ShouldFindBig5C3Equals10" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CombinatoricizerTest.ShouldFindCountOfValuesForFor_n_1Thru100Where_nCr_ValueIsGreaterThan1Million" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CombinatoricizerTest" />
+      <option name="METHOD_NAME" value="ShouldFindCountOfValuesForFor_n_1Thru100Where_nCr_ValueIsGreaterThan1Million" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -585,11 +591,11 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SubstitutePrimeFinderTest.ShouldFindNumberPrimesInSubstitute2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.NumbersWithSameDigitsInMultiplesFinderTest.ShouldFind125874ToHaveTheSameDigitsAsItsDoubledValue" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.NumbersWithSameDigitsInMultiplesFinderTest.ShouldFind125875ToNotHaveTheSameDigitsAsItsDoubledValue" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.NumbersWithSameDigitsInMultiplesFinderTest.ShouldFind125874ToNotHaveTheSameDigitsAsItsTripledValue" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.NumbersWithSameDigitsInMultiplesFinderTest.ShouldFindSmallestValueThatHasTheSameDigitsThroughFirstSixMultiples" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.NumbersWithSameDigitsInMultiplesFinderTest.ShouldFindSmallestValueThatHasTheSameDigitsThroughFirstSixMultiples" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CombinatoricizerTest.ShouldFind5C3Equals10" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CombinatoricizerTest.ShouldFind23C10Equals1144066" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.CombinatoricizerTest.ShouldFindBig5C3Equals10" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.CombinatoricizerTest.ShouldFindCountOfValuesForFor_n_1Thru100Where_nCr_ValueIsGreaterThan1Million" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -694,7 +700,11 @@
       <created>1341431559830</created>
       <updated>1341431559830</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Solved Problem 52.">
+      <created>1342758504913</created>
+      <updated>1342758504913</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -736,7 +746,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23782468" sideWeight="0.77474403" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22525597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22525597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28782707" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -781,7 +791,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commiting to merge." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved Problem 53." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -794,8 +804,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Finished Problem 25" />
-    <MESSAGE value="Refactored PythagoreanTriplet to run more efficiently." />
     <MESSAGE value="Solved Problem 26" />
     <MESSAGE value="Solved Problem 26.  Ran Refomatter and optimized imports." />
     <MESSAGE value="Solved Problem 27 and 28." />
@@ -819,6 +827,8 @@
     <MESSAGE value="Solved Problem 47.&#10;&#10;Marked most of the Tests for Problems with the Problem Number" />
     <MESSAGE value="Solved Problem 49.&#10;&#10;Rewrote Permutizer to handle duplicates in the permutation set, thanks to the internet!" />
     <MESSAGE value="Commiting to merge." />
+    <MESSAGE value="Solved Problem 52." />
+    <MESSAGE value="Solved Problem 53." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -828,16 +838,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NameListAnalyzerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.65648854" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="48" selection-start="6631" selection-end="6631" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TrianglePathFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="0" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" />
@@ -895,23 +895,31 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/lang/String.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="19" selection-start="4499" selection-end="4499" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="110" column="19" selection-start="4499" selection-end="4499" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.7010551">
+        <state line="51" column="13" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.7010551" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="22" selection-start="747" selection-end="747" vertical-scroll-proportion="0.5275498" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CombinatoricizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="52" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.40833333">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinder.java">
+    <entry file="file://$PROJECT_DIR$/src/Combinatoricizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="747" selection-end="747" vertical-scroll-proportion="0.5275498">
+        <state line="22" column="8" selection-start="629" selection-end="629" vertical-scroll-proportion="0.5140187">
           <folding />
         </state>
       </provider>
