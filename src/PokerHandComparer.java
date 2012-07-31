@@ -1,3 +1,10 @@
+import Poker.Hand;
+import Poker.PokerHandRank;
+import Poker.PokerHandValue;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.math.BigInteger;
 import java.util.Map;
 
 /**
@@ -20,9 +27,13 @@ class PokerHandComparer {
                 thisHand.ContainsCardOfAnySuit("A");
     }
 
-    public boolean IsStraightFlush(String hand) {
+    public String IsStraightFlush(String hand) {
         Hand thisHand = new Hand(hand);
-        return thisHand.IsSameSuit() && thisHand.IsConsecutive();
+        if (thisHand.IsSameSuit() && thisHand.IsConsecutive())
+            if(thisHand.ContainsCardOfAnySuit("2") && thisHand.ContainsCardOfAnySuit("A"))
+                return "5";
+            else  return thisHand.GetHighestSingleCardInHand();
+        return "";
     }
 
 
@@ -51,12 +62,18 @@ class PokerHandComparer {
         return firstPair + secondPair;
     }
 
-    public boolean IsFlush(String hand) {
-        return new Hand(hand).IsSameSuit();
+    public String IsFlush(String hand) {
+        Hand thisHand = new Hand(hand);
+        if(thisHand.IsSameSuit())
+            return thisHand.GetHighestSingleCardInHand();
+        return "";
     }
 
-    public boolean IsStraight(String hand) {
-        return new Hand(hand).IsConsecutive();
+    public String IsStraight(String hand) {
+        Hand thisHand = new Hand(hand);
+        if(thisHand.IsConsecutive())
+            return thisHand.GetHighestSingleCardInHand();
+        return "";
     }
 
     String GetValueOfCardsThatOccurXTimes(String hand, int x)
@@ -70,5 +87,88 @@ class PokerHandComparer {
     }
 
 
+    public String FullHouse(String hand) {
+        String threeOfAKind = ThreeOfAKind(hand);
+        String twoOfAKind = OnePair(hand);
 
+        if((!threeOfAKind.equals("") && !twoOfAKind.equals("")))
+            return threeOfAKind + twoOfAKind;
+        return "";
+    }
+
+
+    public boolean Hand1BeatsHand2(String hand1, String hand2) {
+        Hand firstHand = new Hand(hand1);
+        Hand secondHand = new Hand(hand2);
+
+        PokerHandValue firstHandRank = GetHandRank(firstHand);
+        PokerHandValue secondHandRank = GetHandRank(secondHand);
+
+        while (firstHandRank.compareTo(secondHandRank) == 0 && !firstHand.toString().equals(""))
+        {
+            if(firstHandRank.Rank == PokerHandRank.Four_Of_A_Kind
+                    || firstHandRank.Rank == PokerHandRank.One_Pair
+                    || firstHandRank.Rank == PokerHandRank.Three_Of_A_Kind
+                    || firstHandRank.Rank == PokerHandRank.High_Card
+                    || firstHandRank.Rank == PokerHandRank.Flush
+                    || firstHandRank.Rank == PokerHandRank.Straight
+                    || firstHandRank.Rank == PokerHandRank.Straight_Flush)
+            {
+                firstHand.RemoveAllCardsOfValue(firstHandRank.Value);
+                secondHand.RemoveAllCardsOfValue(secondHandRank.Value);
+            }
+            if(firstHandRank.Rank == PokerHandRank.Two_Pair
+                    || firstHandRank.Rank == PokerHandRank.Full_House)
+            {
+                for(int i = 0; i < firstHandRank.Value.length(); i++)
+                {
+                    firstHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i+1));
+                    secondHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i+1));
+                }
+            }
+
+            if(firstHand.toString().equals("") || secondHand.toString().equals(""))
+                return false;
+
+            firstHandRank = GetHandRank(firstHand);
+            secondHandRank = GetHandRank(secondHand);
+        }
+
+        return !(firstHand.toString().equals("") && secondHand.toString().equals("")) && firstHandRank.compareTo(secondHandRank) > 0;
+
+    }
+
+    public PokerHandValue GetHandRank(Hand hand) {
+        String thisHand = hand.toString();
+        if(IsRoyalFlush(thisHand)) return new PokerHandValue("", PokerHandRank.Royal_Flush);
+        if(!IsStraightFlush(thisHand).equals("")) return new PokerHandValue(IsStraight(thisHand), PokerHandRank.Straight_Flush);
+        if(!FourOfAKind(thisHand).equals("")) return new PokerHandValue(FourOfAKind(thisHand), PokerHandRank.Four_Of_A_Kind);
+        if(!FullHouse(thisHand).equals("")) return new PokerHandValue(FullHouse(thisHand),  PokerHandRank.Full_House);
+        if(!IsFlush(thisHand).equals("")) return new PokerHandValue(IsFlush(thisHand), PokerHandRank.Flush);
+        if(!IsStraight(thisHand).equals(""))return new PokerHandValue(IsStraight(thisHand), PokerHandRank.Straight);
+        if(!ThreeOfAKind(thisHand).equals("")) return new PokerHandValue(ThreeOfAKind(thisHand), PokerHandRank.Three_Of_A_Kind);
+        if(!TwoPair(thisHand).equals("")) return new PokerHandValue(TwoPair(thisHand), PokerHandRank.Two_Pair);
+        if(!OnePair(thisHand).equals("")) return new PokerHandValue(OnePair(thisHand), PokerHandRank.One_Pair);
+        return new PokerHandValue(hand.GetHighestSingleCardInHand(), PokerHandRank.High_Card);
+    }
+
+
+    public int GetCountOfHandsWhereHand1BeatsHand2(String pokerFile) {
+        FileHelper helper = new FileHelper();
+        BufferedReader reader = helper.GetReader(pokerFile);
+        String line;
+        int count = 0;
+        try {
+            while ((line = reader.readLine()) != null) {
+                String hand1 = line.substring(0, 14);
+                String hand2 = line.substring(15, 29);
+                if(Hand1BeatsHand2(hand1, hand2))
+                    count++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return count;
+    }
 }
+

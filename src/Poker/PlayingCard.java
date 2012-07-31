@@ -1,3 +1,5 @@
+package Poker;
+
 /**
  * Created with IntelliJ IDEA.
  * User: austin
@@ -5,7 +7,7 @@
  * Time: 8:24 PM
  * To change this template use File | Settings | File Templates.
  */
-class PlayingCard implements Comparable<PlayingCard> {
+public class PlayingCard implements Comparable<PlayingCard> {
     public final String Value;
     public final String Suit;
     public final String ValueOrder = "23456789TJQKA";

@@ -1,3 +1,5 @@
+package Poker;
+
 import java.util.*;
 
 /**
@@ -26,10 +28,12 @@ public class Hand {
 
     public boolean IsSameSuit()
     {
+        if(playingCards.size() < 5) return false;
         String currentSuit = "";
         for (PlayingCard playingCard : playingCards) {
             if(!(playingCard.Suit.compareTo(currentSuit) == 0 || currentSuit.isEmpty()))
                 return false;
+            currentSuit = playingCard.Suit;
         }
         return true;
     }
@@ -37,6 +41,21 @@ public class Hand {
     public void AddCard(String value, String suit)
     {
         playingCards.add(new PlayingCard(value, suit));
+    }
+
+    public void RemoveCard(String value, String suit)
+    {
+        PlayingCard card = new PlayingCard(value, suit);
+        if(ContainsCard(card))
+        {
+            List<PlayingCard> tempCards = new ArrayList<PlayingCard>();
+            for(PlayingCard currentCard : playingCards)
+            {
+                if(currentCard.compareTo(card) != 0)
+                    tempCards.add(currentCard);
+            }
+            playingCards = tempCards;
+        }
     }
 
     public boolean ContainsCard(PlayingCard card) {
@@ -49,12 +68,13 @@ public class Hand {
 
     public boolean IsConsecutive()
     {
+        if(playingCards.size() < 5) return false;
         Collections.sort(playingCards);
         int currentIndex = 0;
         int count = 0;
          for (PlayingCard playingCard : playingCards) {
             int thisCardIndex = playingCard.ValueOrder.indexOf(playingCard.Value);
-            if(currentIndex != 0)
+            if(currentIndex != 0 || count > 0)
             {
                 if(count == 4
                 && playingCards.get(0).Value.equals("2")
@@ -120,5 +140,13 @@ public class Hand {
             }
         }
         return toReturn;
+    }
+
+    public void RemoveAllCardsOfValue(String value) {
+        for (PlayingCard card : playingCards) {
+            if(card.Value.equals(value))
+                RemoveCard(card.Value, card.Suit);
+        }
+
     }
 }

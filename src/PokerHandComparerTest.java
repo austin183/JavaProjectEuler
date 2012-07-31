@@ -1,7 +1,10 @@
+import Poker.Hand;
+import Poker.PlayingCard;
+import Poker.PokerHandRank;
+import Poker.PokerHandValue;
 import junit.framework.Assert;
 import org.junit.Test;
 
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,6 +43,18 @@ public class PokerHandComparerTest {
         input.AddCard("7", "H");
 
         String result = input.toString();
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldRemoveAllCardsWithValueOf2()
+    {
+        Hand hand = new Hand("2C 2S 2D 2H 3C");
+        String expected = "3C";
+
+        hand.RemoveAllCardsOfValue("2");
+        String result = hand.toString();
+
         Assert.assertEquals(expected, result);
     }
 
@@ -96,6 +111,18 @@ public class PokerHandComparerTest {
     public void ShouldIdentifyHandAsNotConsecutive()
     {
         String hand = "AS 2S 3S 4S 6S";
+        boolean expected = false;
+
+        Hand thisHand = new Hand(hand);
+        boolean result = thisHand.IsConsecutive();
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldIdentifyA2KHandAsNotConsecutive()
+    {
+        String hand = "AD AH 2C 2C KS";
         boolean expected = false;
 
         Hand thisHand = new Hand(hand);
@@ -170,14 +197,27 @@ public class PokerHandComparerTest {
     }
 
     @Test
-    public void ShouldIdentifyHandAsStraightFlush()
+    public void ShouldIdentifyHandAsStraightFlushWith5AsHighValue()
     {
         String hand = "2S 3S 4S 5S AS";
 
-        boolean expected = true;
+        String expected = "5";
 
         PokerHandComparer comparer = new PokerHandComparer();
-        boolean result = comparer.IsStraightFlush(hand);
+        String result = comparer.IsStraightFlush(hand);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldIdentifyHandAsStraightFlushWith6AsHighValue()
+    {
+        String hand = "2S 3S 4S 5S 6S";
+
+        String expected = "6";
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        String result = comparer.IsStraightFlush(hand);
 
         Assert.assertEquals(expected, result);
     }
@@ -265,10 +305,22 @@ public class PokerHandComparerTest {
     public void ShouldIdentifyFlush()
     {
         String hand = "2S 4S 6S 8S TS";
-        boolean  expected = true;
+        String  expected = "T";
 
         PokerHandComparer comparer = new PokerHandComparer();
-        boolean result = comparer.IsFlush(hand);
+        String result = comparer.IsFlush(hand);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldNotIdentifyFlush()
+    {
+        String hand = "2S 4S 6S 8D TC";
+        String expected = "";
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        String result = comparer.IsFlush(hand);
 
         Assert.assertEquals(expected, result);
     }
@@ -277,22 +329,159 @@ public class PokerHandComparerTest {
     public void ShouldIdentifyStraight()
     {
         String hand = "2S 3C 4D 5D 6D";
-        boolean expected = true;
+        String expected = "6";
 
         PokerHandComparer comparer = new PokerHandComparer();
-        boolean  result = comparer.IsStraight(hand);
+        String  result = comparer.IsStraight(hand);
 
         Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void ShouldIdentifyFullHouse()
+    public void ShouldIdentifyFullHouse2sOver3s()
     {
         String hand = "2D 3D 2S 3S 2C";
         String expected1 = "23";
-        String expected2 = "32";
 
-        Assert.assertTrue(false);
+        PokerHandComparer comparer = new PokerHandComparer();
+        String result = comparer.FullHouse(hand);
+
+        Assert.assertEquals(expected1, result);
     }
 
+    @Test
+    public void ShouldIdentifyFullHouse3sOver2s()
+    {
+        String hand = "2D 3D 2S 3S 3C";
+        String expected1 = "32";
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        String result = comparer.FullHouse(hand);
+
+        Assert.assertEquals(expected1, result);
+    }
+
+    @Test
+    public void ShouldNotIdentifyFullHouse()
+    {
+        String hand = "2D 3D 2S 3S 4C";
+        String expected1 = "";
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        String result = comparer.FullHouse(hand);
+
+        Assert.assertEquals(expected1, result);
+    }
+
+    @Test
+    public void ShouldDetermineRankOfHandAsTwoPair3s()
+    {
+        String hand = "2D 3D 2S 3S 4C";
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        PokerHandValue expected = new PokerHandValue("32", PokerHandRank.Two_Pair);
+
+        PokerHandValue result = comparer.GetHandRank(new Hand(hand));
+
+        Assert.assertTrue(expected.compareTo(result) == 0);
+    }
+
+    @Test
+    public void ShouldCompareValuesOfTwoPair_2KUnderA2()
+    {
+        String firstValues = "2K";
+        String secondValues = "A2";
+
+        int expected = -1;
+
+        PokerHandValue hand1 = new PokerHandValue(firstValues, PokerHandRank.Two_Pair);
+        PokerHandValue hand2 = new PokerHandValue(secondValues, PokerHandRank.Two_Pair);
+
+        int result = hand1.compareTo(hand2);
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldCompareValuesOfTwoPair_AKOverA2()
+    {
+        String hand1 = "AC AS KH KH 7S";
+        String hand2 = "AD AH 2C 2C KS";
+
+        boolean expected = true;
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        boolean result = comparer.Hand1BeatsHand2(hand1, hand2);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldCompareValuesOfTwoPairAKEqualsKA()
+    {
+        String hand1 = "AC AS KH KH 7S";
+        String hand2 = "AD AH KC 7C KS";
+
+        boolean expected = false;
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        boolean result = comparer.Hand1BeatsHand2(hand1, hand2);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldCompareValuesOfOnePairAsWithKingHighCardBeating7HighCard()
+    {
+        String hand1 = "AC AS 2H 3H 7S";
+        String hand2 = "AD AH 2C 3C KS";
+
+        boolean expected = false;
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        boolean result = comparer.Hand1BeatsHand2(hand1, hand2);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void ShouldFindTwoPairA4BeatsKHigh()
+    {
+        String hand1 = "7C 5H KC QH JD";
+        String hand2 = "AS KH 4C AD 4S";
+
+        boolean expected = false;
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        boolean result = comparer.Hand1BeatsHand2(hand1, hand2);
+
+        Assert.assertEquals(expected, result);
+    }
+
+
+    @Test
+    public void ShouldFindHand1RoyalFlushToBeatHand2StraightFlush()
+    {
+        String hand1 = "TS JS QS KS AS";
+        String hand2 = "2S 3S 4S 5S 6S";
+        boolean expected = true;
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        boolean result = comparer.Hand1BeatsHand2(hand1, hand2);
+
+        Assert.assertEquals(expected, result);
+    }
+
+    //Problem 54
+    @Test
+    public void ShouldFindCountOfHandsWhereHand1BeatsHand2()
+    {
+        SupportFiles files = new SupportFiles();
+        String pokerFile = files.Location + "54.poker.txt";
+        int expected = 376;
+
+        PokerHandComparer comparer = new PokerHandComparer();
+        int result = comparer.GetCountOfHandsWhereHand1BeatsHand2(pokerFile);
+
+        Assert.assertEquals(expected, result);
+    }
 }
