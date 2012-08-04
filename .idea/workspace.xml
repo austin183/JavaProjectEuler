@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaximumDigitalSumizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Poker/Hand.java" afterPath="$PROJECT_DIR$/src/Poker/Hand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PokerHandComparer.java" afterPath="$PROJECT_DIR$/src/PokerHandComparer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Poker/PokerHandValue.java" afterPath="$PROJECT_DIR$/src/Poker/PokerHandValue.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -100,29 +101,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PokerHandComparerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PokerHandComparerTest.java">
+      <file leaf-file-name="MaximumDigitalSumizer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="429" column="0" selection-start="10979" selection-end="10979" vertical-scroll-proportion="0.2966418">
+            <state line="26" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PokerHandComparer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PokerHandComparer.java">
+      <file leaf-file-name="MaximumDigitalSumizerTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="0" selection-start="3926" selection-end="3926" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="48" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="41" column="16" selection-start="910" selection-end="910" vertical-scroll-proportion="0.4402985">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,8 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" />
-        <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinder.java" />
         <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinderTest.java" />
         <option value="$PROJECT_DIR$/src/CombinatoricizerTest.java" />
         <option value="$PROJECT_DIR$/src/Combinatoricizer.java" />
@@ -161,6 +153,8 @@
         <option value="$PROJECT_DIR$/src/LychrelNumberFinder.java" />
         <option value="$PROJECT_DIR$/src/PokerHandComparer.java" />
         <option value="$PROJECT_DIR$/src/Poker/Hand.java" />
+        <option value="$PROJECT_DIR$/src/MaximumDigitalSumizer.java" />
+        <option value="$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java" />
       </list>
     </option>
   </component>
@@ -330,78 +324,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in SumMultiple3and5Under1000">
-    <configuration default="false" name="PokerHandComparerTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LychrelNumberFinderTest.ShouldFind47ToNotBeLychrel" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFind47ToNotBeLychrel" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LychrelNumberFinderTest.ShouldFine196ToBeLychrel" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFine196ToBeLychrel" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -449,6 +371,72 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaximumDigitalSumizerTest.ShouldGetDigitalSumOf10ToThe100As1" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MaximumDigitalSumizerTest" />
+      <option name="METHOD_NAME" value="ShouldGetDigitalSumOf10ToThe100As1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaximumDigitalSumizerTest.ShouldGetDigitalSumOf2ToThe4" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MaximumDigitalSumizerTest" />
+      <option name="METHOD_NAME" value="ShouldGetDigitalSumOf2ToThe4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaximumDigitalSumizerTest.ShouldGetMaximumDigitalSumForNumbersUpTo100To100" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MaximumDigitalSumizerTest" />
+      <option name="METHOD_NAME" value="ShouldGetMaximumDigitalSumForNumbersUpTo100To100" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -696,12 +684,12 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfOnePairAsWithKingHighCardBeating7HighCard" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFind47ToNotBeLychrel" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFine196ToBeLychrel" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfTwoPairAKEqualsKA" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfTwoPairAKEqualsKA" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.MaximumDigitalSumizerTest.ShouldGetDigitalSumOf10ToThe100As1" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.MaximumDigitalSumizerTest.ShouldGetDigitalSumOf2ToThe4" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.MaximumDigitalSumizerTest.ShouldGetMaximumDigitalSumForNumbersUpTo100To100" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -826,7 +814,11 @@
       <created>1344039971463</created>
       <updated>1344039971463</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fixed bug in PokerHandComparer where two equivalent hands would cause a never ending loop.">
+      <created>1344041075951</created>
+      <updated>1344041075951</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -869,7 +861,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23782468" sideWeight="0.63936293" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22411832" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3606371" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3606371" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -913,7 +905,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved Problem 55" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in PokerHandComparer where two equivalent hands would cause a never ending loop." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -926,7 +918,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Solved Problems 29 and 30." />
     <MESSAGE value="Solved Problem 31" />
     <MESSAGE value="Solved Problem 32" />
     <MESSAGE value="Solved Problem 33" />
@@ -951,6 +942,7 @@
     <MESSAGE value="Incremental Checking for 54.  Have Full Houses and comparing two hands left at least." />
     <MESSAGE value="Solved Problem 54" />
     <MESSAGE value="Solved Problem 55" />
+    <MESSAGE value="Fixed bug in PokerHandComparer where two equivalent hands would cause a never ending loop." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -960,16 +952,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Poker/PlayingCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="676" selection-end="778" vertical-scroll-proportion="0.7835821" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3472222" />
@@ -1032,16 +1014,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
+    <entry file="file://$PROJECT_DIR$/src/PokerHandComparerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="48" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.0">
+        <state line="436" column="79" selection-start="11165" selection-end="11165" vertical-scroll-proportion="0.49253732">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PokerHandComparer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="3926" selection-end="3926" vertical-scroll-proportion="0.0">
+        <state line="114" column="0" selection-start="3926" selection-end="3926" vertical-scroll-proportion="0.2963671">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="48" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.60820895">
           <folding />
         </state>
       </provider>
@@ -1055,10 +1044,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokerHandComparerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="429" column="0" selection-start="10979" selection-end="10979" vertical-scroll-proportion="0.2966418">
+        <state line="26" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="16" selection-start="910" selection-end="910" vertical-scroll-proportion="0.4402985">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

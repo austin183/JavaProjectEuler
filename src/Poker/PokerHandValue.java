@@ -10,7 +10,7 @@ package Poker;
 public class PokerHandValue implements Comparable<PokerHandValue>
 {
     public final String Value;
-    public final PokerHandRank Rank;
+    private final PokerHandRank Rank;
 
     public PokerHandValue(String value, PokerHandRank rank)
     {
