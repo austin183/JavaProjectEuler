@@ -106,25 +106,9 @@ class PokerHandComparer {
 
         while (firstHandRank.compareTo(secondHandRank) == 0 && !firstHand.toString().equals(""))
         {
-            switch (firstHandRank.Rank) {
-                case Four_Of_A_Kind:
-                case One_Pair:
-                case Three_Of_A_Kind:
-                case High_Card:
-                case Flush:
-                case Straight:
-                case Straight_Flush:
-                    firstHand.RemoveAllCardsOfValue(firstHandRank.Value);
-                    secondHand.RemoveAllCardsOfValue(secondHandRank.Value);
-                    break;
-
-                case Two_Pair:
-                case Full_House:
-                    for (int i = 0; i < firstHandRank.Value.length(); i++) {
-                        firstHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i + 1));
-                        secondHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i + 1));
-                    }
-                    break;
+            for (int i = 0; i < firstHandRank.Value.length(); i++) {
+                firstHand = firstHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i + 1));
+                secondHand =  secondHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i + 1));
             }
 
             if(firstHand.toString().equals("") || secondHand.toString().equals(""))

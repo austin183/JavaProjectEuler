@@ -144,11 +144,12 @@ public class Hand {
         return toReturn;
     }
 
-    public void RemoveAllCardsOfValue(String value) {
-        for(int i = playingCards.size() -1; i > 0; i--)
+    public Hand RemoveAllCardsOfValue(String value) {
+        for(int i = playingCards.size() -1; i >= 0; i--)
         {
             if(playingCards.get(i).Value.equals(value))
                 playingCards.remove(i);
         }
+        return this;
     }
 }
