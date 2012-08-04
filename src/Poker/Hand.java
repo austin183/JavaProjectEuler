@@ -10,7 +10,7 @@ import java.util.*;
  * To change this template use File | Settings | File Templates.
  */
 public class Hand {
-    private List<PlayingCard> playingCards;
+    private final List<PlayingCard> playingCards;
 
     public Hand(String hand)
     {
@@ -46,15 +46,16 @@ public class Hand {
     public void RemoveCard(String value, String suit)
     {
         PlayingCard card = new PlayingCard(value, suit);
-        if(ContainsCard(card))
+        if (!ContainsCard(card)) {
+            return;
+        }
+        for(int i = playingCards.size() - 1; i > 0; i--)
         {
-            List<PlayingCard> tempCards = new ArrayList<PlayingCard>();
-            for(PlayingCard currentCard : playingCards)
+            PlayingCard currentCard = playingCards.get(i);
+            if(currentCard.compareTo(card) == 0)
             {
-                if(currentCard.compareTo(card) != 0)
-                    tempCards.add(currentCard);
+                playingCards.remove(i);
             }
-            playingCards = tempCards;
         }
     }
 
@@ -98,6 +99,7 @@ public class Hand {
         return false;
     }
 
+    @Override
     public String toString()
     {
         String toReturn = "";
@@ -143,10 +145,10 @@ public class Hand {
     }
 
     public void RemoveAllCardsOfValue(String value) {
-        for (PlayingCard card : playingCards) {
-            if(card.Value.equals(value))
-                RemoveCard(card.Value, card.Suit);
+        for(int i = playingCards.size() -1; i > 0; i--)
+        {
+            if(playingCards.get(i).Value.equals(value))
+                playingCards.remove(i);
         }
-
     }
 }

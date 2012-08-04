@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Poker/PokerHandRank.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Poker/PokerHandValue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Hand.java" afterPath="$PROJECT_DIR$/src/Poker/Hand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/PlayingCard.java" afterPath="$PROJECT_DIR$/src/Poker/PlayingCard.java" />
+    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="Solved Problem 54">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LychrelNumberFinder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LychrelNumberFinderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Palindromizer.java" afterPath="$PROJECT_DIR$/src/Palindromizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Poker/Hand.java" afterPath="$PROJECT_DIR$/src/Poker/Hand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PokerHandComparer.java" afterPath="$PROJECT_DIR$/src/PokerHandComparer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PokerHandComparerTest.java" afterPath="$PROJECT_DIR$/src/PokerHandComparerTest.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -32,21 +31,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/PokerHandComparer.java" line="164" class="PokerHandComparer" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -94,8 +78,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -103,67 +87,7 @@
     <favorites_list name="SumMultiple3and5Under1000" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PokerHandComparerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PokerHandComparerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.25360578">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4221#4238#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BigIntegerMath.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BigIntegerMath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="313" selection-end="624" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SupportFiles.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SupportFiles.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BigIntegerMathTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BigIntegerMathTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PokerHandComparer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PokerHandComparer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="0" selection-start="5025" selection-end="5025" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PokerHandValue.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Poker/PokerHandValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="22" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -181,9 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/TrianglePathFinderTest.java" />
-        <option value="$PROJECT_DIR$/src/SupportFiles.java" />
-        <option value="$PROJECT_DIR$/src/SubstitutePrimeFinder.java" />
         <option value="$PROJECT_DIR$/src/SubstitutePrimeFinderTest.java" />
         <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinder.java" />
         <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinderTest.java" />
@@ -191,12 +112,15 @@
         <option value="$PROJECT_DIR$/src/Combinatoricizer.java" />
         <option value="$PROJECT_DIR$/src/PlayingCard.java" />
         <option value="$PROJECT_DIR$/src/Hand.java" />
-        <option value="$PROJECT_DIR$/src/Poker/Hand.java" />
         <option value="$PROJECT_DIR$/src/Poker/PokerHandComparer.java" />
         <option value="$PROJECT_DIR$/src/Poker/PokerHandComparerTest.java" />
-        <option value="$PROJECT_DIR$/src/PokerHandComparer.java" />
-        <option value="$PROJECT_DIR$/src/Poker/PokerHandValue.java" />
         <option value="$PROJECT_DIR$/src/PokerHandComparerTest.java" />
+        <option value="$PROJECT_DIR$/src/Poker/PokerHandValue.java" />
+        <option value="$PROJECT_DIR$/src/PokerHandComparer.java" />
+        <option value="$PROJECT_DIR$/src/Poker/Hand.java" />
+        <option value="$PROJECT_DIR$/src/Palindromizer.java" />
+        <option value="$PROJECT_DIR$/src/LychrelNumberFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/LychrelNumberFinder.java" />
       </list>
     </option>
   </component>
@@ -216,12 +140,15 @@
             <id />
           </State>
           <State>
+            <id>Abstraction issues</id>
+          </State>
+          <State>
             <id>Spelling</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>SpellCheckingInspection</id>
+            <id>FeatureEnvy</id>
           </State>
         </selected-state>
       </profile-state>
@@ -263,20 +190,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="SumMultiple3and5Under1000" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -349,15 +262,16 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="last.edited.regexp" value=" " />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last.edited.regexp" value=" " />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -375,14 +289,58 @@
       <recent name="Poker" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in SumMultiple3and5Under1000">
-    <configuration default="false" name="PokerHandComparerTest.ShouldCompareValuesOfTwoPair_AKOverA2" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.LychrelNumberFinderTest">
+    <configuration default="false" name="PokerHandComparerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" value="ShouldCompareValuesOfTwoPair_AKOverA2" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LychrelNumberFinderTest.ShouldFind47ToNotBeLychrel" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
+      <option name="METHOD_NAME" value="ShouldFind47ToNotBeLychrel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LychrelNumberFinderTest.ShouldFine196ToBeLychrel" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
+      <option name="METHOD_NAME" value="ShouldFine196ToBeLychrel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -404,13 +362,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PokerHandComparerTest.ShouldIdentifyA2KHandAsNotConsecutive" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" value="ShouldIdentifyA2KHandAsNotConsecutive" />
+      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
+      <option name="METHOD_NAME" value="ShouldFindCountOfAllLychrelNumbersBelow10000" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -422,97 +380,7 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PokerHandComparerTest.ShouldCompareValuesOfTwoPairAKEqualsKA" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" value="ShouldCompareValuesOfTwoPairAKEqualsKA" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PokerHandComparerTest.ShouldFindCountOfHandsWhereHand1BeatsHand2" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" value="ShouldFindCountOfHandsWhereHand1BeatsHand2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PokerHandComparerTest.ShouldFindTwoPairA4BeatsKHigh" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" value="ShouldFindTwoPairA4BeatsKHigh" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -536,6 +404,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -564,24 +450,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -733,16 +601,38 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="LychrelNumberFinderTest" type="JUnit" factoryName="JUnit">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <list size="9">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfOnePairAsWithKingHighCardBeating7HighCard" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfTwoPair_AKOverA2" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldIdentifyA2KHandAsNotConsecutive" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfTwoPairAKEqualsKA" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldFindCountOfHandsWhereHand1BeatsHand2" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldFindTwoPairA4BeatsKHigh" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFind47ToNotBeLychrel" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFine196ToBeLychrel" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -859,7 +749,11 @@
       <created>1343189817198</created>
       <updated>1343189817198</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Solved Problem 54">
+      <created>1343703944970</created>
+      <updated>1343703944970</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -901,7 +795,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23782468" sideWeight="0.7758817" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22411832" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22411832" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3606371" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -946,7 +840,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Incremental Checking for 54.  Have Full Houses and comparing two hands left at least." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved Problem 54" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -959,7 +853,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Solved Problem 26.  Ran Refomatter and optimized imports." />
     <MESSAGE value="Solved Problem 27 and 28." />
     <MESSAGE value="Solved Problems 29 and 30." />
     <MESSAGE value="Solved Problem 31" />
@@ -984,6 +877,7 @@
     <MESSAGE value="Solved Problem 52." />
     <MESSAGE value="Solved Problem 53." />
     <MESSAGE value="Incremental Checking for 54.  Have Full Houses and comparing two hands left at least." />
+    <MESSAGE value="Solved Problem 54" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -993,26 +887,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Combinatoricizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="55" selection-start="97" selection-end="97" vertical-scroll-proportion="0.11682243" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FactorializerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="206" selection-end="206" vertical-scroll-proportion="0.023696683" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.12048193" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1023,74 +897,81 @@
         <state line="43" column="25" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.45214105" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3409091" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Poker/PlayingCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="8" selection-start="676" selection-end="778" vertical-scroll-proportion="0.7835821" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="49" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FileHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SupportFiles.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BigIntegerMathTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BigIntegerMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="313" selection-end="624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokerHandComparer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="0" selection-start="5025" selection-end="5025" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Poker/PokerHandValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3472222" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PokerHandComparerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.25360578">
+        <state line="461" column="40" selection-start="11798" selection-end="11798" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BigIntegerMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="313" selection-end="624" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SupportFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BigIntegerMathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PokerHandComparer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="3901" selection-end="3901" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="28" selection-start="566" selection-end="566" vertical-scroll-proportion="0.33411488" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Poker/PokerHandValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="27" selection-start="1681" selection-end="1681" vertical-scroll-proportion="0.68347013" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="50" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-0.3516999" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Palindromizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LychrelNumberFinderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="16" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4221#4238#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LychrelNumberFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5259146">
+          <folding />
         </state>
       </provider>
     </entry>

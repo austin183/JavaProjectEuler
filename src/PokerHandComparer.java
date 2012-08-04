@@ -106,25 +106,25 @@ class PokerHandComparer {
 
         while (firstHandRank.compareTo(secondHandRank) == 0 && !firstHand.toString().equals(""))
         {
-            if(firstHandRank.Rank == PokerHandRank.Four_Of_A_Kind
-                    || firstHandRank.Rank == PokerHandRank.One_Pair
-                    || firstHandRank.Rank == PokerHandRank.Three_Of_A_Kind
-                    || firstHandRank.Rank == PokerHandRank.High_Card
-                    || firstHandRank.Rank == PokerHandRank.Flush
-                    || firstHandRank.Rank == PokerHandRank.Straight
-                    || firstHandRank.Rank == PokerHandRank.Straight_Flush)
-            {
-                firstHand.RemoveAllCardsOfValue(firstHandRank.Value);
-                secondHand.RemoveAllCardsOfValue(secondHandRank.Value);
-            }
-            if(firstHandRank.Rank == PokerHandRank.Two_Pair
-                    || firstHandRank.Rank == PokerHandRank.Full_House)
-            {
-                for(int i = 0; i < firstHandRank.Value.length(); i++)
-                {
-                    firstHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i+1));
-                    secondHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i+1));
-                }
+            switch (firstHandRank.Rank) {
+                case Four_Of_A_Kind:
+                case One_Pair:
+                case Three_Of_A_Kind:
+                case High_Card:
+                case Flush:
+                case Straight:
+                case Straight_Flush:
+                    firstHand.RemoveAllCardsOfValue(firstHandRank.Value);
+                    secondHand.RemoveAllCardsOfValue(secondHandRank.Value);
+                    break;
+
+                case Two_Pair:
+                case Full_House:
+                    for (int i = 0; i < firstHandRank.Value.length(); i++) {
+                        firstHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i + 1));
+                        secondHand.RemoveAllCardsOfValue(firstHandRank.Value.substring(i, i + 1));
+                    }
+                    break;
             }
 
             if(firstHand.toString().equals("") || secondHand.toString().equals(""))

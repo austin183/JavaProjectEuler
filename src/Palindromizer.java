@@ -15,7 +15,7 @@ class Palindromizer {
         return IsPalindromeString(sBinCandidate);
     }
 
-    private boolean IsPalindromeString(String sCanditate) {
+    public boolean IsPalindromeString(String sCanditate) {
         int start = 0;
         int end = sCanditate.length() - 1;
         while (start <= (sCanditate.length() / 2) && end >= (sCanditate.length() / 2)) {
