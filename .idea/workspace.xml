@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaximumDigitalSumizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java" />
+    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="Fixed bug in PokerHandComparer where two equivalent hands would cause a never ending loop.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Poker/PokerHandValue.java" afterPath="$PROJECT_DIR$/src/Poker/PokerHandValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fraction.java" afterPath="$PROJECT_DIR$/src/Fraction.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -91,8 +92,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -101,22 +102,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MaximumDigitalSumizer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizer.java">
+      <file leaf-file-name="InfiniteContinuedFractionAnalyzerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="72" column="55" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaximumDigitalSumizerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java">
+      <file leaf-file-name="InfiniteContinuedFractionAnalyzer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="16" selection-start="910" selection-end="910" vertical-scroll-proportion="0.4402985">
+            <state line="30" column="116" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fraction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Fraction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="102" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.6585821">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,10 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/NumbersWithSameDigitsInMultiplesFinderTest.java" />
-        <option value="$PROJECT_DIR$/src/CombinatoricizerTest.java" />
-        <option value="$PROJECT_DIR$/src/Combinatoricizer.java" />
-        <option value="$PROJECT_DIR$/src/PlayingCard.java" />
         <option value="$PROJECT_DIR$/src/Hand.java" />
         <option value="$PROJECT_DIR$/src/Poker/PokerHandComparer.java" />
         <option value="$PROJECT_DIR$/src/Poker/PokerHandComparerTest.java" />
@@ -155,6 +163,10 @@
         <option value="$PROJECT_DIR$/src/Poker/Hand.java" />
         <option value="$PROJECT_DIR$/src/MaximumDigitalSumizer.java" />
         <option value="$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java" />
+        <option value="$PROJECT_DIR$/src/FractionTest.java" />
+        <option value="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java" />
+        <option value="$PROJECT_DIR$/src/Fraction.java" />
       </list>
     </option>
   </component>
@@ -226,9 +238,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SumMultiple3and5Under1000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
+        <subPane subId="Tests" />
         <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -237,7 +274,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Tests" />
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -273,16 +309,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,11 +327,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="last.edited.regexp" value=" " />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -323,14 +349,14 @@
       <recent name="Poker" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in SumMultiple3and5Under1000">
-    <configuration default="false" name="LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.FractionTest">
+    <configuration default="false" name="InfiniteContinuedFractionAnalyzerTest.ShouldFindThirdIteration1Equals17Over12" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LychrelNumberFinderTest" />
-      <option name="METHOD_NAME" value="ShouldFindCountOfAllLychrelNumbersBelow10000" />
+      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
+      <option name="METHOD_NAME" value="ShouldFindThirdIteration1Equals17Over12" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -346,17 +372,17 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PokerHandComparerTest.ShouldCompareValuesOfTwoPairAKEqualsKA" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="InfiniteContinuedFractionAnalyzerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PokerHandComparerTest" />
-      <option name="METHOD_NAME" value="ShouldCompareValuesOfTwoPairAKEqualsKA" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -364,23 +390,17 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MaximumDigitalSumizerTest.ShouldGetDigitalSumOf10ToThe100As1" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin8_Expansions" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MaximumDigitalSumizerTest" />
-      <option name="METHOD_NAME" value="ShouldGetDigitalSumOf10ToThe100As1" />
+      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
+      <option name="METHOD_NAME" value="FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin8_Expansions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -396,35 +416,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MaximumDigitalSumizerTest.ShouldGetDigitalSumOf2ToThe4" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MaximumDigitalSumizerTest" />
-      <option name="METHOD_NAME" value="ShouldGetDigitalSumOf2ToThe4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MaximumDigitalSumizerTest.ShouldGetMaximumDigitalSumForNumbersUpTo100To100" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MaximumDigitalSumizerTest" />
-      <option name="METHOD_NAME" value="ShouldGetMaximumDigitalSumForNumbersUpTo100To100" />
+      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
+      <option name="METHOD_NAME" value="FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -463,24 +461,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -506,6 +486,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -679,17 +677,39 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="FractionTest" type="JUnit" factoryName="JUnit">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FractionTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <list size="10">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfOnePairAsWithKingHighCardBeating7HighCard" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest.ShouldFindCountOfAllLychrelNumbersBelow10000" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfTwoPairAKEqualsKA" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.MaximumDigitalSumizerTest.ShouldGetDigitalSumOf10ToThe100As1" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.MaximumDigitalSumizerTest.ShouldGetDigitalSumOf2ToThe4" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.MaximumDigitalSumizerTest.ShouldGetMaximumDigitalSumForNumbersUpTo100To100" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.ShouldFindThirdIteration1Equals17Over12" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin8_Expansions" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.FractionTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -818,7 +838,11 @@
       <created>1344041075951</created>
       <updated>1344041075951</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fixed bug in PokerHandComparer where two equivalent hands would cause a never ending loop.">
+      <created>1344043233391</created>
+      <updated>1344043233391</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -856,10 +880,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32195678" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2112104" sideWeight="0.32738096" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.23782468" sideWeight="0.22866894" order="1" side_tool="true" content_ui="tabs" x="479" y="549" width="384" height="428" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23782468" sideWeight="0.63936293" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.23782468" sideWeight="0.63936293" order="0" side_tool="false" content_ui="combo" x="857" y="25" width="423" height="952" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22411832" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3606371" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -952,111 +976,121 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3472222" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BigIntegerMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="313" selection-end="624" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SupportFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BigIntegerMathTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Poker/PokerHandValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="27" selection-start="1681" selection-end="1681" vertical-scroll-proportion="0.68347013" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Palindromizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LychrelNumberFinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LychrelNumberFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5259146">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="19" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="28" selection-start="5541" selection-end="5541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokerHandComparerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="436" column="79" selection-start="11165" selection-end="11165" vertical-scroll-proportion="0.49253732">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokerHandComparer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="3926" selection-end="3926" vertical-scroll-proportion="0.2963671">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="48" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.60820895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1777#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnorthodoxFractionFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="40" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.8021108">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+        <state line="26" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.5013193">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="16" selection-start="910" selection-end="910" vertical-scroll-proportion="0.4402985">
+        <state line="41" column="16" selection-start="910" selection-end="910" vertical-scroll-proportion="0.089709766">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="48" selection-start="4372" selection-end="4372" vertical-scroll-proportion="2.584994">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="395" selection-end="395" vertical-scroll-proportion="-5.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="494" selection-end="494" vertical-scroll-proportion="-6.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runner/notification/RunNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="25" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.35322195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3472222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Poker/PlayingCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="110" selection-start="347" selection-end="347" vertical-scroll-proportion="0.36380598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="76" selection-start="6175" selection-end="6313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="116" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="55" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="226" selection-end="226" vertical-scroll-proportion="0.19589552">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="102" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.6585821">
+          <folding />
         </state>
       </provider>
     </entry>
