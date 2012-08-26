@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="Fixed bug in PokerHandComparer where two equivalent hands would cause a never ending loop.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java" />
+    <list default="true" id="ed6ba2d9-e9ad-414f-b78d-6176101f81e4" name="Default" comment="Solved Problem 57">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionalMath/BigFactorizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionalMath/BigFactorizerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionalMath/BigFraction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionalMath/BigFractionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FractionalMath/DoubleFraction.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Fraction.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Factorizer.java" afterPath="$PROJECT_DIR$/src/FractionalMath/Factorizer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/FactorizerTest.java" afterPath="$PROJECT_DIR$/src/FractionalMath/FactorizerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/FractionTest.java" afterPath="$PROJECT_DIR$/src/FractionalMath/DoubleFractionTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java" afterPath="$PROJECT_DIR$/src/FractionalMath/InfiniteContinuedFractionAnalyzer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java" afterPath="$PROJECT_DIR$/src/FractionalMath/InfiniteContinuedFractionAnalyzerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fraction.java" afterPath="$PROJECT_DIR$/src/Fraction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AbundantNumberizer.java" afterPath="$PROJECT_DIR$/src/AbundantNumberizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AmicablePairizer.java" afterPath="$PROJECT_DIR$/src/AmicablePairizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator.java" afterPath="$PROJECT_DIR$/src/Calculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UnorthodoxFractionFinder.java" afterPath="$PROJECT_DIR$/src/UnorthodoxFractionFinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java" afterPath="$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java" />
     </list>
     <list id="62d93374-9c4a-463b-97b9-6d2866ebbf59" name="Failed commit: Rejected commit: Failed commit: Default" comment="Added PrimeFactorizer and moved BigIntPrimeFactorizer over.  Now that I know about longs, I could rewrite all the Primes Tests if I wanted." />
     <ignored path="SumMultiple3and5Under1000.iws" />
@@ -18,6 +30,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CloverPlugin" class="com.cenqua.clover.idea.config.IdeaCloverConfig">
+    <loadPerTestData>true</loadPerTestData>
+    <projectRebuild class="com.cenqua.clover.idea.config.ProjectRebuild">ASK</projectRebuild>
+    <filteredHighlight>-4144960</filteredHighlight>
+    <relativeInitString>false</relativeInitString>
+    <buildWithClover>true</buildWithClover>
+    <lastProjectConfigTabSelected>0</lastProjectConfigTabSelected>
+    <periodicRefresh>false</periodicRefresh>
+    <notCoveredStripe>-65536</notCoveredStripe>
+    <flushPolicy>0</flushPolicy>
+    <viewIncludeAnnotation>true</viewIncludeAnnotation>
+    <alwaysExpandTestClasses>false</alwaysExpandTestClasses>
+    <languageLevel>1.3</languageLevel>
+    <manualInitString null="true" />
+    <autoRefreshInterval>2000</autoRefreshInterval>
+    <flushInterval>5000</flushInterval>
+    <showInline>true</showInline>
+    <showSummaryInToolwindow>true</showSummaryInToolwindow>
+    <autoRefresh>true</autoRefresh>
+    <coveredHighlight>-3605816</coveredHighlight>
+    <enabled>false</enabled>
+    <alwaysCollapseTestClasses>false</alwaysCollapseTestClasses>
+    <filteredStripe>-12566464</filteredStripe>
+    <excludes null="true" />
+    <calculateTestCoverage>true</calculateTestCoverage>
+    <instrumentTests>true</instrumentTests>
+    <outOfDateHighlight>-32</outOfDateHighlight>
+    <notCoveredHighlight>-341816</notCoveredHighlight>
+    <hideFullyCovered>false</hideFullyCovered>
+    <cloudReportIncludeSubpkgs>false</cloudReportIncludeSubpkgs>
+    <includes null="true" />
+    <includePassedTestCoverageOnly>true</includePassedTestCoverageOnly>
+    <testViewScope class="com.cenqua.clover.idea.config.TestViewScope">GLOBAL</testViewScope>
+    <testCaseLayout class="com.cenqua.clover.idea.config.TestCaseLayout">TEST_CASES</testCaseLayout>
+    <viewCoverage>true</viewCoverage>
+    <contextFilterSpec />
+    <coveredStripe>-16711936</coveredStripe>
+    <autoViewInCloudReport>true</autoViewInCloudReport>
+    <autoScroll>true</autoScroll>
+    <useGeneratedInitString>true</useGeneratedInitString>
+    <showGutter>true</showGutter>
+    <failedCoveredStripe>-14336</failedCoveredStripe>
+    <regexpContexts class="java.util.ArrayList" />
+    <flattenPackages>false</flattenPackages>
+    <autoScrollFromSource>false</autoScrollFromSource>
+    <showErrorMarks>true</showErrorMarks>
+    <showTooltips>true</showTooltips>
+    <showSummaryInToolbar>true</showSummaryInToolbar>
+    <span>0</span>
+    <outOfDateStripe>-256</outOfDateStripe>
+    <modelScope class="com.cenqua.clover.idea.config.ModelScope">APP_CLASSES_ONLY</modelScope>
+    <failedCoveredHighlight>-3920</failedCoveredHighlight>
+    <highlightCovered>true</highlightCovered>
+  </component>
   <component name="Commander">
     <leftPanel />
     <rightPanel />
@@ -101,39 +167,7 @@
     <favorites_list name="SumMultiple3and5Under1000" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="InfiniteContinuedFractionAnalyzerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="55" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfiniteContinuedFractionAnalyzer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="116" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fraction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Fraction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="102" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.6585821">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -151,22 +185,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Hand.java" />
-        <option value="$PROJECT_DIR$/src/Poker/PokerHandComparer.java" />
-        <option value="$PROJECT_DIR$/src/Poker/PokerHandComparerTest.java" />
-        <option value="$PROJECT_DIR$/src/PokerHandComparerTest.java" />
-        <option value="$PROJECT_DIR$/src/Poker/PokerHandValue.java" />
-        <option value="$PROJECT_DIR$/src/Palindromizer.java" />
-        <option value="$PROJECT_DIR$/src/LychrelNumberFinderTest.java" />
-        <option value="$PROJECT_DIR$/src/LychrelNumberFinder.java" />
-        <option value="$PROJECT_DIR$/src/PokerHandComparer.java" />
-        <option value="$PROJECT_DIR$/src/Poker/Hand.java" />
-        <option value="$PROJECT_DIR$/src/MaximumDigitalSumizer.java" />
-        <option value="$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java" />
-        <option value="$PROJECT_DIR$/src/FractionTest.java" />
         <option value="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java" />
         <option value="$PROJECT_DIR$/src/Fraction.java" />
+        <option value="$PROJECT_DIR$/src/Fractions/InfiniteContinuedFractionAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/Fractions/Fraction.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/Fraction.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/DoubleFractionTest.java" />
+        <option value="$PROJECT_DIR$/src/UnorthodoxFractionFinder.java" />
+        <option value="$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/BigFractionTest.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/BigFactorizer.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/BigFactorizerTest.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/DoubleFraction.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/BigFraction.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/InfiniteContinuedFractionAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/FractionalMath/InfiniteContinuedFractionAnalyzerTest.java" />
       </list>
     </option>
   </component>
@@ -232,24 +266,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="SumMultiple3and5Under1000" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SumMultiple3and5Under1000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -335,29 +351,80 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="FractionalMath" />
       <recent name="" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="FractionalMath" />
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Fractions" />
       <recent name="" />
       <recent name="Helpers" />
       <recent name="Poker" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FractionTest">
-    <configuration default="false" name="InfiniteContinuedFractionAnalyzerTest.ShouldFindThirdIteration1Equals17Over12" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.All in SumMultiple3and5Under1000">
+    <configuration default="false" name="BigFactorizerTest.ShouldGetFactorsOf3" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
-      <option name="METHOD_NAME" value="ShouldFindThirdIteration1Equals17Over12" />
+      <option name="PACKAGE_NAME" value="FractionalMath" />
+      <option name="MAIN_CLASS_NAME" value="FractionalMath.BigFactorizerTest" />
+      <option name="METHOD_NAME" value="ShouldGetFactorsOf3" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BigFactorizerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="FractionalMath" />
+      <option name="MAIN_CLASS_NAME" value="FractionalMath.BigFactorizerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BigFractionTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SumMultiple3and5Under1000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="FractionalMath" />
+      <option name="MAIN_CLASS_NAME" value="FractionalMath.BigFractionTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -376,32 +443,10 @@
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
+      <option name="PACKAGE_NAME" value="FractionalMath" />
+      <option name="MAIN_CLASS_NAME" value="FractionalMath.InfiniteContinuedFractionAnalyzerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin8_Expansions" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="SumMultiple3and5Under1000" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
-      <option name="METHOD_NAME" value="FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin8_Expansions" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -420,8 +465,8 @@
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InfiniteContinuedFractionAnalyzerTest" />
+      <option name="PACKAGE_NAME" value="FractionalMath" />
+      <option name="MAIN_CLASS_NAME" value="FractionalMath.InfiniteContinuedFractionAnalyzerTest" />
       <option name="METHOD_NAME" value="FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -677,12 +722,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="FractionTest" type="JUnit" factoryName="JUnit">
+    <configuration default="false" name="DoubleFractionTest" type="JUnit" factoryName="JUnit">
       <module name="SumMultiple3and5Under1000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FractionTest" />
+      <option name="PACKAGE_NAME" value="FractionalMath" />
+      <option name="MAIN_CLASS_NAME" value="FractionalMath.DoubleFractionTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -699,17 +744,18 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="10">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfOnePairAsWithKingHighCardBeating7HighCard" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.ShouldFindThirdIteration1Equals17Over12" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin8_Expansions" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.FractionTest" />
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BigFactorizerTest.ShouldGetFactorsOf3" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BigFactorizerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BigFractionTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.InfiniteContinuedFractionAnalyzerTest.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in SumMultiple3and5Under1000" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.MultiThreadDivisibilityTest.ShouldGetSmallestNumberDivisibleByNumbersBelow20" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.IterativeSequencerTest.ShouldGetLongestChainForNumberUnder1000000" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.PokerHandComparerTest.ShouldCompareValuesOfOnePairAsWithKingHighCardBeating7HighCard" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.LychrelNumberFinderTest" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.DoubleFractionTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -872,24 +918,26 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.49715677" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5153584" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.6432818" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24918832" sideWeight="0.6432818" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42662117" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.49715677" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20064987" sideWeight="0.22711058" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32195678" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.23782468" sideWeight="0.22866894" order="1" side_tool="true" content_ui="tabs" x="479" y="549" width="384" height="428" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6432818" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.23782468" sideWeight="0.22866894" order="1" side_tool="true" content_ui="tabs" x="479" y="549" width="384" height="428" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.63026166" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6432818" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.23782468" sideWeight="0.63936293" order="0" side_tool="false" content_ui="combo" x="857" y="25" width="423" height="952" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22411832" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3606371" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.23782468" sideWeight="0.63936293" order="0" side_tool="false" content_ui="combo" x="907" y="25" width="373" height="952" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36973834" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24918832" sideWeight="0.61547214" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5153584" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32195678" sideWeight="0.49715677" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cloverage" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24918832" sideWeight="0.64050055" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22411832" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -976,120 +1024,84 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UnorthodoxFractionFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="40" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.8021108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.5013193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaximumDigitalSumizerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="16" selection-start="910" selection-end="910" vertical-scroll-proportion="0.089709766">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Poker/Hand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="48" selection-start="4372" selection-end="4372" vertical-scroll-proportion="2.584994">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runner/notification/Failure.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="395" selection-end="395" vertical-scroll-proportion="-5.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="494" selection-end="494" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runner/notification/RunNotifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1858#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="25" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.35322195">
-          <folding />
-        </state>
+        <state line="43" column="25" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.35322195" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3472222">
-          <folding />
-        </state>
+        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.3472222" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Poker/PlayingCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="110" selection-start="347" selection-end="347" vertical-scroll-proportion="0.36380598">
-          <folding />
-        </state>
+        <state line="13" column="110" selection-start="347" selection-end="347" vertical-scroll-proportion="0.36380598" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="76" selection-start="6175" selection-end="6313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="177" column="8" selection-start="5868" selection-end="5868" vertical-scroll-proportion="0.36779323" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/DoubleFractionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="116" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="22" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InfiniteContinuedFractionAnalyzerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/FactorizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="55" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="31" column="48" selection-start="700" selection-end="700" vertical-scroll-proportion="0.872093" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FractionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/UnorthodoxFractionFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="226" selection-end="226" vertical-scroll-proportion="0.19589552">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="47" column="50" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.9728682" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fraction.java">
+    <entry file="file://$PROJECT_DIR$/src/UnorthodoxFractionFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="102" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.6585821">
+        <state line="28" column="60" selection-start="976" selection-end="976" vertical-scroll-proportion="0.7821229" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/Factorizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="106" selection-start="532" selection-end="532" vertical-scroll-proportion="0.27901524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/BigFractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="284" selection-end="284" vertical-scroll-proportion="0.06802721" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/InfiniteContinuedFractionAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="12" selection-start="918" selection-end="918" vertical-scroll-proportion="0.66480446" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/BigFactorizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="44" selection-start="695" selection-end="695" vertical-scroll-proportion="0.75418997" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/BigFactorizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="76" selection-start="725" selection-end="725" vertical-scroll-proportion="0.5009311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/BigFraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.53072625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/DoubleFraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2344" selection-end="2344" vertical-scroll-proportion="0.15521978" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FractionalMath/InfiniteContinuedFractionAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="16" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.6658851">
           <folding />
         </state>
       </provider>

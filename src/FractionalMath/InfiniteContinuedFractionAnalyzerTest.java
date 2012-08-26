@@ -1,6 +1,10 @@
+package FractionalMath;
+
 import junit.framework.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.math.BigInteger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,15 +13,16 @@ import org.junit.Test;
  * Time: 7:12 PM
  * To change this template use File | Settings | File Templates.
  */
+
 public class InfiniteContinuedFractionAnalyzerTest {
     @Test
     public void ShouldFindFirstIterationEquals3Over2()
     {
         int numberofIterations = 1;
-        Fraction expected = new Fraction(3, 2);
+        BigFraction expected = new BigFraction(new BigInteger("3"), new BigInteger("2"));
 
         InfiniteContinuedFractionAnalyzer analyzer = new InfiniteContinuedFractionAnalyzer();
-        Fraction result = analyzer.FindValueAtIteration(numberofIterations);
+        BigFraction result = analyzer.FindValueAtIteration(numberofIterations);
 
         Assert.assertEquals(0, expected.compareTo(result));
     }
@@ -26,10 +31,10 @@ public class InfiniteContinuedFractionAnalyzerTest {
     public void ShouldFindSecondIteration1Equals7Over5()
     {
         int numberofIterations = 2;
-        Fraction expected = new Fraction(7, 5);
+        BigFraction expected = new BigFraction(new BigInteger("7"), new BigInteger("5"));
 
         InfiniteContinuedFractionAnalyzer analyzer = new InfiniteContinuedFractionAnalyzer();
-        Fraction result = analyzer.FindValueAtIteration(numberofIterations);
+        BigFraction result = analyzer.FindValueAtIteration(numberofIterations);
 
         Assert.assertEquals(0, expected.compareTo(result));
     }
@@ -38,10 +43,10 @@ public class InfiniteContinuedFractionAnalyzerTest {
     public void ShouldFindThirdIteration1Equals17Over12()
     {
         int numberofIterations = 3;
-        Fraction expected = new Fraction(17, 12);
+        BigFraction expected = new BigFraction(new BigInteger("17"), new BigInteger("12"));
 
         InfiniteContinuedFractionAnalyzer analyzer = new InfiniteContinuedFractionAnalyzer();
-        Fraction result = analyzer.FindValueAtIteration(numberofIterations);
+        BigFraction result = analyzer.FindValueAtIteration(numberofIterations);
 
         Assert.assertEquals(0, expected.compareTo(result));
     }
@@ -59,13 +64,13 @@ public class InfiniteContinuedFractionAnalyzerTest {
         Assert.assertEquals(expected, result);
     }
 
+    //Problem 57
     @Test
-    @Ignore("I think there is a problem with the double type for this problem.  I will reimplement Fraction with BigInteger.")
     public void FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithin1000_Expansions()
     {
         int numberOfExpansions = 1000;
 
-        int expected = 1;
+        int expected = 153;
 
         InfiniteContinuedFractionAnalyzer analyzer = new InfiniteContinuedFractionAnalyzer();
         int result = analyzer.FindNumberOfFractionsContainingMoreDigitsInNumeratorThanDenominatorWithinX_Expansions(numberOfExpansions);

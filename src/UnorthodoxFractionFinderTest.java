@@ -1,3 +1,4 @@
+import FractionalMath.DoubleFraction;
 import junit.framework.Assert;
 import org.junit.Test;
 
@@ -40,23 +41,23 @@ public class UnorthodoxFractionFinderTest {
     //Problem 33
     @Test
     public void ShouldFindListOfUnorthodoxFractionsBetween10Over11And98Over99() {
-        List<Fraction> expected = new ArrayList<Fraction>();
-        expected.add(new Fraction(16, 64));
-        expected.add(new Fraction(26, 65));
-        expected.add(new Fraction(19, 95));
-        expected.add(new Fraction(49, 98));
+        List<DoubleFraction> expected = new ArrayList<DoubleFraction>();
+        expected.add(new DoubleFraction(16.0, 64.0));
+        expected.add(new DoubleFraction(26.0, 65.0));
+        expected.add(new DoubleFraction(19.0, 95.0));
+        expected.add(new DoubleFraction(49.0, 98.0));
 
         UnorthodoxFractionFinder finder = new UnorthodoxFractionFinder();
-        List<Fraction> result = finder.GetUnorthodoxFractions();
+        List<DoubleFraction> result = finder.GetUnorthodoxFractions();
 
-        Assert.assertEquals(expected.get(0).Numerator, result.get(0).Numerator);
-        Assert.assertEquals(expected.get(1).Numerator, result.get(1).Numerator);
-        Assert.assertEquals(expected.get(2).Numerator, result.get(2).Numerator);
-        Assert.assertEquals(expected.get(3).Numerator, result.get(3).Numerator);
+        Assert.assertEquals(expected.get(0).getNumerator(), result.get(0).getNumerator());
+        Assert.assertEquals(expected.get(1).getNumerator(), result.get(1).getNumerator());
+        Assert.assertEquals(expected.get(2).getNumerator(), result.get(2).getNumerator());
+        Assert.assertEquals(expected.get(3).getNumerator(), result.get(3).getNumerator());
 
-        Assert.assertEquals(expected.get(0).Denominator, result.get(0).Denominator);
-        Assert.assertEquals(expected.get(1).Denominator, result.get(1).Denominator);
-        Assert.assertEquals(expected.get(2).Denominator, result.get(2).Denominator);
-        Assert.assertEquals(expected.get(3).Denominator, result.get(3).Denominator);
+        Assert.assertEquals(expected.get(0).getDenominator(), result.get(0).getDenominator());
+        Assert.assertEquals(expected.get(1).getDenominator(), result.get(1).getDenominator());
+        Assert.assertEquals(expected.get(2).getDenominator(), result.get(2).getDenominator());
+        Assert.assertEquals(expected.get(3).getDenominator(), result.get(3).getDenominator());
     }
 }

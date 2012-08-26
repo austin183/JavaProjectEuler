@@ -1,3 +1,5 @@
+import FractionalMath.Factorizer;
+
 import java.io.*;
 import java.math.BigInteger;
 import java.util.ArrayList;

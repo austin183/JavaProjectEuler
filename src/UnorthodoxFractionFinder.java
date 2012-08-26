@@ -1,3 +1,5 @@
+import FractionalMath.DoubleFraction;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,12 +25,12 @@ class UnorthodoxFractionFinder {
         return false;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public List<Fraction> GetUnorthodoxFractions() {
-        List<Fraction> toReturn = new ArrayList<Fraction>();
+    public List<DoubleFraction> GetUnorthodoxFractions() {
+        List<DoubleFraction> toReturn = new ArrayList<DoubleFraction>();
         for (int denom = 11; denom <= 99; denom++) {
             for (int num = 10; num < denom; num++) {
                 if (IsUnorthodoxFraction((double) num, (double) denom)) {
-                    toReturn.add(new Fraction((double) num, (double) denom));
+                    toReturn.add(new DoubleFraction((double) num, (double) denom));
                 }
             }
         }

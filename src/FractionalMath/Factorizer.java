@@ -1,3 +1,5 @@
+package FractionalMath;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,7 +11,7 @@ import java.util.Map;
  * Date: 2/8/12
  * Time: 12:48 PM
  */
-class Factorizer {
+public class Factorizer {
 
     public int GetNumberFactorsOf(long numberToTest) {
         int numFactors = 1;
