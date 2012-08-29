@@ -37,40 +37,48 @@ class SpiralDiagonalHelper {
         return toReturn;
     }
 
+    private int GetCountOfPrimeCorners(int level, PrimeFactorizer factorizer)
+    {
+        int toReturn = 0;
+        List<Integer> diagonalsAtLevel = GetDiagonalsAtLevel(level);
+        if(factorizer.IsPrime(diagonalsAtLevel.get(0), factorizer.HasNoCache()))
+        {
+            toReturn++;
+        }
+        if(factorizer.IsPrime(diagonalsAtLevel.get(1), factorizer.HasNoCache()))
+        {
+            toReturn++;
+        }
+        if(factorizer.IsPrime(diagonalsAtLevel.get(2), factorizer.HasNoCache()))
+        {
+            toReturn++;
+        }
+        if(factorizer.IsPrime(diagonalsAtLevel.get(3), factorizer.HasNoCache()))
+        {
+            toReturn++;
+        }
+        return toReturn;
+    }
+
+    public int GetCountOfNumbersAlongDiagonalAtLevel(int level) {
+        return (level * 4) + 1;
+    }
+
     public double GetDiagonalPrimeRatiosAtLevel(int level) {
         PrimeFactorizer factorizer = new PrimeFactorizer();
         double ratio = 0;
 
         int numerator = 0;
-        List<Integer> diagonalsAtLevel;
+
         for(int i = 1; i <= level; i++)
         {
-            diagonalsAtLevel = GetDiagonalsAtLevel(i);
-            if(factorizer.IsPrime(diagonalsAtLevel.get(0), true))
-            {
-                numerator++;
-            }
-            if(factorizer.IsPrime(diagonalsAtLevel.get(1), true))
-            {
-                numerator++;
-            }
-            if(factorizer.IsPrime(diagonalsAtLevel.get(2), true))
-            {
-                numerator++;
-            }
-            if(factorizer.IsPrime(diagonalsAtLevel.get(3), true))
-            {
-                numerator++;
-            }
+            numerator += GetCountOfPrimeCorners(i, factorizer);
             int denominator = GetCountOfNumbersAlongDiagonalAtLevel(i);
             ratio = (double)numerator / (double)denominator;
         }
         return ratio;
     }
 
-    public int GetCountOfNumbersAlongDiagonalAtLevel(int level) {
-        return (level * 4) + 1;
-    }
 
     public int FindSideLengthOfLevelWhereRatioOfPrimesInDiagonalsFallsBelow10Percent(double threshold) {
         double ratio = 1;
@@ -84,23 +92,8 @@ class SpiralDiagonalHelper {
         while (ratio >= threshold)
         {
             currentLevel++;
-            List<Integer> diagonalsAtLevel = GetDiagonalsAtLevel(currentLevel);
-            if(factorizer.IsPrime(diagonalsAtLevel.get(0), false))
-            {
-                numerator++;
-            }
-            if(factorizer.IsPrime(diagonalsAtLevel.get(1), false))
-            {
-                numerator++;
-            }
-            if(factorizer.IsPrime(diagonalsAtLevel.get(2), false))
-            {
-                numerator++;
-            }
-            if(factorizer.IsPrime(diagonalsAtLevel.get(3), false))
-            {
-                numerator++;
-            }
+
+            numerator += GetCountOfPrimeCorners(currentLevel, factorizer);
             int denominator = GetCountOfNumbersAlongDiagonalAtLevel(currentLevel);
             ratio = (double)numerator / (double)denominator;
         }
