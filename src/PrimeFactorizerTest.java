@@ -29,4 +29,18 @@ public class PrimeFactorizerTest {
 
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void ShouldFind1999993ToBePrime()
+    {
+        int candidate = 1999993;
+
+        boolean expected = true;
+
+        PrimeFactorizer factorizer = new PrimeFactorizer();
+        boolean result = factorizer.IsPrime(candidate, false);
+
+        Assert.assertEquals(expected, result);
+    }
+
 }

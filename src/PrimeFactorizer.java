@@ -83,8 +83,7 @@ class PrimeFactorizer {
 
     private boolean IsPrimeNoCache(int candidate) {
         if (candidate < 2) return false;
-        for (int i = 2; i < (candidate / 2) + 1; i++) {
-            //System.out.printf("Testing prime candidate %s to %s%n", Integer.toString(candidate), Integer.toString(i));
+        for (int i = 2; i < Math.sqrt(candidate + 1) + 1; i++) {
             if (candidate % i == 0)
                 return false;
         }

@@ -6,5 +6,5 @@
  */
 class SupportFiles {
     //public String Location = "C:\\Temp\\ProjectEuler\\";
-    public final String Location = "/home/austin/ProjectEulerSupportFiles/";
+    public final String Location = "/home/austin/JavaProjectEuler/JavaProjectEuler/src/SupportFiles/";
 }

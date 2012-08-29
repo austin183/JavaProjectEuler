@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class CalculatorTest {
     @Test
-    public void ShouldCalculateSumOfMultiplesOf3and5Under10() throws Exception {
+    public void ShouldCalculateSumOfMultiplesOf3and5Under10() {
         int[] multiples = {3, 5};
         int maxValue = 10;
 
@@ -24,7 +24,7 @@ public class CalculatorTest {
 
     //Problem 1
     @Test
-    public void ShouldCalculateSumOfMultiples3and5Under1000() throws Exception {
+    public void ShouldCalculateSumOfMultiples3and5Under1000() {
         int[] multiples = {3, 5};
         int maxValue = 1000;
 
